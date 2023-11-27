@@ -25,6 +25,13 @@ const Header = () => {
     };
   }, [currImg]);
 
+  const openExternalLink = () => {
+    window.open(
+      "https://www.booking.com/hotel/nl/villa-steenwyck.nl.html",
+      "_blank"
+    );
+  };
+
   return (
     <header className={stl.header}>
       <AnimatePresence mode="wait">
@@ -35,11 +42,14 @@ const Header = () => {
             className={stl.bannerImg}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2.5 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
             exit={{ opacity: 0 }}
           />
         )}
       </AnimatePresence>
+      <button className={stl.cta} onClick={openExternalLink}>
+        Reserveren
+      </button>
     </header>
   );
 };

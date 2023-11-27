@@ -25,3 +25,53 @@
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
+
+.cta {
+  position: relative;
+  width: 15rem;
+  height: 3rem;
+  outline: 0;
+  border: 1px solid #ffd700;
+  background-color: #ffd700;
+  color: black;
+  font-family: luxuryFont;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.45s ease-in-out;
+  text-decoration: none;
+  margin-top: 11rem;
+}
+
+.cta:hover {
+  background-color: #0d0b03;
+  color: #ffd700;
+  border: black;
+  text-shadow: 0px 0px 5px #ffd700;
+}
+
+.cta a:hover {
+  background-color: transparent;
+  color: #ffd700;
+  border: black;
+  text-shadow: 0px 0px 5px #ffd700;
+}
+
+.cta:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffd700;
+  transform-origin: bottom right;
+  transition: transform 0.65s ease-out;
+}
+
+.cta:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
