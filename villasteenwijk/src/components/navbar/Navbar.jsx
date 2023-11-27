@@ -2,8 +2,9 @@ import stl from "./Navbar.module.css";
 
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/icons/Logo.png";
 
-const Navbar = ({ setActivePage, activePage }) => {
+const Navbar = () => {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
@@ -13,7 +14,7 @@ const Navbar = ({ setActivePage, activePage }) => {
   return (
     <nav className={stl.navbar}>
       <img
-        src="./icons/Logo.png"
+        src={logo}
         alt="Legservice groen"
         className={stl.navlogo}
         onClick={handleNavigation}

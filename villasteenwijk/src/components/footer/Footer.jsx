@@ -1,5 +1,6 @@
 import stl from "./Footer.module.css";
 import { motion as m } from "framer-motion";
+import logo from "../../assets/icons/Logo.png";
 
 const Footer = () => {
   const openExternalLink = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
         initial={{ opacity: 0, y: "-20px" }}
         whileInView={{ opacity: 1, y: "0px" }}
         transition={{ duration: 1.25 }}
-        src="./icons/logo.png"
+        src={logo}
         alt="Villa Boutique Hotel Huismerk"
         className={stl.logo}
       />
