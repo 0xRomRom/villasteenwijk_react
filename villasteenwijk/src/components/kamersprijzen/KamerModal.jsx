@@ -1,25 +1,44 @@
 import React, { useState } from "react";
 import stl from "./KamerModal.module.css";
-import hildoImg1 from "../../assets/hildokrop/Pic1.webp";
 import { FaEuroSign } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { PiForkKnifeBold } from "react-icons/pi";
+import Pic1 from "../../assets/hildokrop/Pic1.webp";
+import Pic2 from "../../assets/hildokrop/Pic2.webp";
+import Pic3 from "../../assets/hildokrop/Pic3.webp";
+import Pic4 from "../../assets/hildokrop/Pic4.webp";
+import Pic5 from "../../assets/hildokrop/Pic5.webp";
+import Pic6 from "../../assets/hildokrop/Pic6.webp";
+import Pic7 from "../../assets/hildokrop/Pic7.webp";
+import Pic8 from "../../assets/hildokrop/Pic8.webp";
 
 const KamerModal = () => {
-  const [activeButton, setActiveButton] = useState(0);
+  const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonClick = (index) => {
     setActiveButton(index);
   };
 
+  const openExternalLink = () => {
+    window.open(
+      "https://www.booking.com/hotel/nl/villa-steenwyck.nl.html",
+      "_blank"
+    );
+  };
+
+  const imageSources = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
   return (
     <div className={stl.kamermodal}>
       <div className={stl.modal}>
         <h1 className={stl.hero}>Hildo krop</h1>
         <div className={stl.imgWrap}>
-          <img src={hildoImg1} alt="Hildo Krop Kamer" className={stl.roomImg} />
+          <img
+            src={imageSources[activeButton]}
+            alt="Hildo Krop Kamer"
+            className={stl.roomImg}
+          />
           <div className={stl.buttonBox}>
             {[...Array(8)].map((_, index) => (
               <button
@@ -119,6 +138,11 @@ const KamerModal = () => {
               </ul>
             </div>
           </div>
+        </div>
+        <div className={stl.ctaBox}>
+          <button className={stl.reserverenCta} onClick={openExternalLink}>
+            Reserveren
+          </button>
         </div>
       </div>
     </div>

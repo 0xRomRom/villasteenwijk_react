@@ -9,12 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 2rem;
+  padding-top: 20px;
 }
 
 .modal {
   width: 40rem;
-  height: 49.6rem;
+  height: 53rem;
   background-color: red;
   border-radius: 20px 5px 20px 5px;
   background-color: rgb(19, 24, 43);
@@ -302,4 +302,32 @@
   border-radius: 0.4rem;
   padding-bottom: 5px;
   overflow: hidden;
+}
+
+.ctaBox {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserverenCta {
+  background-color: rgb(25, 32, 59);
+  color: yellow;
+  font-family: "Open Sans";
+  padding: 0.4rem 3rem;
+  border-radius: 0.4rem;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+}
+
+.reserverenCta:hover {
+  background-color: black;
+  color: yellow;
 }
