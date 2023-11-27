@@ -2,7 +2,7 @@
   background-color: black;
   /* background: linear-gradient(180deg, black, rgb(21, 21, 21)); */
   height: 85rem;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .wrapper {
@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden !important;
 }
 
 .cta {
