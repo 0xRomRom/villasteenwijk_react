@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import Stijlvol from "./stijlvolovernachten/Stijlvol";
 import Reviews from "./reviews/Reviews";
 import Omgeving from "./omgeving/Omgeving";
+import Beleef from "./beleef/Beleef";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Stijlvol />
       <Reviews />
       <Omgeving />
+      <Beleef />
     </div>
   );
 };
