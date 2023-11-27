@@ -1,0 +1,66 @@
+.stijlvol {
+  background: linear-gradient(
+    180deg,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
+  padding-top: 10rem;
+  padding-left: 7rem;
+}
+
+.hero {
+  font-size: 40px;
+  color: yellow;
+}
+
+.contentWrap {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10rem 0rem;
+}
+
+.copy {
+  color: yellow;
+  width: 40rem;
+  font-size: 18px;
+}
+
+.imgWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.stijlvolImg {
+  width: 40rem;
+}
+
+.bekijkCta {
+  color: rgb(213, 213, 213);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-top: 2px;
+}
+
+.arrowRight {
+  transition: all 0.3s ease-in-out;
+}
+
+.bekijkCta:hover .arrowRight {
+  transform: translateX(15px);
+  color: white;
+}
+
+.bekijkCta:hover {
+  color: white;
+}
