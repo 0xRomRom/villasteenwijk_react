@@ -1,0 +1,68 @@
+.omgeving {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    black,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
+  padding: 5rem 0rem;
+}
+
+.hero {
+  font-size: 40px;
+  color: yellow;
+  padding-left: 7rem;
+  padding-top: 15rem;
+}
+
+.nlkaart {
+  /* opacity: 0.3; */
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.nlwrap {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+
+.innerKaartwrap {
+  position: relative;
+  top: -11rem;
+}
+
+.pointer {
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  filter: blur(10px);
+  left: 395px;
+  top: 215px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.pointer:active + .nlkaart {
+  padding-top: 7rem;
+  padding-right: 9rem;
+  transform: scale(2) !important;
+}
+
+.omgevingcopy {
+  color: yellow;
+  width: 38rem;
+  padding-left: 7rem;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding-bottom: 20rem;
+}

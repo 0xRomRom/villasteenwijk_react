@@ -96,7 +96,7 @@ const Reviews = () => {
         <m.div
           className={stl.reviewTile}
           initial={{ opacity: 0, y: "-30px" }}
-          whileInView={{ opacity: 1, y: "0px", duration: 0.4 }}
+          whileInView={{ opacity: 1, y: "0px" }}
           animate={{ opacity: 1, y: "30px" }}
           transition={{ duration: 0.4, ease: "easeInOut", delay: 0.2 }}
         >
