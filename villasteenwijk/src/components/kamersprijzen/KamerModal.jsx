@@ -5,6 +5,7 @@ import { FaEuroSign } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaExclamationTriangle } from "react-icons/fa";
+import { PiForkKnifeBold } from "react-icons/pi";
 
 const KamerModal = () => {
   const [activeButton, setActiveButton] = useState(0);
@@ -41,11 +42,11 @@ const KamerModal = () => {
               <div className={stl.personWrapper}>
                 <div className={stl.priceBlock}>
                   <IoPeopleSharp className={stl.icon} />
-                  <span className={stl.copyTxt}>110</span>
+                  <span className={stl.copyTxt}>110,-</span>
                 </div>
                 <div className={stl.priceBlock}>
                   <FaPeopleGroup className={stl.icon} />
-                  <span className={stl.copyTxt}>130</span>
+                  <span className={stl.copyTxt}>130,-</span>
                 </div>
               </div>
             </div>
@@ -58,7 +59,20 @@ const KamerModal = () => {
             <div className={stl.toeslagBottom}>
               <FaEuroSign className={stl.euro2} />
               <div className={stl.pppnCol}>
-                <span className={stl.copyTxt}>2.50</span>
+                <span className={stl.copyTxt}>2.50,-</span>
+                <span className={stl.pppnTxt}>p.p.p.n.</span>
+              </div>
+            </div>
+          </div>
+          <div className={stl.ontbijtWrap}>
+            <div className={stl.toeslagTop}>
+              <PiForkKnifeBold className={stl.forkIcon} />
+              <span className={stl.copyTitle}>Heerlijk ontbijt</span>
+            </div>
+            <div className={stl.toeslagBottom}>
+              <FaEuroSign className={stl.euro2} />
+              <div className={stl.pppnCol}>
+                <span className={stl.copyTxt}>14.50,-</span>
                 <span className={stl.pppnTxt}>p.p.p.n.</span>
               </div>
             </div>

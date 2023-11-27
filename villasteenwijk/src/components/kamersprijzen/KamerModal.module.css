@@ -129,6 +129,8 @@
   /* background-color: red; */
   justify-content: flex-start;
   align-items: center;
+  left: -5px;
+  position: relative;
 }
 
 .euro {
@@ -173,6 +175,8 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 0.8rem;
+  left: -5px;
+  position: relative;
 }
 
 .euro2 {
@@ -191,4 +195,23 @@
 .pppnTxt {
   color: rgb(163, 163, 163);
   font-family: "Open Sans";
+}
+
+.ontbijtWrap {
+  position: relative;
+  background-color: rgb(25, 32, 59);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+.forkIcon {
+  color: rgb(163, 163, 163);
+  font-size: 1.2rem;
+  position: relative;
 }
