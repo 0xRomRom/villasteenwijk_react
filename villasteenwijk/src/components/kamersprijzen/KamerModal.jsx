@@ -78,6 +78,48 @@ const KamerModal = () => {
             </div>
           </div>
         </div>
+        <div className={stl.descriptionWrap}>
+          <div className={stl.copyBox}>
+            <div className={stl.copyTextBox}>
+              <h2 className={stl.boxTitle}>Omschrijving</h2>
+              <p className={stl.roomCopy}>
+                Vernoemd naar de in Steenwijk geboren beroemde kunstenaar en
+                beeldhouwer Hildo Krop, de Stadsbeeldhouwer van Amsterdam.
+                <br />
+                <br />
+                Deze prachtige, 2-persoons, lichte, kamer met Engels behang,
+                rijke, velourse, gordijnstoffen en zachte vloerbedekking bevind
+                zich op de 2e verdieping van Villa Steenwyck met daardoor een
+                prachtig uitzicht over vestingstad Steenwijk en de Steenwijker
+                toren.
+              </p>
+            </div>
+          </div>
+          <div className={stl.utilitiesBox}>
+            <div className={stl.utilitiesTextBox}>
+              <h2 className={stl.boxTitle}>Voorzieningen</h2>
+              <ul className={stl.voorzienList}>
+                <li className={stl.voorziening}>
+                  Luxe Boxspring bedden (2 bedden tegen elkaar aan, 180x200cm
+                  met luxe topper)
+                </li>
+                <li className={stl.voorziening}>
+                  De bedden zijn ook los van elkaar te zetten, als 2 1-persoons
+                  bedden van 90x200cm. Indien gewenst
+                </li>
+                <li className={stl.voorziening}>
+                  Satijnen beddengoed en badtextiel van “De witte Lietaer”
+                </li>
+                <li className={stl.voorziening}>
+                  Eet setje om uw ontbijt te nuttigen of een spelletje te spelen
+                </li>
+                <li className={stl.voorziening}>
+                  Eet setje om uw ontbijt te nuttigen of een spelletje te spelen
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
