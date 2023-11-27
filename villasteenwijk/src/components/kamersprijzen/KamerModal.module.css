@@ -1,0 +1,41 @@
+.kamermodal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.917);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 35rem;
+  height: 40rem;
+  background-color: red;
+  border-radius: 20px 5px 20px 5px;
+  background-color: rgb(19, 24, 43);
+  /* background: linear-gradient(
+    50deg,
+    rgb(19, 24, 43),
+    rgb(16, 19, 31),
+    rgb(13, 16, 26)
+  ); */
+}
+
+.hero {
+  color: yellow;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.roomImg {
+  position: relative;
+  width: 96%;
+  left: 2%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}

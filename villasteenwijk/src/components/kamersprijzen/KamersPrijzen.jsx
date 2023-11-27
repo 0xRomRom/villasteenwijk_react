@@ -1,10 +1,13 @@
 import stl from "./KamersPrijzen.module.css";
 import { motion as m } from "framer-motion";
 import door from "../../assets/icons/Door.webp";
+import appartment from "../../assets/icons/Appartement.webp";
+import KamerModal from "./KamerModal";
 
 const KamersPrijzen = () => {
   return (
     <main className={stl.kamersprijzen}>
+      <KamerModal />
       <m.h1
         className={stl.hero}
         initial={{ opacity: 0, x: "-20px" }}
@@ -31,7 +34,10 @@ const KamersPrijzen = () => {
           <span className={stl.doorName}>4. Johan van den Kornput</span>
         </div>
       </div>
-      <div className={stl.appartmentGrid}></div>
+      <div className={stl.appartmentGrid}>
+        <img src={appartment} alt="Appartment" className={stl.appartmentImg} />
+        <span className={stl.appTitle}>Appartement Villa Steenwyck</span>
+      </div>
     </main>
   );
 };
