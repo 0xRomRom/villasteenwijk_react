@@ -15,7 +15,6 @@
   top: 0;
   width: 100vw;
   z-index: 1000;
-  border-bottom: 1px solid white;
 }
 
 .navlogo {
@@ -46,7 +45,6 @@
   position: relative;
   padding: 0.25rem;
   font-family: luxuryFont;
-  border-radius: 0.2rem;
   border-bottom: 1px solid transparent;
 }
 
@@ -60,4 +58,8 @@
 
 .active:hover {
   border-bottom: 1px solid transparent;
+}
+
+.reserveren {
+  border-bottom: 1px solid yellow;
 }

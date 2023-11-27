@@ -128,11 +128,11 @@ const Navbar = ({ setActivePage, activePage }) => {
           target="_blank"
         >
           <li
-            className={`${stl.link} ${
-              activePage === "contact" ? stl.active : ""
-            }`}
+            className={`${stl.link} ${stl.reserveren} 
+              
+            `}
           >
-            Contact
+            Reserveren
           </li>
         </Link>
       </ul>

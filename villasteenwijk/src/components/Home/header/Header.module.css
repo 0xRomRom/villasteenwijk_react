@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    black,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bannerImg {
+  position: absolute;
+  top: 3rem;
+  height: 100%;
+  width: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
