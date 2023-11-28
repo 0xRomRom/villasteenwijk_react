@@ -93,7 +93,12 @@ const Activiteiten = () => {
         </div>
       </m.header>
       <div className={stl.contentWrap}>
-        <div className={stl.contentTopBlock}>
+        <m.div
+          className={stl.contentTopBlock}
+          initial={{ opacity: 0, y: "20px" }}
+          whileInView={{ opacity: 1, y: "0px" }}
+          transition={{ duration: 0.8 }}
+        >
           <div className={stl.chopperModal}>
             <div className={stl.innerChopperModal}>
               <h2>Huur een E-Chopper</h2>
@@ -214,8 +219,13 @@ const Activiteiten = () => {
               />
             </div>
           </div>
-        </div>
-        <div className={stl.regioBlock}>
+        </m.div>
+        <m.div
+          className={stl.regioBlock}
+          initial={{ opacity: 0, y: "20px" }}
+          whileInView={{ opacity: 1, y: "0px" }}
+          transition={{ duration: 0.8 }}
+        >
           <div className={stl.regioModal}>
             <div className={stl.regioLeft}>
               <h2 className={stl.regioHero}>In de regio</h2>
@@ -303,9 +313,14 @@ const Activiteiten = () => {
               />
             </div>
           </div>
-        </div>
+        </m.div>
 
-        <div className={stl.contentTopBlock}>
+        <m.div
+          className={stl.contentTopBlock}
+          initial={{ opacity: 0, y: "20px" }}
+          whileInView={{ opacity: 1, y: "0px" }}
+          transition={{ duration: 0.8 }}
+        >
           <div className={stl.activiteitenModal}>
             <div className={stl.activLeft}>
               <h2 className={stl.acthero}>Dineren</h2>
@@ -318,7 +333,7 @@ const Activiteiten = () => {
                 >
                   <li className={stl.listItem}>
                     <IoIosArrowForward className={stl.arrow} />
-                    Argentijns restaurant Argentino Tango
+                    Argentino Tango
                   </li>
                 </a>
                 <a
@@ -445,7 +460,7 @@ const Activiteiten = () => {
               </div>
             </div>
           </div>
-        </div>
+        </m.div>
       </div>
     </div>
   );
