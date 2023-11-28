@@ -26,37 +26,38 @@ const Navbar = () => {
         onClick={handleNavigation}
       />
       <ul className={`${stl.navlist} ${mobileOpen ? stl.mobileNavOpen : ""}`}>
-        <Link to="/" className={stl.links}>
+        <Link to="/" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>Home</li>
         </Link>
 
-        <Link to="/kamersprijzen" className={stl.links}>
+        <Link to="/kamersprijzen" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>Kamers & Prijzen</li>
         </Link>
 
-        <Link to="/fotos" className={stl.links}>
+        <Link to="/fotos" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>Foto's</li>
         </Link>
 
-        <Link to="/media" className={stl.links}>
+        <Link to="/media" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>Media</li>
         </Link>
 
-        <Link to="/housetour" className={stl.links}>
+        <Link to="/housetour" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>3D Virtuele Tour</li>
         </Link>
 
-        <Link to="/activiteiten" className={stl.links}>
+        <Link to="/activiteiten" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>Activiteiten</li>
         </Link>
 
-        <Link to="/contact" className={stl.links}>
+        <Link to="/contact" className={stl.links} onClick={openMobileNav}>
           <li className={stl.link}>Contact</li>
         </Link>
         <Link
           to="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
           className={stl.links}
           target="_blank"
+          onClick={openMobileNav}
         >
           <li
             className={`${stl.link} ${stl.reserveren} 
