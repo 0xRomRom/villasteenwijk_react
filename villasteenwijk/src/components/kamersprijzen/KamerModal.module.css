@@ -122,16 +122,20 @@
 
 .personWrapper {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   /* background-color: red; */
   position: relative;
+  padding-left: 2rem;
 }
 
 .totalWrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
-  padding-left: 3rem;
+  width: 9rem;
+  gap: 1rem;
+  /* background-color: red; */
 }
 
 .euro {
@@ -332,7 +336,7 @@
 }
 .euroWrapper {
   position: absolute;
-  left: 2px;
+  left: -3px;
 }
 
 .closeRow {

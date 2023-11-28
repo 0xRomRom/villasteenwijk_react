@@ -3,6 +3,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import KamersPrijzen from "./components/kamersprijzen/KamersPrijzen";
+import Fotos from "./components/Fotos/Fotos";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/kamersprijzen" element={<KamersPrijzen />} />
+        <Route path="/fotos" element={<Fotos />} />
       </Routes>
       <Footer />
     </div>
