@@ -8,8 +8,8 @@ import Pic1 from "../../assets/omgeving/1.webp";
 import Pic2 from "../../assets/omgeving/2.webp";
 import Pic3 from "../../assets/omgeving/3.webp";
 import Pic4 from "../../assets/omgeving/4.webp";
-// import Pic5 from "../../assets/omgeving/Pic5.webp";
-// import Pic6 from "../../assets/omgeving/Pic6.webp";
+import Pic5 from "../../assets/omgeving/5.webp";
+import Pic6 from "../../assets/omgeving/6.webp";
 // import Pic7 from "../../assets/omgeving/Pic7.webp";
 // import Pic8 from "../../assets/omgeving/Pic8.webp";
 
@@ -17,7 +17,7 @@ const Activiteiten = () => {
   const navigate = useNavigate();
   const [hoveredImg, setHoveredImg] = useState(0);
 
-  const kamerImages = [Pic1, Pic2, Pic3, Pic4];
+  const kamerImages = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6];
   const kamerImgs = useMemo(() => kamerImages, []);
 
   const newImg = (img) => {
