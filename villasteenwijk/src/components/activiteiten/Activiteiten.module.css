@@ -35,6 +35,7 @@
 .contentWrap {
   position: relative;
   height: 40rem;
+  padding-top: 5rem;
 }
 
 .ontDekDiv {
@@ -59,10 +60,9 @@
 .chopperModal {
   background-image: url("../../assets//omgeving/Echopper.webp");
   background-position: center;
+  background-size: cover;
   height: 25rem;
-  width: 25rem;
-  margin-top: 5rem;
-  margin-left: 5rem;
+  width: 30%;
   border-radius: 0.8rem;
   opacity: 0.8;
   overflow: hidden;
@@ -97,9 +97,9 @@
   height: 22rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  padding-left: 7rem;
+
   gap: 0.5rem;
 }
 
@@ -127,4 +127,91 @@
   background-color: black;
   color: white;
   box-shadow: 0px 0px 3px black;
+}
+
+.contentTopBlock {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.activiteitenModal {
+  height: 25rem;
+  width: 60%;
+  border-radius: 0.8rem;
+  opacity: 0.8;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.activLeft {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.acthero {
+  color: white;
+  position: relative;
+  left: -2rem;
+}
+
+.itemList {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.itemList a {
+  color: white;
+  text-decoration: none;
+}
+
+.listItem {
+  color: rgb(222, 222, 222);
+  font-family: "Open Sans";
+  transition: all 0.2s ease-in-out;
+}
+
+.listItem:hover {
+  color: white;
+}
+.listItem:hover .arrow {
+  opacity: 1;
+}
+
+.activRight {
+  position: relative;
+  width: 65%;
+  background-color: red;
+  height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  left: 25px;
+  margin-top: 3px;
+  opacity: 0;
+}
+
+.cycleImg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
