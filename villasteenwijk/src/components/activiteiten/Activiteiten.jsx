@@ -10,14 +10,14 @@ import Pic3 from "../../assets/omgeving/3.webp";
 import Pic4 from "../../assets/omgeving/4.webp";
 import Pic5 from "../../assets/omgeving/5.webp";
 import Pic6 from "../../assets/omgeving/6.webp";
-// import Pic7 from "../../assets/omgeving/Pic7.webp";
-// import Pic8 from "../../assets/omgeving/Pic8.webp";
+import Pic7 from "../../assets/omgeving/7.webp";
+import Pic8 from "../../assets/omgeving/8.webp";
 
 const Activiteiten = () => {
   const navigate = useNavigate();
   const [hoveredImg, setHoveredImg] = useState(0);
 
-  const kamerImages = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6];
+  const kamerImages = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
   const kamerImgs = useMemo(() => kamerImages, []);
 
   const newImg = (img) => {
@@ -162,6 +162,81 @@ const Activiteiten = () => {
                 alt="Activiteiten Steenwijk"
                 className={stl.cycleImg}
               />
+            </div>
+          </div>
+        </div>
+        <div className={stl.regioBlock}>
+          <div className={stl.regioModal}>
+            <div className={stl.regioLeft}>
+              <h2 className={stl.regioHero}>In de regio</h2>
+              <ul className={stl.itemList}>
+                <a
+                  onMouseOver={() => newImg(0)}
+                  target="_blank"
+                  href="https://giethoorn.com/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} />
+                    Giethoorn
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newImg(1)}
+                  target="_blank"
+                  href="https://www.drenthe.nl/cultuur-erfgoed/hunebedden/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Hunnebedden
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newImg(2)}
+                  target="_blank"
+                  href="https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/weerribben"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Weerribben
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newImg(3)}
+                  target="_blank"
+                  href="https://www.mooisteroutes.nl/routes/95b1407/de-woldberg"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> De Woldberg
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newImg(4)}
+                  target="_blank"
+                  href="https://www.drenthe.nl/locaties/4274250260/tourist-info-havelte"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Havelte
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newImg(5)}
+                  target="_blank"
+                  href="https://www.orchideeenhoeve.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> De Orchideeën
+                    Hoeve
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newImg(6)}
+                  target="_blank"
+                  href="https://www.friesland.nl/nl/locaties/4140876077/kasteel-old-stoutenburght"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Kasteel Old
+                    Stoutenburght
+                  </li>
+                </a>
+              </ul>
             </div>
           </div>
         </div>
