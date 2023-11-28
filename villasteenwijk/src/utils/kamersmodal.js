@@ -70,6 +70,30 @@ const kamers = [
       ],
     },
   ],
+  [
+    {
+      hero: "Johan Van Den Kornput",
+      "2personen": 129,
+      "3personen": 0,
+      copy1:
+        "Vernoemd naar Johannes van den Kornput, een beroemde Nederlandse militair die in 1580 Steenwijk tegen de Spanjaarden verdedigde tijdens de 80-jarige oorlog.",
+      copy2:
+        "Deze romantische, 2-persoons, luxe kamer met antiek hemelbed, zachte vloerbedekking en rijke, velourse, stoffen bevind zich op de 1e verdieping van Villa Steenwyck aan de voorkant van de Villa en heeft zijn eigen, aangrenzende badkamer met wastafel en douche.",
+      voorziening: [
+        "Antiek Romantisch Hemelbed (140X200) met heerlijk matras en verduisterende hemelbed gordijnen",
+        "Satijnen beddengoed en badtextiel van “De witte Lietaer”",
+        "Luxe Philips Ambilight TV met Netflix en kabel TV",
+        "Gratis super snelle wifi",
+        "Eigen badkamer met daarin douche & wastafel",
+        "Privé toilet, gelegen op de overloop",
+        "Gratis koffie (Nespresso) en thee faciliteiten",
+        "Koelkast met daarin koel, plat water",
+        "Voorzien van Daikin warmtepomp airconditioners voor het milieu bewust koelen en verwarmen van uw kamer met ingebouwde flash-streamer luchtreiniging tegen stof, pollen, virussen, bacteriën en allergenen, Voor een altijd frisse “berglucht” in uw kamer",
+        "Gedeelde badkamer met toilet, bidet, wastafel en luxe regendouche, met per kamer een plankje voor uw toilet spullen",
+        "2 Luxe, zachte badjassen van “De Witte Lietaer”",
+      ],
+    },
+  ],
 ];
 
 export default kamers;

@@ -37,11 +37,22 @@ import Pic36 from "../../assets/kleibeuker/Pic6.webp";
 import Pic37 from "../../assets/kleibeuker/Pic7.webp";
 import Pic38 from "../../assets/kleibeuker/Pic8.webp";
 
+//Kamer 4 Johan van den kornput
+import Pic41 from "../../assets/johanvandenkornput/Pic1.webp";
+import Pic42 from "../../assets/johanvandenkornput/Pic2.webp";
+import Pic43 from "../../assets/johanvandenkornput/Pic3.webp";
+import Pic44 from "../../assets/johanvandenkornput/Pic4.webp";
+import Pic45 from "../../assets/johanvandenkornput/Pic5.webp";
+import Pic46 from "../../assets/johanvandenkornput/Pic6.webp";
+import Pic47 from "../../assets/johanvandenkornput/Pic7.webp";
+import Pic48 from "../../assets/johanvandenkornput/Pic8.webp";
+
 import kamers from "../../utils/kamersmodal";
 
 const kamer1Images = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
 const kamer2Images = [Pic21, Pic22, Pic23, Pic24, Pic25, Pic26, Pic27, Pic28];
 const kamer3Images = [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38];
+const kamer4Images = [Pic41, Pic42, Pic43, Pic44, Pic45, Pic46, Pic47, Pic48];
 const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   const [activeKamer, setActiveKamer] = useState([]);
   const [activeButton, setActiveButton] = useState(0);
@@ -50,6 +61,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   const kamer1Imgs = useMemo(() => kamer1Images, []);
   const kamer2Imgs = useMemo(() => kamer2Images, []);
   const kamer3Imgs = useMemo(() => kamer3Images, []);
+  const kamer4Imgs = useMemo(() => kamer4Images, []);
 
   const handleButtonClick = (index) => {
     setActiveButton(index);
@@ -81,8 +93,12 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
         setActiveKamer(kamer[2]);
         setKamerImages(kamer3Imgs);
       }
+      if (kamerKeuze === 4) {
+        setActiveKamer(kamer[3]);
+        setKamerImages(kamer4Imgs);
+      }
     }
-  }, [kamerKeuze, kamer1Imgs, kamer2Imgs, kamer3Imgs, kamerImages]);
+  }, [kamerKeuze, kamer1Imgs, kamer2Imgs, kamer3Imgs, kamer4Imgs, kamerImages]);
 
   return activeKamer.map((kamer) => {
     return (
