@@ -47,19 +47,17 @@ const Contact = () => {
       const email = emailRef.current.value;
       const name = nameRef.current.value;
 
-      // The rest of your code for submitting the form
-
       const params = {
         from_name: name,
         reply_email: email,
         message: message,
       };
-      // emailjs.send(
-      //   "service_a939mwr",
-      //   "template_zsbkdcj",
-      //   params,
-      //   "1ExHLcqOKMpwg2JF5"
-      // );
+      emailjs.send(
+        "service_a939mwr",
+        "template_zsbkdcj",
+        params,
+        "1ExHLcqOKMpwg2JF5"
+      );
       setEmailSent(true);
     }
   };
@@ -75,7 +73,12 @@ const Contact = () => {
         Contact
       </m.h1>
       <div className={stl.contactWrapper}>
-        <div className={stl.wrapLeft}>
+        <m.div
+          className={stl.wrapLeft}
+          initial={{ opacity: 0, x: "-20px" }}
+          whileInView={{ opacity: 1, x: "0px" }}
+          transition={{ duration: 1 }}
+        >
           <div className={stl.leftInnerWrap}>
             <div className={stl.infoList}>
               <span className={stl.listItem}>
@@ -106,15 +109,25 @@ const Contact = () => {
               </span>
             </div>
           </div>
-        </div>
-        <div className={stl.wrapRight}>
+        </m.div>
+        <m.div
+          className={stl.wrapRight}
+          initial={{ opacity: 0, x: "20px" }}
+          whileInView={{ opacity: 1, x: "0px" }}
+          transition={{ duration: 1 }}
+        >
           <Lottie
             animationData={contactAnimation}
             className={stl.lottieAnimation}
           />
-        </div>
+        </m.div>
       </div>
-      <div className={stl.formWrapper}>
+      <m.div
+        className={stl.formWrapper}
+        initial={{ opacity: 0, y: "20px" }}
+        whileInView={{ opacity: 1, y: "0px" }}
+        transition={{ duration: 1 }}
+      >
         {emailSent ? (
           "U hoort gauw van ons!"
         ) : (
@@ -155,7 +168,7 @@ const Contact = () => {
             </form>
           </div>
         )}
-      </div>
+      </m.div>
     </main>
   );
 };
