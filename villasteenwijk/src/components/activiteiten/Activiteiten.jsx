@@ -21,10 +21,19 @@ import Pic25 from "../../assets/regio/5.webp";
 import Pic26 from "../../assets/regio/6.webp";
 import Pic27 from "../../assets/regio/7.webp";
 
+import Pic31 from "../../assets/dineren/1.webp";
+// import Pic32 from "../../assets/dineren/2.webp";
+// import Pic33 from "../../assets/dineren/3.webp";
+// import Pic34 from "../../assets/dineren/4.webp";
+// import Pic35 from "../../assets/dineren/5.webp";
+// import Pic36 from "../../assets/dineren/6.webp";
+// import Pic37 from "../../assets/dineren/7.webp";
+
 const Activiteiten = () => {
   const navigate = useNavigate();
   const [activiteitImg, setActiviteitImg] = useState(0);
   const [regioImg, setRegioImg] = useState(0);
+  const [dinerenImg, setDinerenImg] = useState(0);
 
   const activiteitenImages = useMemo(
     () => [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8],
@@ -40,11 +49,17 @@ const Activiteiten = () => {
   );
   const regioImgs = useMemo(() => regioImages, [regioImages]);
 
+  const dinerenImages = useMemo(() => [Pic31], []);
+  const dinerenImgs = useMemo(() => dinerenImages, [dinerenImages]);
+
   const newActiviteitenImg = (img) => {
     setActiviteitImg(img);
   };
   const newRegioImg = (img) => {
     setRegioImg(img);
+  };
+  const newDinerenImg = (img) => {
+    setDinerenImg(img);
   };
 
   return (
@@ -292,7 +307,7 @@ const Activiteiten = () => {
               <h2 className={stl.acthero}>Dineren</h2>
               <ul className={stl.itemList}>
                 <a
-                  onMouseOver={() => newActiviteitenImg(0)}
+                  onMouseOver={() => newDinerenImg(0)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.argentinotango.nl/"
@@ -303,7 +318,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(1)}
+                  onMouseOver={() => newDinerenImg(1)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.woodyshouse.nl/"
@@ -314,7 +329,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(2)}
+                  onMouseOver={() => newDinerenImg(2)}
                   target="_blank"
                   rel="noreferrer"
                   href="http://www.hetsteakhouse.nl/"
@@ -325,7 +340,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(3)}
+                  onMouseOver={() => newDinerenImg(3)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://restaurantdeopschepper.com/"
@@ -336,7 +351,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(4)}
+                  onMouseOver={() => newDinerenImg(4)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.deherenvanderechter.nl/"
@@ -347,7 +362,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(5)}
+                  onMouseOver={() => newDinerenImg(5)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://brasseriezusenzo.nl/"
@@ -358,7 +373,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(6)}
+                  onMouseOver={() => newDinerenImg(6)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.bovenmeestersteenwijk.nl/"
@@ -368,7 +383,7 @@ const Activiteiten = () => {
                   </li>
                 </a>
                 <a
-                  onMouseOver={() => newActiviteitenImg(7)}
+                  onMouseOver={() => newDinerenImg(7)}
                   target="_blank"
                   rel="noreferrer"
                   href="https://rhodossteenwijk.nl/"
@@ -381,7 +396,7 @@ const Activiteiten = () => {
             </div>
             <div className={stl.activRight}>
               <img
-                src={activiteitenImgs[activiteitImg]}
+                src={dinerenImgs[dinerenImg]}
                 alt="Activiteiten Steenwijk"
                 className={stl.cycleImg}
               />
