@@ -14,9 +14,9 @@ import Pic7 from "../../assets/omgeving/7.webp";
 import Pic8 from "../../assets/omgeving/8.webp";
 
 import Pic21 from "../../assets/regio/1.webp";
-// import Pic22 from "../../assets/regio/2.webp";
-// import Pic23 from "../../assets/regio/3.webp";
-// import Pic24 from "../../assets/regio/4.webp";
+import Pic22 from "../../assets/regio/2.webp";
+import Pic23 from "../../assets/regio/3.webp";
+import Pic24 from "../../assets/regio/4.webp";
 // import Pic25 from "../../assets/regio/5.webp";
 // import Pic26 from "../../assets/regio/6.webp";
 // import Pic27 from "../../assets/regio/7.webp";
@@ -26,10 +26,16 @@ const Activiteiten = () => {
   const [activiteitImg, setActiviteitImg] = useState(0);
   const [regioImg, setRegioImg] = useState(0);
 
-  const activiteitenImages = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
-  const activiteitenImgs = useMemo(() => activiteitenImages, []);
-  const regioImages = [Pic21];
-  const regioImgs = useMemo(() => regioImages, []);
+  const activiteitenImages = useMemo(
+    () => [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8],
+    []
+  );
+  const activiteitenImgs = useMemo(
+    () => activiteitenImages,
+    [activiteitenImages]
+  );
+  const regioImages = useMemo(() => [Pic21, Pic22, Pic23, Pic24], []);
+  const regioImgs = useMemo(() => regioImages, [regioImages]);
 
   const newActiviteitenImg = (img) => {
     setActiviteitImg(img);
@@ -92,6 +98,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(0)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.hendrickdekeyser.nl/museumbezoek/villa-rams-woerthe-Steenwijk"
                 >
                   <li className={stl.listItem}>
@@ -102,6 +109,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(1)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://rijksmonumenten.nl/monument/34576/grote-of-sint-clemenskerk/steenwijk/"
                 >
                   <li className={stl.listItem}>
@@ -112,6 +120,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(2)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://rijksmonumenten.nl/monument/34599/kleine-of-onze-lieve-vrouwekerk/steenwijk/"
                 >
                   <li className={stl.listItem}>
@@ -122,6 +131,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(3)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.taman-indonesia.nl/"
                 >
                   <li className={stl.listItem}>
@@ -132,6 +142,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(4)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.demeenthe.nl/"
                 >
                   <li className={stl.listItem}>
@@ -142,6 +153,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(5)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.stadsmuseumsteenwijk.nl/"
                 >
                   <li className={stl.listItem}>
@@ -151,6 +163,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(6)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://klimbos-overijssel.nl/"
                 >
                   <li className={stl.listItem}>
@@ -161,6 +174,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newActiviteitenImg(7)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.stadsmuseumsteenwijk.nl/content/19-Stadswandeling-steenwijk.html?menu_parent=19"
                 >
                   <li className={stl.listItem}>
@@ -187,6 +201,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(0)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://giethoorn.com/"
                 >
                   <li className={stl.listItem}>
@@ -197,6 +212,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(1)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.drenthe.nl/cultuur-erfgoed/hunebedden/"
                 >
                   <li className={stl.listItem}>
@@ -206,6 +222,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(2)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/weerribben"
                 >
                   <li className={stl.listItem}>
@@ -215,6 +232,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(3)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.mooisteroutes.nl/routes/95b1407/de-woldberg"
                 >
                   <li className={stl.listItem}>
@@ -224,6 +242,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(4)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.drenthe.nl/locaties/4274250260/tourist-info-havelte"
                 >
                   <li className={stl.listItem}>
@@ -233,6 +252,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(5)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.orchideeenhoeve.nl/"
                 >
                   <li className={stl.listItem}>
@@ -243,6 +263,7 @@ const Activiteiten = () => {
                 <a
                   onMouseOver={() => newRegioImg(6)}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.friesland.nl/nl/locaties/4140876077/kasteel-old-stoutenburght"
                 >
                   <li className={stl.listItem}>
