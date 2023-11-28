@@ -1,3 +1,4 @@
+import React, { useState, useRef } from "react";
 import stl from "./Contact.module.css";
 import { motion as m } from "framer-motion";
 import Lottie from "lottie-react";
@@ -7,8 +8,62 @@ import { FaPhone } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 import { GrDocumentStore } from "react-icons/gr";
 import { GrMoney } from "react-icons/gr";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const copyRef = useRef(null);
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const [formErrors, setFormErrors] = useState({});
+  const [emailSent, setEmailSent] = useState(false);
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (!nameRef.current.value.trim()) {
+      errors.name = "Vul uw naam in";
+    }
+
+    if (!emailRef.current.value.trim()) {
+      errors.email = "Ongeldig E-Mail adres";
+    } else if (!/\S+@\S+\.\S+/.test(emailRef.current.value)) {
+      errors.email = "Ongeldig E-Mail adres";
+    }
+
+    if (!copyRef.current.value.trim()) {
+      errors.message = "Schrijf een bericht";
+    }
+
+    setFormErrors(errors);
+
+    return Object.keys(errors).length === 0;
+  };
+
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      const message = copyRef.current.value;
+      const email = emailRef.current.value;
+      const name = nameRef.current.value;
+
+      // The rest of your code for submitting the form
+
+      const params = {
+        from_name: name,
+        reply_email: email,
+        message: message,
+      };
+      // emailjs.send(
+      //   "service_a939mwr",
+      //   "template_zsbkdcj",
+      //   params,
+      //   "1ExHLcqOKMpwg2JF5"
+      // );
+      setEmailSent(true);
+    }
+  };
+
   return (
     <main className={stl.kamersprijzen}>
       <m.h1
@@ -59,7 +114,48 @@ const Contact = () => {
           />
         </div>
       </div>
-      <div className={stl.formWrapper}></div>
+      <div className={stl.formWrapper}>
+        {emailSent ? (
+          "U hoort gauw van ons!"
+        ) : (
+          <div className={stl.formBg}>
+            <form className={stl.contactForm}>
+              <textarea
+                className={stl.copyField}
+                placeholder="Uw Bericht"
+                ref={copyRef}
+              ></textarea>
+              {formErrors.message && (
+                <p className={stl.error}>{formErrors.message}</p>
+              )}
+
+              <input
+                type="text"
+                className={stl.textInput}
+                placeholder="Uw naam"
+                ref={nameRef}
+              />
+              {formErrors.name && (
+                <p className={stl.error}>{formErrors.name}</p>
+              )}
+
+              <input
+                type="email"
+                className={stl.textInput}
+                placeholder="Uw E-Mail adres"
+                ref={emailRef}
+              />
+              {formErrors.email && (
+                <p className={stl.error}>{formErrors.email}</p>
+              )}
+
+              <button className={stl.ctaBtn} onClick={submitForm}>
+                Verzenden
+              </button>
+            </form>
+          </div>
+        )}
+      </div>
     </main>
   );
 };
