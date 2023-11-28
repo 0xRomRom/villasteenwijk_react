@@ -17,9 +17,9 @@ import Pic21 from "../../assets/regio/1.webp";
 import Pic22 from "../../assets/regio/2.webp";
 import Pic23 from "../../assets/regio/3.webp";
 import Pic24 from "../../assets/regio/4.webp";
-// import Pic25 from "../../assets/regio/5.webp";
-// import Pic26 from "../../assets/regio/6.webp";
-// import Pic27 from "../../assets/regio/7.webp";
+import Pic25 from "../../assets/regio/5.webp";
+import Pic26 from "../../assets/regio/6.webp";
+import Pic27 from "../../assets/regio/7.webp";
 
 const Activiteiten = () => {
   const navigate = useNavigate();
@@ -34,7 +34,10 @@ const Activiteiten = () => {
     () => activiteitenImages,
     [activiteitenImages]
   );
-  const regioImages = useMemo(() => [Pic21, Pic22, Pic23, Pic24], []);
+  const regioImages = useMemo(
+    () => [Pic21, Pic22, Pic23, Pic24, Pic25, Pic26, Pic27],
+    []
+  );
   const regioImgs = useMemo(() => regioImages, [regioImages]);
 
   const newActiviteitenImg = (img) => {
@@ -277,7 +280,7 @@ const Activiteiten = () => {
               <img
                 src={regioImgs[regioImg]}
                 alt="Activiteiten Steenwijk"
-                className={stl.cycleImg}
+                className={stl.cycleImg2}
               />
             </div>
           </div>

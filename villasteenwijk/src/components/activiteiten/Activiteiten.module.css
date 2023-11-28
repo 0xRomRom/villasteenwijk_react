@@ -150,7 +150,7 @@
 
 .activLeft {
   position: relative;
-  width: 35%;
+  width: 39%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -161,7 +161,7 @@
 
 .regioLeft {
   position: relative;
-  width: 18%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -173,7 +173,6 @@
 .acthero {
   color: white;
   position: relative;
-  left: -2rem;
 }
 
 .regioHero {
@@ -216,7 +215,7 @@
 
 .activRight {
   position: relative;
-  width: 65%;
+  width: 100%;
   /* background-color: red; */
   height: 100%;
 }
@@ -232,6 +231,16 @@
   top: 2.5%;
   left: 2%;
   width: 96%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.cycleImg2 {
+  position: relative;
+  height: 95%;
+  top: 2.5%;
+  left: 2%;
+  width: 97%;
   object-fit: cover;
   border-radius: 0.4rem;
 }
