@@ -28,7 +28,13 @@ const Media = () => {
       <div className={stl.portfolio}>
         <div className={stl.topBlock}>
           <div className={stl.flexdiv}>
-            <h1>Media</h1>
+            <m.h1
+              initial={{ opacity: 0, x: "-20px" }}
+              whileInView={{ opacity: 1, x: "0px" }}
+              transition={{ duration: 1.25 }}
+            >
+              Media
+            </m.h1>
           </div>
         </div>
         <div className={stl.tilesGrid}>

@@ -1,0 +1,34 @@
+.portfolio {
+  position: relative;
+  text-align: start;
+  display: flex;
+
+  flex-direction: column;
+  background-color: black;
+  background: linear-gradient(
+    180deg,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
+}
+
+.activityHeader {
+  padding-top: 6rem;
+  background-image: url("../../assets/omgeving/Steenwijkhaven.webp");
+  height: 60rem;
+}
+
+.portfolio h1 {
+  color: yellow;
+  margin-left: 6rem;
+}
+
+.contentWrap {
+  position: relative;
+  height: 40rem;
+}

@@ -8,8 +8,8 @@ const HouseTour = () => {
           sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
           style={{ width: "100vw", height: "100vh" }}
           src="https://my.matterport.com/show/?m=GqLhy5y9YcB&back=1"
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
           allow="xr-spatial-tracking"
         ></iframe>
       </div>

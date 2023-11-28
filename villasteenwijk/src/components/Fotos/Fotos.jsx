@@ -131,7 +131,13 @@ const Fotos = () => {
       <div className={stl.portfolio}>
         <div className={stl.topBlock}>
           <div className={stl.flexdiv}>
-            <h1>Foto's</h1>
+            <m.h1
+              initial={{ opacity: 0, x: "-20px" }}
+              whileInView={{ opacity: 1, x: "0px" }}
+              transition={{ duration: 1.25 }}
+            >
+              Foto's
+            </m.h1>
           </div>
         </div>
         <div className={stl.tilesGrid}>
