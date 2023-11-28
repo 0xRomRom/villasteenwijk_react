@@ -17,7 +17,7 @@ import Pic6 from "../../assets/hildokrop/Pic6.webp";
 import Pic7 from "../../assets/hildokrop/Pic7.webp";
 import Pic8 from "../../assets/hildokrop/Pic8.webp";
 
-//Kamer 2 Hildo Krop
+//Kamer 2 Tromp meester
 import Pic21 from "../../assets/trompmeesters/Pic1.webp";
 import Pic22 from "../../assets/trompmeesters/Pic2.webp";
 import Pic23 from "../../assets/trompmeesters/Pic3.webp";
@@ -47,12 +47,34 @@ import Pic46 from "../../assets/johanvandenkornput/Pic6.webp";
 import Pic47 from "../../assets/johanvandenkornput/Pic7.webp";
 import Pic48 from "../../assets/johanvandenkornput/Pic8.webp";
 
+//Kamer 5 Giethoorn
+import Pic51 from "../../assets/giethoorn/Pic1.webp";
+import Pic52 from "../../assets/giethoorn/Pic2.webp";
+import Pic53 from "../../assets/giethoorn/Pic3.webp";
+import Pic54 from "../../assets/giethoorn/Pic4.webp";
+import Pic55 from "../../assets/giethoorn/Pic5.webp";
+import Pic56 from "../../assets/giethoorn/Pic6.webp";
+import Pic57 from "../../assets/giethoorn/Pic7.webp";
+import Pic58 from "../../assets/giethoorn/Pic8.webp";
+
+//Kamer 6 Giethoorn
+import Pic61 from "../../assets/appartement/Pic1.webp";
+import Pic62 from "../../assets/appartement/Pic2.webp";
+import Pic63 from "../../assets/appartement/Pic3.webp";
+import Pic64 from "../../assets/appartement/Pic4.webp";
+import Pic65 from "../../assets/appartement/Pic5.webp";
+import Pic66 from "../../assets/appartement/Pic6.webp";
+import Pic67 from "../../assets/appartement/Pic7.webp";
+import Pic68 from "../../assets/appartement/Pic8.webp";
+
 import kamers from "../../utils/kamersmodal";
 
 const kamer1Images = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
 const kamer2Images = [Pic21, Pic22, Pic23, Pic24, Pic25, Pic26, Pic27, Pic28];
 const kamer3Images = [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38];
 const kamer4Images = [Pic41, Pic42, Pic43, Pic44, Pic45, Pic46, Pic47, Pic48];
+const kamer5Images = [Pic51, Pic52, Pic53, Pic54, Pic55, Pic56, Pic57, Pic58];
+const kamer6Images = [Pic61, Pic62, Pic63, Pic64, Pic65, Pic66, Pic67, Pic68];
 const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   const [activeKamer, setActiveKamer] = useState([]);
   const [activeButton, setActiveButton] = useState(0);
@@ -62,6 +84,8 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   const kamer2Imgs = useMemo(() => kamer2Images, []);
   const kamer3Imgs = useMemo(() => kamer3Images, []);
   const kamer4Imgs = useMemo(() => kamer4Images, []);
+  const kamer5Imgs = useMemo(() => kamer5Images, []);
+  const kamer6Imgs = useMemo(() => kamer6Images, []);
 
   const handleButtonClick = (index) => {
     setActiveButton(index);
@@ -97,8 +121,25 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
         setActiveKamer(kamer[3]);
         setKamerImages(kamer4Imgs);
       }
+      if (kamerKeuze === 5) {
+        setActiveKamer(kamer[4]);
+        setKamerImages(kamer5Imgs);
+      }
+      if (kamerKeuze === 6) {
+        setActiveKamer(kamer[5]);
+        setKamerImages(kamer6Imgs);
+      }
     }
-  }, [kamerKeuze, kamer1Imgs, kamer2Imgs, kamer3Imgs, kamer4Imgs, kamerImages]);
+  }, [
+    kamerKeuze,
+    kamer1Imgs,
+    kamer2Imgs,
+    kamer3Imgs,
+    kamer4Imgs,
+    kamer5Imgs,
+    kamer6Imgs,
+    kamerImages,
+  ]);
 
   return activeKamer.map((kamer) => {
     return (

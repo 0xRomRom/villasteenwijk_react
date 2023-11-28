@@ -14,8 +14,8 @@
   margin-top: 5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 4rem;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .doorTile {
@@ -25,12 +25,12 @@
   align-items: center;
   cursor: pointer;
   gap: 0.25rem;
-  width: 15rem;
+  width: 12.5rem;
 }
 
 .doorImg {
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  height: 100%;
 }
 
 .appartmentImg {
@@ -42,7 +42,6 @@
 .doorName {
   color: yellow;
   font-size: 16px;
-  top: -4rem;
   position: relative;
   width: 110%;
   text-align: center;

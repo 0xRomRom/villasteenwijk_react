@@ -94,6 +94,68 @@ const kamers = [
       ],
     },
   ],
+  [
+    {
+      hero: "Giethoorn",
+      "2personen": 139,
+      "3personen": 0,
+      copy1:
+        "Naast Boutique hotel Villa Steenwyck, bevind zich onze nieuwste, modern en licht ingerichte hotelkamer, Kamer 5. Giethoorn.",
+      copy2: "",
+      voorziening: [
+        "Extra bed €25,- (Max 3 personen)",
+        "40m2",
+        "Maximaal 3 personen",
+        "Eigen privé opgang",
+        "Alles op de begane grond",
+        "Gratis parkeren",
+        "Luxe kingsize boxspring bed van 160X200cm- Satijnen wit beddengoed en badtextiel van “De witte Lietaer”",
+        "Gratis super snelle WiFi",
+        "Privé badkamer met toilet,wastafel en grote inloopdouche",
+        "CV Verwarming",
+        "Voorzien van bad en bed linnen (handdoeken, bedden zijn opgemaakt)",
+        "Zitje om het ontbijt te nuttigen",
+        "Koelkast",
+        "Waterkoker",
+        "Gratis koffie (Nespresso) en thee faciliteiten",
+        "Desgewenst verzorgen wij een heerlijk, vers, ontbijt op de kamer voor €14.50,- per persoon",
+        "Een prachtige, ruime kamer met grote badkamer en inloopdouche op de begane grond, met een totale oppervlakte van 40m2 met daarin: Garderobe,Hal, ruime toilet, opbergkast, aparte slaapkamer met een heerlijk 2-persoons bed (160X200), ensuite badkamer met grote inloop douche",
+        "Een tafel met 2 stoelen waar ook het ontbijt geserveerd wordt",
+        "Desgewenst kunnen wij 1 extra bed plaatsen, Kosten €25,-",
+      ],
+    },
+  ],
+  [
+    {
+      hero: "Appartement Villa Steenwyck",
+      "2personen": 145,
+      "3personen": 0,
+      copy1:
+        "Naast Boutique hotel Villa Steenwyck, bevind zich “Appartement Villa Steenwyck”.",
+      copy2:
+        "Een volledig gelijkvloers ingericht appartement, op de begane grond, van 110m2 met daarin: Hal, Toilet, opbergkast, aparte slaapkamer met een heerlijk 2-persoons bed (160X200), ensuite badkamer met grote inloop douche. Een prachtige woonkamer met hoog, open, punt plafond, gecombineerde volledige ingerichte keuken met gezellige eetbar.",
+      voorziening: [
+        "Eigen privé opgang",
+        "Alles op de begane grond en zonder drempels, rolstoel vriendelijk. Behalve het stoepje bij de voordeur.",
+        "Luxe kingsize boxspring bed van 160X200cm",
+        "Satijnen wit beddengoed en badtextiel van “De witte Lietaer”",
+        "Luxe Philips Ambilight TV met Netflix en kabel TV",
+        "Gratis super snelle wifi",
+        "Privé badkamer met toilet,wastafel en grote inloopdouche",
+        "Voorzien van Daikin Airconditioning",
+        "Voorzien van bad linnen (handdoeken, gastendoekjes)",
+        "Woonkamer met pelletkachel en Chesterfield inrichting",
+        "Eigen privé terras met zitje",
+        "Compleet ingerichte keuken met:",
+        "Koelkast",
+        "Borden,bestek, pannenset, glazen, kopjes",
+        "5-pits gasfornuis",
+        "Waterkoker",
+        "Gratis koffie (Nespresso) en thee faciliteiten",
+        "Eet bar met 4 bar krukken",
+      ],
+    },
+  ],
 ];
 
 export default kamers;
