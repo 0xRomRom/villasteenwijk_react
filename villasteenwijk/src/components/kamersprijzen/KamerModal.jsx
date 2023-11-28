@@ -43,9 +43,9 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
     }
   }, [kamerKeuze]);
 
-  return activeKamer.map((kamer, index) => {
+  return activeKamer.map((kamer) => {
     return (
-      <div className={stl.kamermodal}>
+      <div className={stl.kamermodal} key={Math.random()}>
         <div className={stl.modal}>
           <h1 className={stl.hero}>{kamer.hero}</h1>
           <div className={stl.imgWrap}>
@@ -70,18 +70,22 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
                 <span className={stl.copyTitle}>Per nacht</span>
               </div>
               <div className={stl.totalWrap}>
-                <div>
+                <div className={stl.euroWrapper}>
                   <FaEuroSign className={stl.euro} />
                 </div>
                 <div className={stl.personWrapper}>
                   <div className={stl.priceBlock}>
                     <IoPeopleSharp className={stl.icon} />
-                    <span className={stl.copyTxt}>110,-</span>
+                    <span className={stl.copyTxt}>{kamer["2personen"]},-</span>
                   </div>
-                  <div className={stl.priceBlock}>
-                    <FaPeopleGroup className={stl.icon} />
-                    <span className={stl.copyTxt}>130,-</span>
-                  </div>
+                  {kamer["3personen"] > 0 && (
+                    <div className={stl.priceBlock}>
+                      <FaPeopleGroup className={stl.icon} />
+                      <span className={stl.copyTxt}>
+                        {kamer["3personen"]},-
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

@@ -122,17 +122,16 @@
 
 .personWrapper {
   display: flex;
-  padding-left: 1.5rem;
   gap: 1.5rem;
+  /* background-color: red; */
+  position: relative;
 }
 
 .totalWrap {
   display: flex;
-  /* background-color: red; */
-  justify-content: flex-start;
   align-items: center;
-  left: -5px;
   position: relative;
+  padding-left: 3rem;
 }
 
 .euro {
@@ -330,4 +329,8 @@
 .reserverenCta:hover {
   background-color: black;
   color: yellow;
+}
+.euroWrapper {
+  position: absolute;
+  left: 2px;
 }
