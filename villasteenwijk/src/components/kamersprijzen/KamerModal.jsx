@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import stl from "./KamerModal.module.css";
 import { FaEuroSign } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
@@ -17,10 +17,27 @@ import Pic6 from "../../assets/hildokrop/Pic6.webp";
 import Pic7 from "../../assets/hildokrop/Pic7.webp";
 import Pic8 from "../../assets/hildokrop/Pic8.webp";
 
+//Kamer 2 Hildo Krop
+import Pic21 from "../../assets/trompmeesters/Pic1.webp";
+import Pic22 from "../../assets/trompmeesters/Pic2.webp";
+import Pic23 from "../../assets/trompmeesters/Pic3.webp";
+import Pic24 from "../../assets/trompmeesters/Pic4.webp";
+import Pic25 from "../../assets/trompmeesters/Pic5.webp";
+import Pic26 from "../../assets/trompmeesters/Pic6.webp";
+import Pic27 from "../../assets/trompmeesters/Pic7.webp";
+import Pic28 from "../../assets/trompmeesters/Pic8.webp";
+
 import kamers from "../../utils/kamersmodal";
+
+const kamer1Images = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
+const kamer2Images = [Pic21, Pic22, Pic23, Pic24, Pic25, Pic26, Pic27, Pic28];
 const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   const [activeKamer, setActiveKamer] = useState([]);
-  const [activeButton, setActiveButton] = useState(1);
+  const [activeButton, setActiveButton] = useState(0);
+  const [kamerImages, setKamerImages] = useState([]);
+
+  const kamer1Imgs = useMemo(() => kamer1Images, []);
+  const kamer2Imgs = useMemo(() => kamer2Images, []);
 
   const handleButtonClick = (index) => {
     setActiveButton(index);
@@ -37,16 +54,19 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
     );
   };
 
-  const imageSources = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
-
   useEffect(() => {
     const kamer = kamers;
-    if (kamerKeuze) {
+    if (kamerKeuze && kamerImages) {
       if (kamerKeuze === 1) {
         setActiveKamer(kamer[0]);
+        setKamerImages(kamer1Imgs);
+      }
+      if (kamerKeuze === 2) {
+        setActiveKamer(kamer[1]);
+        setKamerImages(kamer2Imgs);
       }
     }
-  }, [kamerKeuze]);
+  }, [kamerKeuze, kamer1Imgs, kamer2Imgs, kamerImages]);
 
   return activeKamer.map((kamer) => {
     return (
@@ -58,7 +78,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
           <h1 className={stl.hero}>{kamer.hero}</h1>
           <div className={stl.imgWrap}>
             <img
-              src={imageSources[activeButton]}
+              src={kamerImages[activeButton]}
               alt="B&B Kamer"
               className={stl.roomImg}
             />

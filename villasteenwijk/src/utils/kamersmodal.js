@@ -24,6 +24,29 @@ const kamers = [
       ],
     },
   ],
+  [
+    {
+      hero: "Tromp Meesters",
+      "2personen": 119,
+      "3personen": 149,
+      copy1:
+        "Vernoemd naar Hendrik Jan Trom Meesters, een rijke, Steenwijkse, ondernemer en filantroop, die o.a. Boutique hotel Villa Steenwijk in 1905, als Wijkverpleging liet bouwen.",
+      copy2:
+        "Deze prachtige, 2 of 3 -persoons, luxe kamer met gouden behang, zachte vloerbedekking en rijke, velourse, gordijnstoffen bevind zich op de 2e verdieping van Villa Steenwyck aan de voorkant van de Villa. Er kan een 3e slaapplaats voor u gecreëerd worden, dmv een uitklap sofa.",
+      voorziening: [
+        "Luxe “van der Valk” Kingsize Boxspring bed van Swiss Sense 160X200 cm",
+        "Satijnen wit beddengoed en badtextiel van “De witte Lietaer”",
+        "Luxe Philips Ambilight TV met Netflix en kabel TV",
+        "Gratis super snelle wifi",
+        "Gedeelde badkamer met toilet, bidet, wastafel en luxe regendouche",
+        "Gratis koffie (Nespresso) en Thee faciliteiten",
+        "Koelkast met daarin koel, plat water",
+        "Voorzien van Daikin warmtepomp airconditioners voor het milieu bewust koelen en verwarmen van uw kamer met ingebouwde flash-streamer luchtreiniging tegen stof, pollen, virussen, bacteriën en allergenen, Voor een altijd frisse “berglucht” in uw kamer",
+        "Gedeelde badkamer met toilet, bidet, wastafel en luxe regendouche, met per kamer een plankje voor uw toilet spullen",
+        "2 Luxe, zachte badjassen van “De Witte Lietaer”",
+      ],
+    },
+  ],
 ];
 
 export default kamers;
