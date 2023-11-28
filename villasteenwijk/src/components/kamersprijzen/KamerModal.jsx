@@ -27,10 +27,21 @@ import Pic26 from "../../assets/trompmeesters/Pic6.webp";
 import Pic27 from "../../assets/trompmeesters/Pic7.webp";
 import Pic28 from "../../assets/trompmeesters/Pic8.webp";
 
+//Kamer 3 Kleibeuker
+import Pic31 from "../../assets/kleibeuker/Pic1.webp";
+import Pic32 from "../../assets/kleibeuker/Pic2.webp";
+import Pic33 from "../../assets/kleibeuker/Pic3.webp";
+import Pic34 from "../../assets/kleibeuker/Pic4.webp";
+import Pic35 from "../../assets/kleibeuker/Pic5.webp";
+import Pic36 from "../../assets/kleibeuker/Pic6.webp";
+import Pic37 from "../../assets/kleibeuker/Pic7.webp";
+import Pic38 from "../../assets/kleibeuker/Pic8.webp";
+
 import kamers from "../../utils/kamersmodal";
 
 const kamer1Images = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
 const kamer2Images = [Pic21, Pic22, Pic23, Pic24, Pic25, Pic26, Pic27, Pic28];
+const kamer3Images = [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38];
 const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   const [activeKamer, setActiveKamer] = useState([]);
   const [activeButton, setActiveButton] = useState(0);
@@ -38,6 +49,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
 
   const kamer1Imgs = useMemo(() => kamer1Images, []);
   const kamer2Imgs = useMemo(() => kamer2Images, []);
+  const kamer3Imgs = useMemo(() => kamer3Images, []);
 
   const handleButtonClick = (index) => {
     setActiveButton(index);
@@ -65,8 +77,12 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
         setActiveKamer(kamer[1]);
         setKamerImages(kamer2Imgs);
       }
+      if (kamerKeuze === 3) {
+        setActiveKamer(kamer[2]);
+        setKamerImages(kamer3Imgs);
+      }
     }
-  }, [kamerKeuze, kamer1Imgs, kamer2Imgs, kamerImages]);
+  }, [kamerKeuze, kamer1Imgs, kamer2Imgs, kamer3Imgs, kamerImages]);
 
   return activeKamer.map((kamer) => {
     return (
