@@ -121,15 +121,10 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
               <div className={stl.copyTextBox}>
                 <h2 className={stl.boxTitle}>Omschrijving</h2>
                 <p className={stl.roomCopy}>
-                  Vernoemd naar de in Steenwijk geboren beroemde kunstenaar en
-                  beeldhouwer Hildo Krop, de Stadsbeeldhouwer van Amsterdam.
+                  {kamer.copy1}
                   <br />
                   <br />
-                  Deze prachtige, 2-persoons, lichte, kamer met Engels behang,
-                  rijke, velourse, gordijnstoffen en zachte vloerbedekking
-                  bevind zich op de 2e verdieping van Villa Steenwyck met
-                  daardoor een prachtig uitzicht over vestingstad Steenwijk en
-                  de Steenwijker toren.
+                  {kamer.copy2}
                 </p>
               </div>
             </div>
@@ -137,50 +132,16 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
               <div className={stl.utilitiesTextBox}>
                 <h2 className={stl.boxTitle}>Voorzieningen</h2>
                 <ul className={stl.voorzienList}>
-                  <li className={stl.voorziening}>
-                    Luxe Boxspring bedden (2 bedden tegen elkaar aan, 180x200cm
-                    met luxe topper)
-                  </li>
-                  <li className={stl.voorziening}>
-                    De bedden zijn ook los van elkaar te zetten, als 2
-                    1-persoons bedden van 90x200cm. Indien gewenst
-                  </li>
-                  <li className={stl.voorziening}>
-                    Satijnen beddengoed en badtextiel van “De witte Lietaer”
-                  </li>
-                  <li className={stl.voorziening}>
-                    Eet setje om uw ontbijt te nuttigen of een spelletje te
-                    spelen
-                  </li>
-                  <li className={stl.voorziening}>
-                    Eet setje om uw ontbijt te nuttigen of een spelletje te
-                    spelen
-                  </li>
-                  <li className={stl.voorziening}>
-                    Luxe Philips Ambilight TV met Netflix en kabel TV
-                  </li>
-                  <li className={stl.voorziening}>Gratis super snelle wifi</li>
-                  <li className={stl.voorziening}>
-                    Voorzien van Daikin warmtepomp airconditioners voor het
-                    milieu bewust koelen en verwarmen van uw kamer met
-                    ingebouwde flash-streamer luchtreiniging tegen stof, pollen,
-                    virussen, bacteriën en allergenen, Voor een altijd frisse
-                    “berglucht” in uw kamer
-                  </li>
-                  <li className={stl.voorziening}>
-                    Gedeelde badkamer met toilet, bidet, wastafel en luxe
-                    regendouche, met per kamer een plankje voor uw toilet
-                    spullen
-                  </li>
-                  <li className={stl.voorziening}>
-                    Gratis koffie (Nespresso) en thee faciliteiten
-                  </li>
-                  <li className={stl.voorziening}>
-                    Koelkast met daarin koel, plat water
-                  </li>
-                  <li className={stl.voorziening}>
-                    2 Luxe, zachte badjassen van “De Witte Lietaer”
-                  </li>
+                  {activeKamer.length > 0 &&
+                    activeKamer.map((kamer, index) => (
+                      <React.Fragment key={index}>
+                        {kamer.voorziening.map((item, itemIndex) => (
+                          <li className={stl.voorziening} key={itemIndex}>
+                            {item}
+                          </li>
+                        ))}
+                      </React.Fragment>
+                    ))}
                 </ul>
               </div>
             </div>
