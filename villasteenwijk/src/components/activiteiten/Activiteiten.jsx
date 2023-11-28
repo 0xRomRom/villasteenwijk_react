@@ -22,12 +22,13 @@ import Pic26 from "../../assets/regio/6.webp";
 import Pic27 from "../../assets/regio/7.webp";
 
 import Pic31 from "../../assets/dineren/1.webp";
-// import Pic32 from "../../assets/dineren/2.webp";
-// import Pic33 from "../../assets/dineren/3.webp";
-// import Pic34 from "../../assets/dineren/4.webp";
-// import Pic35 from "../../assets/dineren/5.webp";
-// import Pic36 from "../../assets/dineren/6.webp";
-// import Pic37 from "../../assets/dineren/7.webp";
+import Pic32 from "../../assets/dineren/2.webp";
+import Pic33 from "../../assets/dineren/3.webp";
+import Pic34 from "../../assets/dineren/4.webp";
+import Pic35 from "../../assets/dineren/5.webp";
+import Pic36 from "../../assets/dineren/6.webp";
+import Pic37 from "../../assets/dineren/7.webp";
+import Pic38 from "../../assets/dineren/8.webp";
 
 const Activiteiten = () => {
   const navigate = useNavigate();
@@ -49,7 +50,10 @@ const Activiteiten = () => {
   );
   const regioImgs = useMemo(() => regioImages, [regioImages]);
 
-  const dinerenImages = useMemo(() => [Pic31], []);
+  const dinerenImages = useMemo(
+    () => [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38],
+    []
+  );
   const dinerenImgs = useMemo(() => dinerenImages, [dinerenImages]);
 
   const newActiviteitenImg = (img) => {
