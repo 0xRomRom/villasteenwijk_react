@@ -285,6 +285,128 @@ const Activiteiten = () => {
             </div>
           </div>
         </div>
+
+        <div className={stl.contentTopBlock}>
+          <div className={stl.activiteitenModal}>
+            <div className={stl.activLeft}>
+              <h2 className={stl.acthero}>Dineren</h2>
+              <ul className={stl.itemList}>
+                <a
+                  onMouseOver={() => newActiviteitenImg(0)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.argentinotango.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} />
+                    Argentijns restaurant Argentino Tango
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(1)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.woodyshouse.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Woody's
+                    Steakhouse
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(2)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="http://www.hetsteakhouse.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Tennessee
+                    Steakhouse
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(3)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://restaurantdeopschepper.com/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Bistro De
+                    Opschepper
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(4)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.deherenvanderechter.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> De heren van de
+                    rechter
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(5)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://brasseriezusenzo.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Brasserie Zus en
+                    Zo
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(6)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.bovenmeestersteenwijk.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Bovenmeester
+                  </li>
+                </a>
+                <a
+                  onMouseOver={() => newActiviteitenImg(7)}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://rhodossteenwijk.nl/"
+                >
+                  <li className={stl.listItem}>
+                    <IoIosArrowForward className={stl.arrow} /> Rhodos
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div className={stl.activRight}>
+              <img
+                src={activiteitenImgs[activiteitImg]}
+                alt="Activiteiten Steenwijk"
+                className={stl.cycleImg}
+              />
+            </div>
+          </div>
+          <div className={stl.chopperModal}>
+            <div className={stl.innerChopperModal}>
+              <h2>Huur een E-Chopper</h2>
+              <div className={stl.conditionsList}>
+                <span className={stl.conditionSpan}>€35,- voor 4 uur</span>
+                <span className={stl.conditionSpan}>€50,- voor 1 dag</span>
+                <span className={stl.conditionSpan}>
+                  1 E-Chopper per persoon
+                </span>
+                <span className={stl.conditionSpan}>Max bereik: 40KM</span>
+                <button
+                  className={stl.bookCta}
+                  onClick={() => navigate("/contact")}
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
