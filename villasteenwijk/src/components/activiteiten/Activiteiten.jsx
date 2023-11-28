@@ -406,22 +406,42 @@ const Activiteiten = () => {
               />
             </div>
           </div>
-          <div className={stl.chopperModal}>
-            <div className={stl.innerChopperModal}>
-              <h2>Huur een E-Chopper</h2>
-              <div className={stl.conditionsList}>
-                <span className={stl.conditionSpan}>€35,- voor 4 uur</span>
-                <span className={stl.conditionSpan}>€50,- voor 1 dag</span>
-                <span className={stl.conditionSpan}>
-                  1 E-Chopper per persoon
-                </span>
-                <span className={stl.conditionSpan}>Max bereik: 40KM</span>
-                <button
-                  className={stl.bookCta}
-                  onClick={() => navigate("/contact")}
-                >
-                  Book
-                </button>
+          <div className={stl.linksModal}>
+            <div className={stl.innerLinkModal}>
+              <h2>Links</h2>
+              <div className={stl.linksList}>
+                <div className={stl.innerWrap}>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.steenwijk.com/informatie/"
+                  >
+                    <span className={stl.linkSpan}>VVV Steenwijk</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="http://www.taxiooststeenwijk.nl/Home/"
+                  >
+                    <span className={stl.linkSpan}>Taxi Oost</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.toyota-vanderlinde.nl/over-ons/auto-huren-steenwijk/"
+                  >
+                    <span className={stl.linkSpan}>Auto huren</span>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://rijwielshopsteenwijk.nl/verhuur/"
+                  >
+                    <span className={stl.linkSpan}>
+                      (Elektrische) fiets huren
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

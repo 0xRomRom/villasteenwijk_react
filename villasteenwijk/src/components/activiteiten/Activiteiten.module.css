@@ -91,6 +91,20 @@
   background-color: rgba(0, 0, 0, 0.788);
 }
 
+.innerLinkModal h2 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.linksModal:hover .innerLinkModal {
+  transform: translateY(0%);
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
 .conditionsList {
   position: relative;
   width: 100%;
@@ -99,14 +113,56 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   gap: 0.5rem;
+}
+
+.linksList {
+  position: relative;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 9rem;
+}
+
+.innerWrap {
+  position: relative;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.innerWrap a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+.innerWrap a {
+  text-decoration: none;
+}
+
+.innerWrap a:hover .linkSpan {
+  color: white !important;
 }
 
 .conditionSpan {
   color: white;
   font-family: "Open Sans";
   font-size: 18px;
+}
+
+.linkSpan {
+  color: rgb(204, 204, 204);
+  font-family: "Open Sans";
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .bookCta {
@@ -263,4 +319,22 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 5rem;
+}
+
+.linksModal {
+  background-image: url("../../assets/activiteiten/SteenwijkAir.webp");
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 30%;
+  border-radius: 0.8rem;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.innerLinkModal {
+  width: 100%;
+  height: 100%;
+  transform: translateY(85%);
+  transition: all 1s ease-in-out;
 }
