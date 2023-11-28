@@ -11,6 +11,7 @@ const HouseTour = () => {
           frameBorder="0"
           allowFullScreen
           allow="xr-spatial-tracking"
+          title="3dFrame"
         ></iframe>
       </div>
     </>

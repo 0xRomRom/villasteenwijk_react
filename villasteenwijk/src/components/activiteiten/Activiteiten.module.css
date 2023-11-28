@@ -20,7 +20,10 @@
 .activityHeader {
   padding-top: 6rem;
   background-image: url("../../assets/omgeving/Steenwijkhaven.webp");
-  height: 60rem;
+  height: 40rem;
+  /* background-size: 10%; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .portfolio h1 {
@@ -31,4 +34,23 @@
 .contentWrap {
   position: relative;
   height: 40rem;
+}
+
+.ontDekDiv {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(0, 0, 0, 0.197);
+  top: 25.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroTxt {
+  color: yellow;
+  background-color: rgb(2, 32, 2);
+  padding: 4rem;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
 }
