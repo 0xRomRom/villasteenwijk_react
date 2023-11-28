@@ -67,7 +67,10 @@ const Navbar = () => {
           </li>
         </Link>
       </ul>
-      <div className={stl.hamburger} onClick={openMobileNav}>
+      <div
+        className={`${stl.hamburger} ${mobileOpen ? stl.active : ""}`}
+        onClick={openMobileNav}
+      >
         <span className={stl.bar}></span>
         <span className={stl.bar}></span>
         <span className={stl.bar}></span>
