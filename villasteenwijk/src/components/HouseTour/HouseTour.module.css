@@ -1,0 +1,18 @@
+.portfolio {
+  position: relative;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  background: linear-gradient(
+    180deg,
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    rgb(2, 32, 2),
+    black
+  );
+  overflow-x: hidden;
+}

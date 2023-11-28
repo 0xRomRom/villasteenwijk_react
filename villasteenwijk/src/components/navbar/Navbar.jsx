@@ -36,7 +36,7 @@ const Navbar = () => {
           <li className={stl.link}>Media</li>
         </Link>
 
-        <Link to="/3dtour" className={stl.links}>
+        <Link to="/housetour" className={stl.links}>
           <li className={stl.link}>3D Virtuele Tour</li>
         </Link>
 

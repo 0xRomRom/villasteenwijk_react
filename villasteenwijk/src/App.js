@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import KamersPrijzen from "./components/kamersprijzen/KamersPrijzen";
 import Fotos from "./components/Fotos/Fotos";
 import Media from "./components/Media/Media";
+import HouseTour from "./components/HouseTour/HouseTour";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/kamersprijzen" element={<KamersPrijzen />} />
         <Route path="/fotos" element={<Fotos />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/housetour" element={<HouseTour />} />
       </Routes>
       <Footer />
     </div>
