@@ -22,16 +22,6 @@ const kamers = [
         "Koelkast met daarin koel, plat water",
         "2 Luxe, zachte badjassen van “De Witte Lietaer”",
       ],
-      images: [
-        "../../assets/hildokrop/Pic1.webp",
-        "../../assets/hildokrop/Pic2.webp",
-        "../../assets/hildokrop/Pic3.webp",
-        "../../assets/hildokrop/Pic4.webp",
-        "../../assets/hildokrop/Pic5.webp",
-        "../../assets/hildokrop/Pic6.webp",
-        "../../assets/hildokrop/Pic7.webp",
-        "../../assets/hildokrop/Pic8.webp",
-      ],
     },
   ],
 ];

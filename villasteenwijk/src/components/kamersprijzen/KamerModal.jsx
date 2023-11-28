@@ -5,6 +5,7 @@ import { IoPeopleSharp } from "react-icons/io5";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { PiForkKnifeBold } from "react-icons/pi";
+import { IoMdClose } from "react-icons/io";
 
 //Kamer 1 Hildo Krop
 import Pic1 from "../../assets/hildokrop/Pic1.webp";
@@ -23,6 +24,10 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
 
   const handleButtonClick = (index) => {
     setActiveButton(index);
+  };
+
+  const closeModal = () => {
+    setKamerKeuze(null);
   };
 
   const openExternalLink = () => {
@@ -47,6 +52,9 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
     return (
       <div className={stl.kamermodal} key={Math.random()}>
         <div className={stl.modal}>
+          <div className={stl.closeRow}>
+            <IoMdClose className={stl.closeBtn} onClick={closeModal} />
+          </div>
           <h1 className={stl.hero}>{kamer.hero}</h1>
           <div className={stl.imgWrap}>
             <img
