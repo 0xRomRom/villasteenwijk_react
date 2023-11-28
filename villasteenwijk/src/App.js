@@ -7,6 +7,7 @@ import Fotos from "./components/Fotos/Fotos";
 import Media from "./components/Media/Media";
 import HouseTour from "./components/HouseTour/HouseTour";
 import Activiteiten from "./components/activiteiten/Activiteiten";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/media" element={<Media />} />
         <Route path="/housetour" element={<HouseTour />} />
         <Route path="/activiteiten" element={<Activiteiten />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

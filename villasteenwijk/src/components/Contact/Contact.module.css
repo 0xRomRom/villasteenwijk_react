@@ -1,0 +1,137 @@
+.kamersprijzen {
+  /* background-color: red; */
+  background-color: black;
+}
+
+.hero {
+  color: yellow;
+  padding-top: 6rem;
+  padding-left: 7rem;
+}
+
+.fiveDoorGrid {
+  position: relative;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.doorTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.25rem;
+  width: 12.5rem;
+}
+
+.doorImg {
+  width: 100%;
+  height: 100%;
+}
+
+.appartmentImg {
+  width: 30rem;
+  height: 25rem;
+  cursor: pointer;
+}
+
+.doorName {
+  color: yellow;
+  font-size: 16px;
+  position: relative;
+  width: 110%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.appartmentGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+.appTitle {
+  top: 3rem;
+  color: yellow;
+  cursor: pointer;
+}
+
+.contactWrapper {
+  position: relative;
+  height: 40rem;
+  padding: 2rem;
+  display: flex;
+}
+
+.wrapLeft {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftInnerWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrapRight {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottieAnimation {
+  width: 75%;
+  height: 75%;
+}
+
+.infoList {
+  position: relative;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgb(218, 218, 218);
+  font-family: "Open Sans";
+  /* background-color: rgba(0, 0, 255, 0.644); */
+  border-radius: 0.4rem;
+  font-size: 18px;
+  padding: 0.5rem;
+}
+
+.miniIcon {
+  font-size: 2rem;
+  color: white !important;
+}
+
+.formWrap {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  background-color: red;
+}
+
+.formWrapper {
+  position: relative;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
