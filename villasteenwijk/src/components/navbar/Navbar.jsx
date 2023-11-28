@@ -3,12 +3,18 @@ import stl from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/icons/Logo.png";
+import { useState } from "react";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleNavigation = () => {
     navigate("/");
+  };
+
+  const openMobileNav = () => {
+    setMobileOpen(!mobileOpen);
   };
 
   return (
@@ -19,7 +25,7 @@ const Navbar = () => {
         className={stl.navlogo}
         onClick={handleNavigation}
       />
-      <ul className={stl.navlist}>
+      <ul className={`${stl.navlist} ${mobileOpen ? stl.mobileNavOpen : ""}`}>
         <Link to="/" className={stl.links}>
           <li className={stl.link}>Home</li>
         </Link>
@@ -61,6 +67,11 @@ const Navbar = () => {
           </li>
         </Link>
       </ul>
+      <div className={stl.hamburger} onClick={openMobileNav}>
+        <span className={stl.bar}></span>
+        <span className={stl.bar}></span>
+        <span className={stl.bar}></span>
+      </div>
     </nav>
   );
 };
