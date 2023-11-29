@@ -169,6 +169,12 @@
   .avgRatedBox {
     padding-top: 8rem;
   }
+  .reviews {
+    padding-bottom: 6rem;
+  }
+  .modalsGrid {
+    padding-top: 15rem;
+  }
 }
 
 @media (max-width: 400px) {

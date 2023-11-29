@@ -55,7 +55,7 @@ const Reviews = () => {
               <span className={stl.userName}>Henk W.</span>
               <span className={stl.jobType}>Trompmeesters kamer</span>
             </div>
-            <div className={stl.userRating}>9.5/10</div>
+            <div className={stl.userRating}>9.3/10</div>
           </div>
           <div className={stl.userCopyWrap}>
             <p className={stl.userCopy}>
@@ -110,7 +110,7 @@ const Reviews = () => {
               <span className={stl.userName}>Frank H.</span>
               <span className={stl.jobType}>Kleibeuker kamer</span>
             </div>
-            <div className={stl.userRating}>9.5/10</div>
+            <div className={stl.userRating}>9.7/10</div>
           </div>
           <div className={stl.userCopyWrap}>
             <p className={stl.userCopy}>

@@ -85,11 +85,12 @@
     left: -20rem;
   }
   .omgeving {
-    height: 90rem;
+    height: 85rem;
   }
   .hero {
     padding: 0;
     text-align: center;
+    font-size: 30px;
   }
   .omgevingcopy {
     padding: 0;
@@ -135,5 +136,8 @@
     left: 300px;
     top: 180px;
     pointer-events: none;
+  }
+  .omgeving {
+    padding-bottom: 0rem;
   }
 }

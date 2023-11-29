@@ -29,6 +29,7 @@
   transition: all 0.45s ease-in-out;
   text-decoration: none;
   z-index: 10;
+  user-select: none;
 }
 
 .cta:hover {
@@ -84,4 +85,16 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .vilaBg {
+    width: 97%;
+    border-radius: 0.3rem;
+  }
+  .beleef {
+    height: 55rem;
+    margin-bottom: 5rem;
+    background-color: black;
+  }
 }
