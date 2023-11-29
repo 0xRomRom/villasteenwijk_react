@@ -53,7 +53,7 @@
 .heroTxt {
   color: yellow;
   background-color: rgb(2, 32, 2);
-  padding: 4rem;
+  padding: 3rem;
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
 }
@@ -125,7 +125,6 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding-left: 9rem;
 }
 
 .innerWrap {
@@ -134,7 +133,7 @@
   height: 22rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -193,6 +192,11 @@
   align-items: center;
   gap: 2rem;
 }
+.leftAlign {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
 
 .activiteitenModal {
   height: 25rem;
@@ -207,7 +211,7 @@
 
 .activLeft {
   position: relative;
-  width: 39%;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -241,10 +245,9 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
   gap: 0.5rem;
-  padding-left: 0.5rem;
   list-style-type: none;
 }
 
@@ -280,6 +283,7 @@
 .arrow {
   position: relative;
   opacity: 0;
+  width: 16px;
 }
 
 .cycleImg {
@@ -329,7 +333,7 @@
 .activiteitenModal .itemList {
   padding-left: 0rem;
   align-items: flex-start;
-  margin-right: 0.5rem;
+  justify-content: center;
 }
 
 .regioLeft .itemList {
@@ -354,4 +358,63 @@
   height: 100%;
   transform: translateY(85%);
   transition: all 1s ease-in-out;
+}
+
+@media (max-width: 1400px) {
+  .contentWrap {
+    padding: 5rem 0rem;
+  }
+  .heroTxt {
+    color: yellow;
+    background-color: rgb(2, 32, 2);
+    padding: 3rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heroTxt {
+    color: yellow;
+    background-color: rgb(2, 32, 2);
+    padding: 2.5rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    font-size: 20px;
+  }
+  .contentTopBlock {
+    gap: 0.75rem;
+  }
+  .contentWrap {
+    padding: 7rem 15px;
+  }
+  .chopperModal {
+    width: 40%;
+  }
+  .activiteitenModal {
+    width: 60%;
+  }
+  .linksModal {
+    width: 40%;
+  }
+  .dinerenModal {
+    width: 60%;
+  }
+  .regioModal {
+    width: 100%;
+  }
+  .acthero {
+    font-size: 18px;
+  }
+  .listItem {
+    font-size: 15px;
+  }
+  .regioHero {
+    text-align: center;
+    font-size: 18px;
+  }
+  .innerLinkModal h2 {
+    font-size: 18px;
+    text-shadow: 0px 0px 5px black;
+  }
 }

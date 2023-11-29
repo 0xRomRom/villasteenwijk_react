@@ -426,36 +426,38 @@ const Activiteiten = () => {
               <h2>Links</h2>
               <div className={stl.linksList}>
                 <div className={stl.innerWrap}>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://www.steenwijk.com/informatie/"
-                  >
-                    <span className={stl.linkSpan}>VVV Steenwijk</span>
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="http://www.taxiooststeenwijk.nl/Home/"
-                  >
-                    <span className={stl.linkSpan}>Taxi Oost</span>
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://www.toyota-vanderlinde.nl/over-ons/auto-huren-steenwijk/"
-                  >
-                    <span className={stl.linkSpan}>Auto huren</span>
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://rijwielshopsteenwijk.nl/verhuur/"
-                  >
-                    <span className={stl.linkSpan}>
-                      (Elektrische) fiets huren
-                    </span>
-                  </a>
+                  <div className={stl.leftAlign}>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.steenwijk.com/informatie/"
+                    >
+                      <span className={stl.linkSpan}>VVV Steenwijk</span>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="http://www.taxiooststeenwijk.nl/Home/"
+                    >
+                      <span className={stl.linkSpan}>Taxi Oost</span>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.toyota-vanderlinde.nl/over-ons/auto-huren-steenwijk/"
+                    >
+                      <span className={stl.linkSpan}>Auto huren</span>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://rijwielshopsteenwijk.nl/verhuur/"
+                    >
+                      <span className={stl.linkSpan}>
+                        (Elektrische) fiets huren
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
