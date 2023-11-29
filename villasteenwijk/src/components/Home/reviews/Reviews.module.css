@@ -158,10 +158,12 @@
 
 @media (max-width: 900px) {
   .subHeroTitle {
-    font-size: 5vw;
+    font-size: 7vw;
+    text-align: center;
   }
   .rating {
-    font-size: 5vw;
+    font-size: 8vw;
+    font-weight: bold;
   }
 }
 

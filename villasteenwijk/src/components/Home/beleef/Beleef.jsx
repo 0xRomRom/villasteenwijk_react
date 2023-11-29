@@ -1,11 +1,14 @@
 import stl from "./Beleef.module.css";
 import { motion as m } from "framer-motion";
+import { useNavigate } from "react-router";
 
 const Beleef = () => {
+  const navigate = useNavigate();
   return (
     <section className={stl.beleef}>
       <div className={stl.wrapper}>
         <m.button
+          onClick={() => navigate("/housetour")}
           className={stl.cta}
           initial={{ opacity: 0, y: "20px" }}
           whileInView={{ opacity: 1, y: "0px" }}

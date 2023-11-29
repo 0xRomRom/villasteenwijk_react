@@ -1,7 +1,11 @@
 import stl from "./Stijlvol.module.css";
 import { motion as m } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
+
 const Stijlvol = () => {
+  const navigate = useNavigate();
   return (
     <section className={stl.stijlvol}>
       <m.h1
@@ -47,6 +51,7 @@ const Stijlvol = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           />
           <m.span
+            onClick={() => navigate("/kamersprijzen")}
             className={stl.bekijkCta}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

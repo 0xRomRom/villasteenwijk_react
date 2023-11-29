@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 1000;
+  /* top: 3.3rem; */
+  width: 100%;
+  z-index: 1000 !important;
   user-select: none;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .hamburger {
-  position: relative;
+  position: absolute;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -92,7 +92,7 @@
 }
 
 .mobileNavOpen {
-  transform: translateX(0vw) !important;
+  left: 0% !important;
 }
 
 @media (max-width: 1200px) {
@@ -107,30 +107,24 @@
   }
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .navlist {
     gap: 0.5rem;
     padding-left: 3rem;
   }
-}
+} */
 
 @media (max-width: 850px) {
   .navlist {
     gap: 0.5rem;
-    padding-left: 3rem;
-    height: 100vh !important;
+    height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     background-color: black;
     top: 0;
-    left: 0;
-
-    bottom: 0;
-    right: 0;
-    /* display: none; */
+    left: -100%;
     flex-direction: column;
-    transform: translateX(-100vw);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .link {
