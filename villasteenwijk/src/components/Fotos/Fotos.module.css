@@ -58,3 +58,23 @@
   border: 1px solid black;
   box-shadow: 0px 0px 5px black;
 }
+
+@media (max-width: 1000px) {
+  .flexdiv h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .topBlock {
+    margin-left: 0rem;
+  }
+  .tilesGrid {
+    padding: 0rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .tilesGrid {
+    padding: 0rem 15px;
+    margin-bottom: 5rem;
+  }
+}
