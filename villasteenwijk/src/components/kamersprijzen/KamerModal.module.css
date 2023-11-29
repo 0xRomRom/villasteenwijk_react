@@ -41,6 +41,7 @@
   );
   min-height: 53rem;
   overflow-x: hidden;
+  top: 0;
 }
 .hero {
   color: yellow;

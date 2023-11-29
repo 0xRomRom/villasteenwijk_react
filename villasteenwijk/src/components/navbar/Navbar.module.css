@@ -25,6 +25,7 @@
   align-items: center;
   gap: 2rem;
   overflow: hidden;
+  will-change: left;
 }
 
 .links {
@@ -89,6 +90,7 @@
   height: 3px;
   background-color: white;
   transition: all 0.3s ease-in-out;
+  will-change: position;
 }
 
 .mobileNavOpen {
@@ -106,13 +108,6 @@
     font-size: 14px;
   }
 }
-
-/* @media (max-width: 1000px) {
-  .navlist {
-    gap: 0.5rem;
-    padding-left: 3rem;
-  }
-} */
 
 @media (max-width: 850px) {
   .navlist {
