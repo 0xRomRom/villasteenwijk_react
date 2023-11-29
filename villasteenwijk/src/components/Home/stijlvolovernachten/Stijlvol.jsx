@@ -25,9 +25,9 @@ const Stijlvol = () => {
           Rick & Patrick heten u van harte welkom in Boutique hotel Villa
           Steenwyck.
           <br />
-          <br /> Luxe, maar voordelig, overnachten kan in 1 van onze 4
-          gloednieuwe kamers in het historische stadscentrum van het vestings
-          stadje Steenwijk. <br />
+          <br /> Luxe, maar voordelig, overnachten kan in 1 van onze 6
+          gloednieuwe vertrekken in het historische stadscentrum van het
+          vestings stadje Steenwijk. <br />
           <br />
           Boutique hotel villa Steenwyck is geopend in januari 2023. Alles is
           splinternieuw en overal is aan gedacht; <br />
