@@ -127,7 +127,7 @@ const kamers = [
   ],
   [
     {
-      hero: "Appartement Villa Steenwyck",
+      hero: "App. Villa Steenwyck",
       "2personen": 145,
       "3personen": 0,
       copy1:

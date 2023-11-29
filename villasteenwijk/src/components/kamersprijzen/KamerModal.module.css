@@ -9,12 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 10px;
+  overflow-x: hidden;
 }
 
 .modal {
   width: 40rem;
-  height: 53rem;
+  /* height: 53rem; */
   background-color: red;
   border-radius: 20px 5px 20px 5px;
   background-color: rgb(19, 24, 43);
@@ -26,7 +28,20 @@
   );
   overflow: hidden;
 }
-
+.modalWrap {
+  position: absolute;
+  width: 100vw;
+  max-width: 40rem;
+  /* height: 100vh; */
+  background: linear-gradient(
+    50deg,
+    rgb(19, 24, 43),
+    rgb(16, 19, 31),
+    rgb(13, 16, 26)
+  );
+  min-height: 53rem;
+  overflow-x: hidden;
+}
 .hero {
   color: yellow;
   text-align: center;
@@ -114,7 +129,6 @@
 .copyTitle {
   color: rgb(163, 163, 163);
   font-family: "Open Sans";
-  width: 100%;
   display: block;
   font-weight: bold;
   text-align: start;
@@ -154,6 +168,7 @@
 
 .exclamation {
   color: yellow;
+  position: relative;
 }
 
 .toeslagWrap {
@@ -251,7 +266,6 @@
 
 .copyTextBox {
   width: 100%;
-  height: 100%;
   background-color: rgb(25, 32, 59);
   border-radius: 0.4rem;
 }
@@ -359,4 +373,112 @@
 
 .closeBtn:hover {
   color: white;
+}
+
+@media (max-width: 680px) {
+  .modal {
+    margin: 0rem 20px;
+  }
+  .closeRow {
+    width: 100vw;
+    padding-right: 2.5rem !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .personWrapper {
+    padding-left: 0rem;
+  }
+  .hero {
+    font-size: 28px;
+  }
+
+  .descriptionWrap {
+    height: auto;
+    max-height: 310px;
+    overflow-y: scroll;
+  }
+  .utilitiesBox {
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .personWrapper {
+    padding-left: 0rem;
+  }
+  .bottomWrap {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .prijsWrap {
+    width: 100%;
+  }
+  .toeslagWrap {
+    width: 100%;
+  }
+  .ontbijtWrap {
+    width: 100%;
+  }
+
+  .toeslagTop {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .totalWrap {
+    width: 100%;
+  }
+  .euroWrapper {
+    position: relative;
+  }
+  .toeslagBottom {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .imgWrap {
+    height: 15rem;
+    margin-bottom: 10px;
+  }
+  .roomImg {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    font-size: 20px;
+  }
+  .closeBtn {
+    position: relative;
+    top: -3px;
+  }
+
+  .kamermodal {
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 500px) {
+  .voorzienList {
+    /* margin-top: 10px; */
+    width: 107%;
+    /* padding-bottom: 7.8rem !important; */
+  }
+  .roomCopy {
+    font-size: 14px;
+  }
+  .copyBox {
+    padding-right: 0px;
+  }
+  .boxTitle {
+    font-size: 16px;
+  }
+  .utilitiesBox {
+    margin-right: 8px;
+  }
+  .ctaBox {
+    margin: 10px 0px;
+  }
 }

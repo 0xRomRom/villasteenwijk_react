@@ -144,9 +144,11 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
   return activeKamer.map((kamer) => {
     return (
       <div className={stl.kamermodal} key={Math.random()}>
-        <div className={stl.modal}>
-          <div className={stl.closeRow}>
-            <IoMdClose className={stl.closeBtn} onClick={closeModal} />
+        <div className={stl.modalWrap}>
+          <div className={stl.modal}>
+            <div className={stl.closeRow}>
+              <IoMdClose className={stl.closeBtn} onClick={closeModal} />
+            </div>
           </div>
           <h1 className={stl.hero}>{kamer.hero}</h1>
           <div className={stl.imgWrap}>
