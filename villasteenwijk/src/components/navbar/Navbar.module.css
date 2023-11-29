@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  /* top: 3.3rem; */
-  width: 100%;
+  top: 0px;
+  width: 100vw;
   z-index: 1000 !important;
   user-select: none;
 }
@@ -55,7 +55,7 @@
 }
 
 .hamburger {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   width: 30px;
   height: 30px;
