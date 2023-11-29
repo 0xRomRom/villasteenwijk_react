@@ -86,7 +86,7 @@
     left: -20rem;
   }
   .omgeving {
-    height: 85rem;
+    height: 80rem;
   }
   .hero {
     padding: 0;
@@ -128,14 +128,16 @@
   .innerKaartwrap {
     position: relative;
     top: 30rem;
-    left: -15rem;
+    left: 10rem;
   }
   .nlkaart {
-    width: 30rem;
+    width: 25rem;
+    top: 5rem;
+    left: -21rem;
   }
   .pointer {
-    left: 300px;
-    top: 180px;
+    left: -80px;
+    top: 185px;
     pointer-events: none;
   }
   .omgeving {

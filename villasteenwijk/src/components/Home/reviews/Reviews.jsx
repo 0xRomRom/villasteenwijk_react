@@ -8,14 +8,6 @@ const Reviews = () => {
   });
   return (
     <section className={stl.reviews}>
-      {/* <m.h1
-        className={stl.hero}
-        initial={{ opacity: 0, x: "-30px" }}
-        whileInView={{ opacity: 1, x: "0px" }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        Laat onze gasten u overtuigen
-      </m.h1> */}
       <div className={stl.avgRatedBox}>
         <m.h2
           className={stl.subHeroTitle}
@@ -40,10 +32,9 @@ const Reviews = () => {
       <div className={stl.modalsGrid}>
         <m.div
           className={stl.reviewTile}
-          initial={{ opacity: 0, y: "-30px" }}
-          whileInView={{ opacity: 1, y: "0px", duration: 0.4 }}
-          animate={{ opacity: 1, y: "30px" }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.25 }}
         >
           <div className={stl.revToprow}>
             <img
@@ -68,10 +59,9 @@ const Reviews = () => {
 
         <m.div
           className={stl.reviewTile}
-          initial={{ opacity: 0, y: "-30px" }}
-          whileInView={{ opacity: 1, y: "0px", duration: 0.4 }}
-          animate={{ opacity: 1, y: "30px" }}
-          transition={{ duration: 0.4, ease: "easeInOut", delay: 0.1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.25 }}
         >
           <div className={stl.revToprow}>
             <img
@@ -95,10 +85,9 @@ const Reviews = () => {
 
         <m.div
           className={stl.reviewTile}
-          initial={{ opacity: 0, y: "-30px" }}
-          whileInView={{ opacity: 1, y: "0px" }}
-          animate={{ opacity: 1, y: "30px" }}
-          transition={{ duration: 0.4, ease: "easeInOut", delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.25 }}
         >
           <div className={stl.revToprow}>
             <img

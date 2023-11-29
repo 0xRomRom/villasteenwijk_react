@@ -29,7 +29,12 @@ const Omgeving = () => {
           />
         </m.div>
       </div>
-      <p className={stl.omgevingcopy}>
+      <m.p
+        className={stl.omgevingcopy}
+        initial={{ opacity: 0, y: "-15px" }}
+        whileInView={{ opacity: 1, y: "0px" }}
+        transition={{ duration: 1.25 }}
+      >
         "Onze prachtige stadsvilla is in 1905, in opdracht van Jan Hendrik Tromp
         Meesters (een rijke, Steenwijkse ondernemer en filantroop) gebouwd in de
         bekende Jugendstill stijl als zijnde wijkverpleging gebouw,hetgeen nog
@@ -37,7 +42,7 @@ const Omgeving = () => {
         groene kruis gebouw” zoals de villa bij de Steenwijker in de volksmond
         genoemd wordt, zat vroeger een dokterspraktijk, kregen baby's hun
         inentingen en kwam men hierheen voor de sportkeuring."
-      </p>
+      </m.p>
     </section>
   );
 };

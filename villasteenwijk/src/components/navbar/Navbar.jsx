@@ -1,21 +1,24 @@
-import stl from "./Navbar.module.css";
-
+import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import stl from "./Navbar.module.css";
 import logo from "../../assets/icons/Logo.png";
-import { useState } from "react";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const handleNavigation = () => {
+  const handleNavigation = useCallback(() => {
     navigate("/");
-  };
+  }, [navigate]);
 
-  const openMobileNav = () => {
+  const openMobileNav = useCallback(() => {
     setMobileOpen(!mobileOpen);
-  };
+  }, [mobileOpen]);
+
+  const handleLinkClick = useCallback(() => {
+    openMobileNav();
+  }, [openMobileNav]);
 
   return (
     <nav className={stl.navbar}>
@@ -26,51 +29,60 @@ const Navbar = () => {
         onClick={handleNavigation}
       />
       <ul className={`${stl.navlist} ${mobileOpen ? stl.mobileNavOpen : ""}`}>
-        <Link to="/" className={stl.links} onClick={openMobileNav}>
+        <Link
+          to="/"
+          className={stl.links}
+          onClick={handleLinkClick}
+          exact="true"
+        >
           <li className={stl.link}>Home</li>
         </Link>
 
-        <Link to="/kamersprijzen" className={stl.links} onClick={openMobileNav}>
+        <Link
+          to="/kamersprijzen"
+          className={stl.links}
+          onClick={handleLinkClick}
+        >
           <li className={stl.link}>Kamers & Prijzen</li>
         </Link>
 
-        <Link to="/fotos" className={stl.links} onClick={openMobileNav}>
+        <Link to="/fotos" className={stl.links} onClick={handleLinkClick}>
           <li className={stl.link}>Foto's</li>
         </Link>
 
-        <Link to="/media" className={stl.links} onClick={openMobileNav}>
+        <Link to="/media" className={stl.links} onClick={handleLinkClick}>
           <li className={stl.link}>Media</li>
         </Link>
 
-        <Link to="/housetour" className={stl.links} onClick={openMobileNav}>
+        <Link to="/housetour" className={stl.links} onClick={handleLinkClick}>
           <li className={stl.link}>3D Virtuele Tour</li>
         </Link>
 
-        <Link to="/activiteiten" className={stl.links} onClick={openMobileNav}>
+        <Link
+          to="/activiteiten"
+          className={stl.links}
+          onClick={handleLinkClick}
+        >
           <li className={stl.link}>Activiteiten</li>
         </Link>
 
-        <Link to="/contact" className={stl.links} onClick={openMobileNav}>
+        <Link to="/contact" className={stl.links} onClick={handleLinkClick}>
           <li className={stl.link}>Contact</li>
         </Link>
-        <Link
-          to="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
+
+        <a
+          href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
           className={stl.links}
           target="_blank"
-          onClick={openMobileNav}
+          rel="noopener noreferrer"
+          onClick={handleLinkClick}
         >
-          <li
-            className={`${stl.link} ${stl.reserveren} 
-              
-            `}
-          >
-            Reserveren
-          </li>
-        </Link>
+          <li className={`${stl.link} ${stl.reserveren}`}>Reserveren</li>
+        </a>
       </ul>
       <div
         className={`${stl.hamburger} ${mobileOpen ? stl.active : ""}`}
-        onClick={openMobileNav}
+        onClick={handleLinkClick}
       >
         <span className={stl.bar}></span>
         <span className={stl.bar}></span>
