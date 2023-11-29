@@ -1,7 +1,6 @@
 import stl from "./Stijlvol.module.css";
 import { motion as m } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
-import { useEffect } from "react";
 import { useNavigate } from "react-router";
 
 const Stijlvol = () => {

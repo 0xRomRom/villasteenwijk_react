@@ -157,6 +157,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
               alt="B&B Kamer"
               className={stl.roomImg}
             />
+
             <div className={stl.buttonBox}>
               {[...Array(8)].map((_, index) => (
                 <button
