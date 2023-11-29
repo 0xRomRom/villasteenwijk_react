@@ -75,3 +75,16 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+@media (max-width: 850px) {
+  .bannerImg {
+    visibility: hidden;
+  }
+
+  .header {
+    background-image: url("../../../../public/landing/Bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50%;
+  }
+}
