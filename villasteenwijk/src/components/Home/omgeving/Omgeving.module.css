@@ -10,7 +10,8 @@
     black
   );
   padding: 5rem 0rem;
-  overflow: hidden;
+
+  overflow-x: hidden !important;
 }
 
 .hero {

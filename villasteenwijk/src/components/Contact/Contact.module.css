@@ -1,6 +1,7 @@
 .kamersprijzen {
   /* background-color: red; */
   background-color: black;
+  overflow-x: hidden;
 }
 
 .hero {
