@@ -241,7 +241,7 @@
 }
 
 .descriptionWrap {
-  height: 19.9rem;
+  max-height: 22rem;
   display: flex;
   width: 103.8%;
 }
@@ -252,6 +252,7 @@
   height: 100%;
   padding: 10px;
   padding-right: 7px;
+  /* overflow-y: scroll; */
 }
 
 .utilitiesBox {
@@ -327,6 +328,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .reserverenCta {
