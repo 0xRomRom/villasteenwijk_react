@@ -126,3 +126,53 @@
   color: white;
   font-family: "Open Sans";
 }
+
+@media (max-width: 1240px) {
+  .modalsGrid {
+    gap: 0rem;
+  }
+
+  .reviewTile {
+    transform: scale(0.9) !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .userRating {
+    left: 13rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modalsGrid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .reviewTile {
+    transform: scale(1) !important;
+  }
+  .userRating {
+    left: 15rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .subHeroTitle {
+    font-size: 5vw;
+  }
+  .rating {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .avgRatedBox {
+    padding-top: 8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .reviewTile {
+    transform: scale(0.9) !important;
+  }
+}
