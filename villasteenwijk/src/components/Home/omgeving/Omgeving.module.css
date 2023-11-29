@@ -21,17 +21,14 @@
 }
 
 .nlkaart {
-  /* opacity: 0.3; */
   position: absolute;
   transition: all 0.3s ease;
 }
 
 .nlwrap {
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid white; */
 }
 
 .innerKaartwrap {
@@ -66,4 +63,77 @@
   font-size: 18px;
   letter-spacing: 3px;
   padding-bottom: 20rem;
+}
+
+@media (max-width: 1200px) {
+  .nlwrap {
+    position: relative;
+    /* left: -3rem !important; */
+  }
+
+  .omgevingcopy {
+    padding-left: 3rem;
+  }
+  .hero {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 1150px) {
+  .innerKaartwrap {
+    position: relative;
+    top: 20rem;
+    left: -20rem;
+  }
+  .omgeving {
+    height: 90rem;
+  }
+  .hero {
+    padding: 0;
+    text-align: center;
+  }
+  .omgevingcopy {
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+    padding: 0rem 5rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .innerKaartwrap {
+    position: relative;
+    top: 25rem;
+    left: -10rem;
+  }
+  .omgevingcopy {
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+    padding: 0rem 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .omgeving {
+    padding-top: 0rem;
+  }
+  .omgevingcopy {
+    padding: 0;
+    margin: 0 auto;
+    width: auto;
+    padding: 0rem 1.5rem;
+  }
+  .innerKaartwrap {
+    position: relative;
+    top: 30rem;
+    left: -15rem;
+  }
+  .nlkaart {
+    width: 30rem;
+  }
+  .pointer {
+    left: 300px;
+    top: 180px;
+    pointer-events: none;
+  }
 }

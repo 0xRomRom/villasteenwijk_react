@@ -24,6 +24,7 @@ const Omgeving = () => {
           <img
             src="./omgeving/netherlands.svg"
             alt="Kaart van Nederland"
+            style={{ zIndex: 2 }}
             className={stl.nlkaart}
           />
         </m.div>
