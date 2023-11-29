@@ -312,7 +312,7 @@
   align-items: center;
   gap: 2rem;
 
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 .regioModal {
   height: 25rem;
@@ -323,7 +323,7 @@
   background-color: black;
   display: flex;
   flex-direction: row;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .regioModal .regioLeft {
@@ -386,7 +386,7 @@
     gap: 0.75rem;
   }
   .contentWrap {
-    padding: 7rem 15px;
+    padding: 5rem 15px;
   }
   .chopperModal {
     width: 40%;
@@ -407,7 +407,7 @@
     font-size: 18px;
   }
   .listItem {
-    font-size: 15px;
+    font-size: 14px;
   }
   .regioHero {
     text-align: center;
@@ -416,5 +416,43 @@
   .innerLinkModal h2 {
     font-size: 18px;
     text-shadow: 0px 0px 5px black;
+  }
+}
+
+@media (max-width: 800px) {
+  .contentTopBlock {
+    flex-direction: column;
+  }
+  .chopperModal {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .activiteitenModal {
+    width: 100%;
+  }
+  .linksModal {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroTxt {
+    text-align: center;
+  }
+  li svg {
+    display: none;
+  }
+  .listItem {
+    padding-right: 5px;
+  }
+  .regioLeft {
+    width: 40%;
+  }
+  .activLeft .itemList {
+    padding-left: 5px;
+  }
+  .activityHeader {
+    background-position: 50%;
   }
 }

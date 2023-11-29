@@ -453,9 +453,7 @@ const Activiteiten = () => {
                       rel="noreferrer"
                       href="https://rijwielshopsteenwijk.nl/verhuur/"
                     >
-                      <span className={stl.linkSpan}>
-                        (Elektrische) fiets huren
-                      </span>
+                      <span className={stl.linkSpan}>Fiets huren</span>
                     </a>
                   </div>
                 </div>
