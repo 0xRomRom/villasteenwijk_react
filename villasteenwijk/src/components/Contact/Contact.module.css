@@ -268,7 +268,7 @@
     padding-right: 0px;
   }
   .formBg {
-    left: 0;
+    left: -0.5rem;
     transform: scale(0.9);
   }
   .wrapLeft {

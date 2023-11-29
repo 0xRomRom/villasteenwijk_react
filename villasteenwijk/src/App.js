@@ -8,11 +8,13 @@ import Media from "./components/Media/Media";
 import HouseTour from "./components/HouseTour/HouseTour";
 import Activiteiten from "./components/activiteiten/Activiteiten";
 import Contact from "./components/Contact/Contact";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/kamersprijzen" element={<KamersPrijzen />} />
