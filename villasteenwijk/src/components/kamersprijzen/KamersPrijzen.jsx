@@ -26,33 +26,41 @@ const KamersPrijzen = () => {
       >
         Kamers & Prijzen
       </m.h1>
-      <div className={stl.fiveDoorGrid}>
-        <div className={stl.doorTile} onClick={() => openModal(1)}>
-          <img src={door} alt="Deur" className={stl.doorImg} />
-          <span className={stl.doorName}>1. Hildo Krop</span>
-        </div>
-        <div className={stl.doorTile} onClick={() => openModal(2)}>
-          <img src={door} alt="Deur" className={stl.doorImg} />
-          <span className={stl.doorName}>2. Tromp Meesters</span>
-        </div>
-        <div className={stl.doorTile} onClick={() => openModal(3)}>
-          <img src={door} alt="Deur" className={stl.doorImg} />
-          <span className={stl.doorName}>3. Kleibeuker</span>
-        </div>
-        <div className={stl.doorTile} onClick={() => openModal(4)}>
-          <img src={door} alt="Deur" className={stl.doorImg} />
-          <span className={stl.doorName}>4. Johan van den Kornput</span>
-        </div>
-        <div className={stl.doorTile} onClick={() => openModal(5)}>
-          <img src={door} alt="Deur" className={stl.doorImg} />
-          <span className={stl.doorName}>5. Giethoorn</span>
-        </div>
-      </div>
+      {!kamerKeuze && (
+        <>
+          <div className={stl.fiveDoorGrid}>
+            <div className={stl.doorTile} onClick={() => openModal(1)}>
+              <img src={door} alt="Deur" className={stl.doorImg} />
+              <span className={stl.doorName}>1. Hildo Krop</span>
+            </div>
+            <div className={stl.doorTile} onClick={() => openModal(2)}>
+              <img src={door} alt="Deur" className={stl.doorImg} />
+              <span className={stl.doorName}>2. Tromp Meesters</span>
+            </div>
+            <div className={stl.doorTile} onClick={() => openModal(3)}>
+              <img src={door} alt="Deur" className={stl.doorImg} />
+              <span className={stl.doorName}>3. Kleibeuker</span>
+            </div>
+            <div className={stl.doorTile} onClick={() => openModal(4)}>
+              <img src={door} alt="Deur" className={stl.doorImg} />
+              <span className={stl.doorName}>4. Johan van den Kornput</span>
+            </div>
+            <div className={stl.doorTile} onClick={() => openModal(5)}>
+              <img src={door} alt="Deur" className={stl.doorImg} />
+              <span className={stl.doorName}>5. Giethoorn</span>
+            </div>
+          </div>
 
-      <div className={stl.appartmentGrid} onClick={() => openModal(6)}>
-        <img src={appartment} alt="Appartment" className={stl.appartmentImg} />
-        <span className={stl.appTitle}>Appartement Villa Steenwyck</span>
-      </div>
+          <div className={stl.appartmentGrid} onClick={() => openModal(6)}>
+            <img
+              src={appartment}
+              alt="Appartment"
+              className={stl.appartmentImg}
+            />
+            <span className={stl.appTitle}>Appartement Villa Steenwyck</span>
+          </div>
+        </>
+      )}
     </main>
   );
 };
