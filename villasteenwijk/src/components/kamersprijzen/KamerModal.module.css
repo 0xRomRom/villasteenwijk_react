@@ -241,6 +241,7 @@
 .descriptionWrap {
   display: flex;
   width: 103.8%;
+  height: 400px;
 }
 
 .copyBox {
@@ -322,7 +323,7 @@
 }
 
 .ctaBox {
-  height: 7rem;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +472,7 @@
     margin-right: 8px;
   }
   .ctaBox {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .voorziening {
     width: 91%;
