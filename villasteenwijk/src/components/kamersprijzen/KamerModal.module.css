@@ -32,14 +32,12 @@
   position: absolute;
   width: 100vw;
   max-width: 40rem;
-  /* height: 100vh; */
   background: linear-gradient(
     50deg,
     rgb(19, 24, 43),
     rgb(16, 19, 31),
     rgb(13, 16, 26)
   );
-  min-height: 53rem;
   overflow-x: hidden;
   top: 0;
 }
@@ -452,10 +450,6 @@
   .closeBtn {
     position: relative;
     top: -3px;
-  }
-
-  .kamermodal {
-    overflow-y: scroll;
   }
 }
 @media (max-width: 500px) {

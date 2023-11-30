@@ -50,17 +50,12 @@ const KamersPrijzen = () => {
               <span className={stl.doorName}>5. Giethoorn</span>
             </div>
           </div>
-
-          <div className={stl.appartmentGrid} onClick={() => openModal(6)}>
-            <img
-              src={appartment}
-              alt="Appartment"
-              className={stl.appartmentImg}
-            />
-            <span className={stl.appTitle}>Appartement Villa Steenwyck</span>
-          </div>
         </>
       )}
+      <div className={stl.appartmentGrid} onClick={() => openModal(6)}>
+        <img src={appartment} alt="Appartment" className={stl.appartmentImg} />
+        <span className={stl.appTitle}>Appartement Villa Steenwyck</span>
+      </div>
     </main>
   );
 };
