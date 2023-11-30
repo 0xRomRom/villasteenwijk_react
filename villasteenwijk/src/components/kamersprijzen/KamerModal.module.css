@@ -241,7 +241,6 @@
 }
 
 .descriptionWrap {
-  max-height: 22rem;
   display: flex;
   width: 103.8%;
 }
@@ -299,6 +298,7 @@
   overflow-y: scroll;
   /* background-color: red; */
   padding-top: 5px;
+  max-height: 334px !important;
 }
 
 .voorziening {
@@ -321,6 +321,7 @@
   border-radius: 0.4rem;
   padding-bottom: 5px;
   overflow: hidden;
+  max-height: 387px;
 }
 
 .ctaBox {
@@ -396,11 +397,6 @@
     font-size: 28px;
   }
 
-  .descriptionWrap {
-    height: auto;
-    max-height: 310px;
-    overflow-y: scroll;
-  }
   .utilitiesBox {
     padding-right: 0rem;
   }
@@ -483,5 +479,6 @@
   }
   .ctaBox {
     margin: 10px 0px;
+    margin-bottom: 1.5rem;
   }
 }
