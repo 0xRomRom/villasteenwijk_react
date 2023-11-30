@@ -247,11 +247,12 @@
 
 .copyBox {
   width: 65%;
-  /* background-color: rgba(255, 0, 0, 0.192); */
   height: 100%;
   padding: 10px;
   padding-right: 7px;
-  /* overflow-y: scroll; */
+  height: 100%;
+
+  position: relative;
 }
 
 .utilitiesBox {
@@ -269,6 +270,7 @@
   width: 100%;
   background-color: rgb(25, 32, 59);
   border-radius: 0.4rem;
+  height: 400px;
 }
 
 .boxTitle {
@@ -296,9 +298,7 @@
   margin-top: 5px;
   padding-bottom: 37px;
   overflow-y: scroll;
-  /* background-color: red; */
   padding-top: 5px;
-  max-height: 334px !important;
 }
 
 .voorziening {
@@ -319,9 +319,8 @@
   border-radius: 0.4rem;
   height: 100%;
   border-radius: 0.4rem;
-  padding-bottom: 5px;
   overflow: hidden;
-  max-height: 387px;
+  height: 400px;
 }
 
 .ctaBox {
@@ -480,5 +479,8 @@
   .ctaBox {
     margin: 10px 0px;
     margin-bottom: 1.5rem;
+  }
+  .voorziening {
+    width: 91%;
   }
 }
