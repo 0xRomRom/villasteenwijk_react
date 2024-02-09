@@ -4,10 +4,64 @@ import { useNavigate } from "react-router-dom";
 import stl from "./Navbar.module.css";
 import logo from "../../assets/icons/Logo.png";
 
-const Navbar = ({ setCurrentLanguage }) => {
+const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [navFolded, setNavFolded] = useState(true);
+  const [navFolded, setNavFolded] = useState(false);
+
+  const order1 = [
+    {
+      src: "./flags/NL.webp",
+      alt: "Dutch flag",
+      setLang: "Dutch",
+    },
+    {
+      src: "./flags/German.png",
+      alt: "German flag",
+      setLang: "German",
+    },
+    {
+      src: "./flags/China.png",
+      alt: "Chinese flag",
+      setLang: "Chinese",
+    },
+  ];
+
+  const order2 = [
+    {
+      src: "./flags/German.png",
+      alt: "German flag",
+      setLang: "German",
+    },
+    {
+      src: "./flags/NL.webp",
+      alt: "Dutch flag",
+      setLang: "Dutch",
+    },
+    {
+      src: "./flags/China.png",
+      alt: "Chinese flag",
+      setLang: "Chinese",
+    },
+  ];
+
+  const order3 = [
+    {
+      src: "./flags/China.png",
+      alt: "Chinese flag",
+      setLang: "Chinese",
+    },
+    {
+      src: "./flags/NL.webp",
+      alt: "Dutch flag",
+      setLang: "Dutch",
+    },
+    {
+      src: "./flags/German.png",
+      alt: "German flag",
+      setLang: "German",
+    },
+  ];
 
   const handleNavigation = useCallback(() => {
     navigate("/");
@@ -21,7 +75,11 @@ const Navbar = ({ setCurrentLanguage }) => {
     openMobileNav();
   }, [openMobileNav]);
 
-  const handleNewLanguage = (newLang) => {};
+  const handleNewLanguage = (newLang) => {
+    if (newLang === currentLanguage) return;
+    setCurrentLanguage(newLang);
+    setNavFolded(false);
+  };
 
   return (
     <nav className={stl.navbar}>
@@ -91,42 +149,108 @@ const Navbar = ({ setCurrentLanguage }) => {
         <span className={stl.bar}></span>
         <span className={stl.bar}></span>
       </div>
+
       <div
         className={stl.languageDropdown}
         onClick={() => setNavFolded(!navFolded)}
       >
-        <div className={stl.flag} onClick={() => handleNewLanguage("Dutch")}>
-          <img
-            src="./flags/NL.webp"
-            alt="Dutch flag"
-            className={stl.flagIcon}
-          />
-          <span className={stl.languageTitle}>Dutch</span>
-        </div>
-        {!navFolded && (
+        {currentLanguage === "Dutch" && (
           <>
-            <div
-              className={stl.flag}
-              onClick={() => handleNewLanguage("German")}
-            >
-              <img
-                src="./flags/German.png"
-                alt="German flag"
-                className={stl.flagIcon}
-              />
-              <span className={stl.languageTitle}>German</span>
-            </div>
-            <div
-              className={stl.flag}
-              onClick={() => handleNewLanguage("Chinese")}
-            >
-              <img
-                src="./flags/China.png"
-                alt="China flag"
-                className={stl.flagIcon}
-              />
-              <span className={stl.languageTitle}>Chinese</span>
-            </div>
+            {navFolded
+              ? order1.map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))
+              : order1.slice(0, 1).map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))}
+          </>
+        )}
+        {currentLanguage === "German" && (
+          <>
+            {navFolded
+              ? order2.map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))
+              : order2.slice(0, 1).map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))}
+          </>
+        )}
+        {currentLanguage === "Chinese" && (
+          <>
+            {navFolded
+              ? order3.map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))
+              : order3.slice(0, 1).map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))}
           </>
         )}
       </div>

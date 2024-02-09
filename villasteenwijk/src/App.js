@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -15,9 +15,16 @@ import ScrollToTop from "./utils/ScrollToTop";
 const App = () => {
   const [currentLanguage, setCurrentLanguage] = useState("Dutch");
 
+  useEffect(() => {
+    console.log(currentLanguage);
+  }, [currentLanguage]);
+
   return (
     <div className="App">
-      <Navbar setCurrentLanguage={setCurrentLanguage} />
+      <Navbar
+        setCurrentLanguage={setCurrentLanguage}
+        currentLanguage={currentLanguage}
+      />
       <ScrollToTop />
       <Routes>
         <Route index path="/" element={<Home />} />
