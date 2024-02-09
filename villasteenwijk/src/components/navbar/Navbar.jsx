@@ -4,9 +4,10 @@ import { useNavigate } from "react-router-dom";
 import stl from "./Navbar.module.css";
 import logo from "../../assets/icons/Logo.png";
 
-const Navbar = () => {
+const Navbar = ({ setCurrentLanguage }) => {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [navFolded, setNavFolded] = useState(true);
 
   const handleNavigation = useCallback(() => {
     navigate("/");
@@ -19,6 +20,8 @@ const Navbar = () => {
   const handleLinkClick = useCallback(() => {
     openMobileNav();
   }, [openMobileNav]);
+
+  const handleNewLanguage = (newLang) => {};
 
   return (
     <nav className={stl.navbar}>
@@ -87,6 +90,45 @@ const Navbar = () => {
         <span className={stl.bar}></span>
         <span className={stl.bar}></span>
         <span className={stl.bar}></span>
+      </div>
+      <div
+        className={stl.languageDropdown}
+        onClick={() => setNavFolded(!navFolded)}
+      >
+        <div className={stl.flag} onClick={() => handleNewLanguage("Dutch")}>
+          <img
+            src="./flags/NL.webp"
+            alt="Dutch flag"
+            className={stl.flagIcon}
+          />
+          <span className={stl.languageTitle}>Dutch</span>
+        </div>
+        {!navFolded && (
+          <>
+            <div
+              className={stl.flag}
+              onClick={() => handleNewLanguage("German")}
+            >
+              <img
+                src="./flags/German.png"
+                alt="German flag"
+                className={stl.flagIcon}
+              />
+              <span className={stl.languageTitle}>German</span>
+            </div>
+            <div
+              className={stl.flag}
+              onClick={() => handleNewLanguage("Chinese")}
+            >
+              <img
+                src="./flags/China.png"
+                alt="China flag"
+                className={stl.flagIcon}
+              />
+              <span className={stl.languageTitle}>Chinese</span>
+            </div>
+          </>
+        )}
       </div>
     </nav>
   );
