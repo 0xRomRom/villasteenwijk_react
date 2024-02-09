@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import stl from "./Navbar.module.css";
 import logo from "../../assets/icons/Logo.png";
 
+const languages = {};
+
 const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -96,7 +98,12 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
           onClick={handleLinkClick}
           exact="true"
         >
-          <li className={stl.link}>Home</li>
+          <li className={stl.link}>
+            {" "}
+            {currentLanguage === "Dutch" && "Home"}
+            {currentLanguage === "German" && "Home"}
+            {currentLanguage === "Chinese" && "家"}
+          </li>
         </Link>
 
         <Link
@@ -104,19 +111,35 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
           className={stl.links}
           onClick={handleLinkClick}
         >
-          <li className={stl.link}>Kamers & Prijzen</li>
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "Kamers & Prijzen"}
+            {currentLanguage === "German" && "Zimmer & Preise"}
+            {currentLanguage === "Chinese" && "房间及价格"}
+          </li>
         </Link>
 
         <Link to="/fotos" className={stl.links} onClick={handleLinkClick}>
-          <li className={stl.link}>Foto's</li>
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "Foto's"}
+            {currentLanguage === "German" && "Fotos"}
+            {currentLanguage === "Chinese" && "相片"}
+          </li>
         </Link>
 
         <Link to="/media" className={stl.links} onClick={handleLinkClick}>
-          <li className={stl.link}>Media</li>
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "Media"}
+            {currentLanguage === "German" && "Medien"}
+            {currentLanguage === "Chinese" && "媒体"}
+          </li>
         </Link>
 
         <Link to="/housetour" className={stl.links} onClick={handleLinkClick}>
-          <li className={stl.link}>3D Virtuele Tour</li>
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "3D Virtuele Tour"}
+            {currentLanguage === "German" && "Virtueller 3D-Rundgang"}
+            {currentLanguage === "Chinese" && "3D虚拟游览"}
+          </li>
         </Link>
 
         <Link
@@ -124,11 +147,19 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
           className={stl.links}
           onClick={handleLinkClick}
         >
-          <li className={stl.link}>Activiteiten</li>
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "Activiteiten"}
+            {currentLanguage === "German" && "Aktivitäten"}
+            {currentLanguage === "Chinese" && "活动"}
+          </li>
         </Link>
 
         <Link to="/contact" className={stl.links} onClick={handleLinkClick}>
-          <li className={stl.link}>Contact</li>
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "Contact"}
+            {currentLanguage === "German" && "Kontakt"}
+            {currentLanguage === "Chinese" && "接触"}
+          </li>
         </Link>
 
         <a
@@ -138,7 +169,11 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
           rel="noopener noreferrer"
           onClick={handleLinkClick}
         >
-          <li className={`${stl.link} ${stl.reserveren}`}>Reserveren</li>
+          <li className={`${stl.link} ${stl.reserveren}`}>
+            {currentLanguage === "Dutch" && "Reserveren"}
+            {currentLanguage === "German" && "Buchen"}
+            {currentLanguage === "Chinese" && "预订"}
+          </li>
         </a>
       </ul>
       <div
