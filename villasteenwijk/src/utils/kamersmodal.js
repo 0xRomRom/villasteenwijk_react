@@ -4,8 +4,13 @@ const kamers = [
       hero: "Hildo krop",
       "2personen": 109,
       "3personen": 0,
-      copy1:
-        "Vernoemd naar de in Steenwijk geboren beroemde kunstenaar en beeldhouwer Hildo Krop, de Stadsbeeldhouwer van Amsterdam.",
+      copy1: {
+        Dutch:
+          "Vernoemd naar de in Steenwijk geboren beroemde kunstenaar en beeldhouwer Hildo Krop, de Stadsbeeldhouwer van Amsterdam.",
+        German:
+          "Benannt nach dem berühmten Künstler und Bildhauer Hildo Krop, dem Stadtbildhauer von Amsterdam, geboren in Steenwijk.",
+      },
+
       copy2:
         "Deze prachtige, 2-persoons, lichte, kamer met Engels behang, rijke, velourse, gordijnstoffen en zachte vloerbedekking bevind zich op de 2e verdieping van Villa Steenwyck met daardoor een prachtig uitzicht over vestingstad Steenwijk en de Steenwijker toren.",
       voorziening: [

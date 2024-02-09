@@ -2,7 +2,7 @@ import stl from "./Beleef.module.css";
 import { motion as m } from "framer-motion";
 import { useNavigate } from "react-router";
 
-const Beleef = () => {
+const Beleef = ({ currentLanguage }) => {
   const navigate = useNavigate();
   return (
     <section className={stl.beleef}>
@@ -14,7 +14,9 @@ const Beleef = () => {
           whileInView={{ opacity: 1, y: "0px" }}
           transition={{ duration: 0.5 }}
         >
-          Beleef het zelf
+          {currentLanguage === "Dutch" && "Beleef het zelf"}
+          {currentLanguage === "German" && "Erleben Sie es selbst"}
+          {currentLanguage === "Chinese" && "亲自体验一下"}
         </m.button>
         <m.img
           initial={{ opacity: 0, y: "-20px" }}

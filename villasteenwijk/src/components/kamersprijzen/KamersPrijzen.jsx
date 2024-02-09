@@ -5,7 +5,7 @@ import appartment from "../../assets/icons/Appartement.webp";
 import KamerModal from "./KamerModal";
 import { useState } from "react";
 
-const KamersPrijzen = () => {
+const KamersPrijzen = ({ currentLanguage }) => {
   const [kamerKeuze, setKamerKeuze] = useState(null);
 
   const openModal = (room) => {
@@ -15,7 +15,11 @@ const KamersPrijzen = () => {
   return (
     <main className={stl.kamersprijzen}>
       {kamerKeuze && (
-        <KamerModal kamerKeuze={kamerKeuze} setKamerKeuze={setKamerKeuze} />
+        <KamerModal
+          kamerKeuze={kamerKeuze}
+          setKamerKeuze={setKamerKeuze}
+          currentLanguage={currentLanguage}
+        />
       )}
 
       <m.h1
@@ -24,7 +28,9 @@ const KamersPrijzen = () => {
         whileInView={{ opacity: 1, x: "0px" }}
         transition={{ duration: 1.25 }}
       >
-        Kamers & Prijzen
+        {currentLanguage === "Dutch" && "Kamers & Prijzen"}
+        {currentLanguage === "German" && "Zimmer & Preise"}
+        {currentLanguage === "Chinese" && "房间及价格"}
       </m.h1>
       {!kamerKeuze && (
         <>
@@ -56,7 +62,11 @@ const KamersPrijzen = () => {
               alt="Appartment"
               className={stl.appartmentImg}
             />
-            <span className={stl.appTitle}>Appartement Villa Steenwyck</span>
+            <span className={stl.appTitle}>
+              {currentLanguage === "Dutch" && "Appartement Villa Steenwyck"}
+              {currentLanguage === "German" && "Apartement Villa Steenwyck"}
+              {currentLanguage === "Chinese" && "斯汀威克别墅公寓"}
+            </span>
           </div>
         </>
       )}

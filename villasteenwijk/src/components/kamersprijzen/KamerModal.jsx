@@ -75,7 +75,7 @@ const kamer3Images = [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38];
 const kamer4Images = [Pic41, Pic42, Pic43, Pic44, Pic45, Pic46, Pic47, Pic48];
 const kamer5Images = [Pic51, Pic52, Pic53, Pic54, Pic55, Pic56, Pic57, Pic58];
 const kamer6Images = [Pic61, Pic62, Pic63, Pic64, Pic65, Pic66, Pic67, Pic68];
-const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
+const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
   const [activeKamer, setActiveKamer] = useState([]);
   const [activeButton, setActiveButton] = useState(0);
   const [kamerImages, setKamerImages] = useState([]);
@@ -171,7 +171,11 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
           <div className={stl.bottomWrap}>
             <div className={stl.prijsWrap}>
               <div className={stl.personCount}>
-                <span className={stl.copyTitle}>Per nacht</span>
+                <span className={stl.copyTitle}>
+                  {currentLanguage === "Dutch" && "Per nacht"}
+                  {currentLanguage === "German" && "Pro nacht"}
+                  {currentLanguage === "Chinese" && "每晚"}
+                </span>
               </div>
               <div className={stl.totalWrap}>
                 <div className={stl.euroWrapper}>
@@ -196,7 +200,11 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
             <div className={stl.toeslagWrap}>
               <div className={stl.toeslagTop}>
                 <FaExclamationTriangle className={stl.exclamation} />
-                <span className={stl.copyTitle}>Toeristenbelasting</span>
+                <span className={stl.copyTitle}>
+                  {currentLanguage === "Dutch" && "Toeristenbelasting"}
+                  {currentLanguage === "German" && "Kurtaxe"}
+                  {currentLanguage === "Chinese" && "旅游税"}
+                </span>
               </div>
               <div className={stl.toeslagBottom}>
                 <FaEuroSign className={stl.euro2} />
@@ -209,7 +217,11 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
             <div className={stl.ontbijtWrap}>
               <div className={stl.toeslagTop}>
                 <PiForkKnifeBold className={stl.forkIcon} />
-                <span className={stl.copyTitle}>Heerlijk ontbijt</span>
+                <span className={stl.copyTitle}>
+                  {currentLanguage === "Dutch" && "Heerlijk ontbijt"}
+                  {currentLanguage === "German" && "Leckeres Frühstück"}
+                  {currentLanguage === "Chinese" && "美味的早餐"}
+                </span>
               </div>
               <div className={stl.toeslagBottom}>
                 <FaEuroSign className={stl.euro2} />
@@ -223,9 +235,13 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
           <div className={stl.descriptionWrap}>
             <div className={stl.copyBox}>
               <div className={stl.copyTextBox}>
-                <h2 className={stl.boxTitle}>Omschrijving</h2>
+                <h2 className={stl.boxTitle}>
+                  {currentLanguage === "Dutch" && "Omschrijving"}
+                  {currentLanguage === "German" && "Beschreibung"}
+                  {currentLanguage === "Chinese" && "描述"}
+                </h2>
                 <p className={stl.roomCopy}>
-                  {kamer.copy1}
+                  {kamer.copy1[currentLanguage]}
                   <br />
                   <br />
                   {kamer.copy2}
@@ -234,7 +250,11 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
             </div>
             <div className={stl.utilitiesBox}>
               <div className={stl.utilitiesTextBox}>
-                <h2 className={stl.boxTitle}>Voorzieningen</h2>
+                <h2 className={stl.boxTitle}>
+                  {currentLanguage === "Dutch" && "Voorzieningen"}
+                  {currentLanguage === "German" && "Dienstleistungen"}
+                  {currentLanguage === "Chinese" && "服务"}
+                </h2>
                 <ul className={stl.voorzienList}>
                   {activeKamer.length > 0 &&
                     activeKamer.map((kamer, index) => (
@@ -252,7 +272,9 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze }) => {
           </div>
           <div className={stl.ctaBox}>
             <button className={stl.reserverenCta} onClick={openExternalLink}>
-              Reserveren
+              {currentLanguage === "Dutch" && "Reserveren"}
+              {currentLanguage === "German" && "Buchen"}
+              {currentLanguage === "Chinese" && "预订"}
             </button>
           </div>
         </div>

@@ -144,7 +144,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: rgb(42, 42, 42); */
   gap: 3px;
 }
 

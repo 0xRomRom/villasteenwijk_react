@@ -5,14 +5,14 @@ import Reviews from "./reviews/Reviews";
 import Omgeving from "./omgeving/Omgeving";
 import Beleef from "./beleef/Beleef";
 
-const Home = () => {
+const Home = ({ currentLanguage }) => {
   return (
     <div className={stl.home}>
-      <Header />
-      <Stijlvol />
-      <Reviews />
-      <Omgeving />
-      <Beleef />
+      <Header currentLanguage={currentLanguage} />
+      <Stijlvol currentLanguage={currentLanguage} />
+      <Reviews currentLanguage={currentLanguage} />
+      <Omgeving currentLanguage={currentLanguage} />
+      <Beleef currentLanguage={currentLanguage} />
     </div>
   );
 };

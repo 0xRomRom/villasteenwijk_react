@@ -187,6 +187,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
 
       <div
         className={stl.languageDropdown}
+        style={{ backgroundColor: navFolded ? "rgb(42, 42, 42)" : "" }}
         onClick={() => setNavFolded(!navFolded)}
       >
         {currentLanguage === "Dutch" && (

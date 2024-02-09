@@ -2,7 +2,7 @@ import stl from "./Footer.module.css";
 import { motion as m } from "framer-motion";
 import logo from "../../assets/icons/Logo.png";
 
-const Footer = () => {
+const Footer = ({ currentLanguage }) => {
   const openExternalLink = () => {
     window.open(
       "https://www.booking.com/hotel/nl/villa-steenwyck.nl.html",
@@ -21,7 +21,9 @@ const Footer = () => {
         className={stl.logo}
       />
       <span className={stl.reserveerCtaSpan} onClick={openExternalLink}>
-        Reserveer
+        {currentLanguage === "Dutch" && "Reserveer"}
+        {currentLanguage === "German" && "Buchen"}
+        {currentLanguage === "Chinese" && "预订"}
       </span>
       <div className={stl.border}></div>
       <span className={stl.copyRight}>

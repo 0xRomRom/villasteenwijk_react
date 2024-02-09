@@ -15,7 +15,7 @@
 
 .cta {
   position: relative;
-  width: 15rem;
+  /* width: 15rem; */
   height: 3rem;
   outline: 0;
   border: 1px solid #ffd700;
@@ -30,6 +30,7 @@
   text-decoration: none;
   z-index: 10;
   user-select: none;
+  padding: 0rem 0.5rem;
 }
 
 .cta:hover {

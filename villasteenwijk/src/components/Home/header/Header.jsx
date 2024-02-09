@@ -2,7 +2,7 @@ import stl from "./Header.module.css";
 import { useState, useEffect } from "react";
 import { motion as m, AnimatePresence } from "framer-motion";
 
-const Header = () => {
+const Header = ({ currentLanguage }) => {
   const [currImg, setCurrImg] = useState(2);
   const [imgPresent, setImgPresent] = useState(true);
 
@@ -48,7 +48,9 @@ const Header = () => {
         )}
       </AnimatePresence>
       <button className={stl.cta} onClick={openExternalLink}>
-        Reserveren
+        {currentLanguage === "Dutch" && "Reserveren"}
+        {currentLanguage === "German" && "Buchen"}
+        {currentLanguage === "Chinese" && "预订"}
       </button>
     </header>
   );

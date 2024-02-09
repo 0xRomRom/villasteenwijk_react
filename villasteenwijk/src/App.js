@@ -27,15 +27,37 @@ const App = () => {
       />
       <ScrollToTop />
       <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="/kamersprijzen" element={<KamersPrijzen />} />
-        <Route path="/fotos" element={<Fotos />} />
-        <Route path="/media" element={<Media />} />
-        <Route path="/housetour" element={<HouseTour />} />
-        <Route path="/activiteiten" element={<Activiteiten />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route
+          index
+          path="/"
+          element={<Home currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/kamersprijzen"
+          element={<KamersPrijzen currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/fotos"
+          element={<Fotos currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/media"
+          element={<Media currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/housetour"
+          element={<HouseTour currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/activiteiten"
+          element={<Activiteiten currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/contact"
+          element={<Contact currentLanguage={currentLanguage} />}
+        />
       </Routes>
-      <Footer />
+      <Footer currentLanguage={currentLanguage} />
     </div>
   );
 };
