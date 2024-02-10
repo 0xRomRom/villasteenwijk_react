@@ -27,7 +27,10 @@ const Footer = ({ currentLanguage }) => {
       </span>
       <div className={stl.border}></div>
       <span className={stl.copyRight}>
-        © 2023 Boutique Hotel Villa Steenwyck
+        {currentLanguage === "Dutch" && "© 2024 Boutique Hotel Villa Steenwyck"}
+        {currentLanguage === "German" &&
+          "© 2024 Boutique-Hotel Villa Steenwyck"}
+        {currentLanguage === "Chinese" && "© 2024 斯汀威克精品酒店"}
       </span>
     </footer>
   );
