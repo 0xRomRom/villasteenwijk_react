@@ -10,7 +10,7 @@ import { GrDocumentStore } from "react-icons/gr";
 import { GrMoney } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ currentLanguage }) => {
   const copyRef = useRef(null);
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -21,17 +21,49 @@ const Contact = () => {
     const errors = {};
 
     if (!nameRef.current.value.trim()) {
-      errors.name = "Vul uw naam in";
+      if (currentLanguage === "Dutch") {
+        errors.name = "Vul uw naam in";
+      }
+      if (currentLanguage === "German") {
+        errors.name = "Gib deinen Namen ein";
+      }
+      if (currentLanguage === "Chinese") {
+        errors.name = "输入你的名字";
+      }
     }
 
     if (!emailRef.current.value.trim()) {
-      errors.email = "Ongeldig E-Mail adres";
+      if (currentLanguage === "Dutch") {
+        errors.email = "Ongeldig E-Mail adres";
+      }
+      if (currentLanguage === "German") {
+        errors.email = "Ungültige E-Mail-Adresse";
+      }
+      if (currentLanguage === "Chinese") {
+        errors.email = "无效的邮件地址";
+      }
     } else if (!/\S+@\S+\.\S+/.test(emailRef.current.value)) {
-      errors.email = "Ongeldig E-Mail adres";
+      if (currentLanguage === "Dutch") {
+        errors.email = "Ongeldig E-Mail adres";
+      }
+      if (currentLanguage === "German") {
+        errors.email = "Ungültige E-Mail-Adresse";
+      }
+      if (currentLanguage === "Chinese") {
+        errors.email = "无效的邮件地址";
+      }
     }
 
     if (!copyRef.current.value.trim()) {
-      errors.message = "Schrijf een bericht";
+      if (currentLanguage === "Dutch") {
+        errors.message = "Schrijf een bericht";
+      }
+      if (currentLanguage === "German") {
+        errors.message = "Nachricht schreiben";
+      }
+      if (currentLanguage === "Chinese") {
+        errors.message = "写一个信息";
+      }
     }
 
     setFormErrors(errors);
@@ -70,7 +102,9 @@ const Contact = () => {
         whileInView={{ opacity: 1, x: "0px" }}
         transition={{ duration: 1.25 }}
       >
-        Contact
+        {currentLanguage === "Dutch" && "Contact"}
+        {currentLanguage === "German" && "Kontakt"}
+        {currentLanguage === "Chinese" && "接触"}
       </m.h1>
       <div className={stl.contactWrapper}>
         <m.div
@@ -101,11 +135,17 @@ const Contact = () => {
               </span>
               <span className={stl.listItem}>
                 <GrMoney className={stl.miniIcon} />
-                Credit Card
+                {currentLanguage === "Dutch" && "Creditcard"}
+                {currentLanguage === "German" && "Kreditkarte"}
+                {currentLanguage === "Chinese" && "信用卡"}
                 <br />
-                Overschrijving
+                {currentLanguage === "Dutch" && "Overschrijving"}
+                {currentLanguage === "German" && "Überweisung"}
+                {currentLanguage === "Chinese" && "转账"}
                 <br />
-                Contant
+                {currentLanguage === "Dutch" && "Contant"}
+                {currentLanguage === "German" && "Barzahlung"}
+                {currentLanguage === "Chinese" && "现金"}
               </span>
             </div>
           </div>
@@ -133,37 +173,94 @@ const Contact = () => {
         ) : (
           <div className={stl.formBg}>
             <form className={stl.contactForm}>
-              <textarea
-                className={stl.copyField}
-                placeholder="Uw Bericht"
-                ref={copyRef}
-              ></textarea>
+              {currentLanguage === "Dutch" && (
+                <textarea
+                  className={stl.copyField}
+                  placeholder="Uw Bericht"
+                  ref={copyRef}
+                ></textarea>
+              )}
+              {currentLanguage === "German" && (
+                <textarea
+                  className={stl.copyField}
+                  placeholder="Ihre Nachricht"
+                  ref={copyRef}
+                ></textarea>
+              )}
+              {currentLanguage === "Chinese" && (
+                <textarea
+                  className={stl.copyField}
+                  placeholder="您的留言"
+                  ref={copyRef}
+                ></textarea>
+              )}
+
               {formErrors.message && (
                 <p className={stl.error}>{formErrors.message}</p>
               )}
 
-              <input
-                type="text"
-                className={stl.textInput}
-                placeholder="Uw naam"
-                ref={nameRef}
-              />
+              {currentLanguage === "Dutch" && (
+                <input
+                  type="text"
+                  className={stl.textInput}
+                  placeholder="Uw naam"
+                  ref={nameRef}
+                />
+              )}
+              {currentLanguage === "German" && (
+                <input
+                  type="text"
+                  className={stl.textInput}
+                  placeholder="Ihr Name"
+                  ref={nameRef}
+                />
+              )}
+              {currentLanguage === "Chinese" && (
+                <input
+                  type="text"
+                  className={stl.textInput}
+                  placeholder="你的名字"
+                  ref={nameRef}
+                />
+              )}
+
               {formErrors.name && (
                 <p className={stl.error}>{formErrors.name}</p>
               )}
 
-              <input
-                type="email"
-                className={stl.textInput}
-                placeholder="Uw E-Mail adres"
-                ref={emailRef}
-              />
+              {currentLanguage === "Dutch" && (
+                <input
+                  type="email"
+                  className={stl.textInput}
+                  placeholder="Uw E-Mail adres"
+                  ref={emailRef}
+                />
+              )}
+              {currentLanguage === "German" && (
+                <input
+                  type="email"
+                  className={stl.textInput}
+                  placeholder="Ihre E-Mail-Adresse"
+                  ref={emailRef}
+                />
+              )}
+              {currentLanguage === "Chinese" && (
+                <input
+                  type="email"
+                  className={stl.textInput}
+                  placeholder="这里是电子邮件地址"
+                  ref={emailRef}
+                />
+              )}
+
               {formErrors.email && (
                 <p className={stl.error}>{formErrors.email}</p>
               )}
 
               <button className={stl.ctaBtn} onClick={submitForm}>
-                Verzenden
+                {currentLanguage === "Dutch" && "Verzenden"}
+                {currentLanguage === "German" && "Schicken"}
+                {currentLanguage === "Chinese" && "发送"}
               </button>
             </form>
           </div>
