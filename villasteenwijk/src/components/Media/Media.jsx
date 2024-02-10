@@ -12,7 +12,7 @@ import Pic4 from "../../assets/media/4.webp";
 
 const kamerImages = [Pic1, Pic2, Pic3, Pic4];
 
-const Media = () => {
+const Media = ({ currentLanguage }) => {
   const [overlaySrc, setOverlaySrc] = useState("");
   const kamerImgs = useMemo(() => kamerImages, []);
 
@@ -33,7 +33,9 @@ const Media = () => {
               whileInView={{ opacity: 1, x: "0px" }}
               transition={{ duration: 1.25 }}
             >
-              Media
+              {currentLanguage === "Dutch" && "Media"}
+              {currentLanguage === "German" && "Medien"}
+              {currentLanguage === "Chinese" && "媒体"}
             </m.h1>
           </div>
         </div>

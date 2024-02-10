@@ -30,7 +30,7 @@ import Pic36 from "../../assets/dineren/6.webp";
 import Pic37 from "../../assets/dineren/7.webp";
 import Pic38 from "../../assets/dineren/8.webp";
 
-const Activiteiten = () => {
+const Activiteiten = ({ currentLanguage }) => {
   const navigate = useNavigate();
   const [activiteitImg, setActiviteitImg] = useState(0);
   const [regioImg, setRegioImg] = useState(0);
@@ -79,7 +79,9 @@ const Activiteiten = () => {
           whileInView={{ opacity: 1, x: "0px" }}
           transition={{ duration: 1.25 }}
         >
-          Activiteiten
+          {currentLanguage === "Dutch" && "Activiteiten"}
+          {currentLanguage === "German" && "Aktivitäten"}
+          {currentLanguage === "Chinese" && "活动"}
         </m.h1>
         <div className={stl.ontDekDiv}>
           <m.h2
@@ -88,7 +90,11 @@ const Activiteiten = () => {
             whileInView={{ opacity: 1, y: "0px" }}
             transition={{ duration: 1.25 }}
           >
-            Ontdek wat steenwijk te bieden heeft
+            {currentLanguage === "Dutch" &&
+              "Ontdek wat Steenwijk te bieden heeft"}
+            {currentLanguage === "German" &&
+              "Entdecken Sie, was Steenwijk zu bieten hat"}
+            {currentLanguage === "Chinese" && "发现斯滕维克提供的内容"}
           </m.h2>
         </div>
       </m.header>
@@ -101,26 +107,50 @@ const Activiteiten = () => {
         >
           <div className={stl.chopperModal}>
             <div className={stl.innerChopperModal}>
-              <h2>Huur een E-Chopper</h2>
+              <h2>
+                {currentLanguage === "Dutch" && "Huur een E-chopper"}
+                {currentLanguage === "German" && "Mieten Sie einen E-Chopper"}
+                {currentLanguage === "Chinese" && "租一辆电动摩托车"}
+              </h2>
               <div className={stl.conditionsList}>
-                <span className={stl.conditionSpan}>€35,- voor 4 uur</span>
-                <span className={stl.conditionSpan}>€50,- voor 1 dag</span>
                 <span className={stl.conditionSpan}>
-                  1 E-Chopper per persoon
+                  {currentLanguage === "Dutch" && "€35,- voor 4 uur"}
+                  {currentLanguage === "German" && "€35,- für 4 Stunden"}
+                  {currentLanguage === "Chinese" && "4小时35欧元"}
                 </span>
-                <span className={stl.conditionSpan}>Max bereik: 40KM</span>
+                <span className={stl.conditionSpan}>
+                  {currentLanguage === "Dutch" && "€50,- voor 1 dag"}
+                  {currentLanguage === "German" && "€50,- für 1 Tag"}
+                  {currentLanguage === "Chinese" && "一天50欧元"}
+                </span>
+                <span className={stl.conditionSpan}>
+                  {currentLanguage === "Dutch" && "1 E-Chopper per persoon"}
+                  {currentLanguage === "German" && "1 E-Chopper pro Person"}
+                  {currentLanguage === "Chinese" && "每人一辆E-Chopper"}
+                </span>
+                <span className={stl.conditionSpan}>
+                  {currentLanguage === "Dutch" && "Max bereik: 40KM"}
+                  {currentLanguage === "German" && "Maximale Reichweite: 40 km"}
+                  {currentLanguage === "Chinese" && "最大续航里程：40公里"}
+                </span>
                 <button
                   className={stl.bookCta}
                   onClick={() => navigate("/contact")}
                 >
-                  Book
+                  {currentLanguage === "Dutch" && "Book"}
+                  {currentLanguage === "German" && "Buch"}
+                  {currentLanguage === "Chinese" && "预订"}
                 </button>
               </div>
             </div>
           </div>
           <div className={stl.activiteitenModal}>
             <div className={stl.activLeft}>
-              <h2 className={stl.acthero}>Activiteiten</h2>
+              <h2 className={stl.acthero}>
+                {currentLanguage === "Dutch" && "Activiteiten"}
+                {currentLanguage === "German" && "Aktivitäten"}
+                {currentLanguage === "Chinese" && "活动"}
+              </h2>
               <ul className={stl.itemList}>
                 <a
                   onMouseOver={() => newActiviteitenImg(0)}
@@ -130,7 +160,9 @@ const Activiteiten = () => {
                 >
                   <li className={stl.listItem}>
                     <IoIosArrowForward className={stl.arrow} />
-                    Villa Ramswoerthe
+                    {currentLanguage === "Dutch" && "Villa Ramswoerthe"}
+                    {currentLanguage === "German" && "Villa Ramswoerthe"}
+                    {currentLanguage === "Chinese" && "Ramswoerthe 别墅"}
                   </li>
                 </a>
                 <a
@@ -140,8 +172,10 @@ const Activiteiten = () => {
                   href="https://rijksmonumenten.nl/monument/34576/grote-of-sint-clemenskerk/steenwijk/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Sint Clemens
-                    kerk
+                    <IoIosArrowForward className={stl.arrow} />{" "}
+                    {currentLanguage === "Dutch" && "Sint Clemenskerk"}
+                    {currentLanguage === "German" && "Sint Clemens Kirche"}
+                    {currentLanguage === "Chinese" && "圣克莱门斯教堂"}
                   </li>
                 </a>
                 <a
@@ -151,8 +185,11 @@ const Activiteiten = () => {
                   href="https://rijksmonumenten.nl/monument/34599/kleine-of-onze-lieve-vrouwekerk/steenwijk/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Onze lieve
-                    vrouwe kerk
+                    <IoIosArrowForward className={stl.arrow} />{" "}
+                    {currentLanguage === "Dutch" && "Onze Lieve Vrouwekerk"}
+                    {currentLanguage === "German" &&
+                      "Kirche Unserer Lieben Frau"}
+                    {currentLanguage === "Chinese" && "我们亲爱的夫人教堂"}
                   </li>
                 </a>
                 <a
@@ -162,8 +199,12 @@ const Activiteiten = () => {
                   href="https://www.taman-indonesia.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Dierenpark Taman
-                    Indonesia
+                    <IoIosArrowForward className={stl.arrow} />{" "}
+                    {currentLanguage === "Dutch" &&
+                      "Dierenpark Taman Indonesia"}
+                    {currentLanguage === "German" &&
+                      "Tierpark Taman Indonesien"}
+                    {currentLanguage === "Chinese" && "Taman 印度尼西亚动物园"}
                   </li>
                 </a>
                 <a
@@ -173,8 +214,10 @@ const Activiteiten = () => {
                   href="https://www.demeenthe.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Theater De
-                    Meenthe
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Theater De Meenthe"}
+                    {currentLanguage === "German" && "Theater De Meenthe"}
+                    {currentLanguage === "Chinese" && "Meenthe 剧院"}
                   </li>
                 </a>
                 <a
@@ -184,7 +227,10 @@ const Activiteiten = () => {
                   href="https://www.stadsmuseumsteenwijk.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Stadsmuseum
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Stadsmuseum"}
+                    {currentLanguage === "German" && "Stadtmuseum"}
+                    {currentLanguage === "Chinese" && "城市博物馆"}
                   </li>
                 </a>
                 <a
@@ -194,8 +240,11 @@ const Activiteiten = () => {
                   href="https://klimbos-overijssel.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Klimbos
-                    Avontuurlijk
+                    <IoIosArrowForward className={stl.arrow} />{" "}
+                    {currentLanguage === "Dutch" && "Klimbos Avontuurlijk"}
+                    {currentLanguage === "German" &&
+                      "Abenteuerlicher Kletterwald"}
+                    {currentLanguage === "Chinese" && "冒险攀登森林"}
                   </li>
                 </a>
                 <a
@@ -205,8 +254,12 @@ const Activiteiten = () => {
                   href="https://www.stadsmuseumsteenwijk.nl/content/19-Stadswandeling-steenwijk.html?menu_parent=19"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Stadswandeling
-                    Steenwijk Vestingstad
+                    <IoIosArrowForward className={stl.arrow} />{" "}
+                    {currentLanguage === "Dutch" &&
+                      "Stadswandeling Steenwijk Vestingstad"}
+                    {currentLanguage === "German" &&
+                      "Stadtrundgang Steenwijk Festungsstadt"}
+                    {currentLanguage === "Chinese" && "斯滕维克古城市漫步"}
                   </li>
                 </a>
               </ul>
@@ -228,7 +281,11 @@ const Activiteiten = () => {
         >
           <div className={stl.regioModal}>
             <div className={stl.regioLeft}>
-              <h2 className={stl.regioHero}>In de regio</h2>
+              <h2 className={stl.regioHero}>
+                {currentLanguage === "Dutch" && "In de regio"}
+                {currentLanguage === "German" && "In der Region"}
+                {currentLanguage === "Chinese" && "在该地区"}
+              </h2>
               <ul className={stl.itemList}>
                 <a
                   onMouseOver={() => newRegioImg(0)}
@@ -248,7 +305,10 @@ const Activiteiten = () => {
                   href="https://www.drenthe.nl/cultuur-erfgoed/hunebedden/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Hunnebedden
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Hunnebedden"}
+                    {currentLanguage === "German" && "Hünengräber"}
+                    {currentLanguage === "Chinese" && "史前石棺"}
                   </li>
                 </a>
                 <a
@@ -258,7 +318,10 @@ const Activiteiten = () => {
                   href="https://www.staatsbosbeheer.nl/uit-in-de-natuur/locaties/weerribben"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Weerribben
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Weerribben"}
+                    {currentLanguage === "German" && "Weerribben"}
+                    {currentLanguage === "Chinese" && "韦尔里本"}
                   </li>
                 </a>
                 <a
@@ -268,7 +331,10 @@ const Activiteiten = () => {
                   href="https://www.mooisteroutes.nl/routes/95b1407/de-woldberg"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> De Woldberg
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "De Woldberg"}
+                    {currentLanguage === "German" && "De Woldberg"}
+                    {currentLanguage === "Chinese" && "沃尔德贝格"}
                   </li>
                 </a>
                 <a
@@ -278,7 +344,10 @@ const Activiteiten = () => {
                   href="https://www.drenthe.nl/locaties/4274250260/tourist-info-havelte"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Havelte
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Havelte"}
+                    {currentLanguage === "German" && "Havelte"}
+                    {currentLanguage === "Chinese" && "哈费尔特"}
                   </li>
                 </a>
                 <a
@@ -288,8 +357,10 @@ const Activiteiten = () => {
                   href="https://www.orchideeenhoeve.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> De Orchideeën
-                    Hoeve
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "De Orchideeën Hoeve"}
+                    {currentLanguage === "German" && "Die Orchideenfarm"}
+                    {currentLanguage === "Chinese" && "兰花农场"}
                   </li>
                 </a>
                 <a
@@ -299,8 +370,11 @@ const Activiteiten = () => {
                   href="https://www.friesland.nl/nl/locaties/4140876077/kasteel-old-stoutenburght"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Kasteel Old
-                    Stoutenburght
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Kasteel Old Stoutenburght"}
+                    {currentLanguage === "German" &&
+                      "Schloss Old Stoutenburght"}
+                    {currentLanguage === "Chinese" && "Old Stoutenburght 城堡"}
                   </li>
                 </a>
               </ul>
@@ -323,7 +397,11 @@ const Activiteiten = () => {
         >
           <div className={stl.activiteitenModal}>
             <div className={stl.activLeft}>
-              <h2 className={stl.acthero}>Dineren</h2>
+              <h2 className={stl.acthero}>
+                {currentLanguage === "Dutch" && "Dineren"}
+                {currentLanguage === "German" && "Essen gehen"}
+                {currentLanguage === "Chinese" && "用餐"}
+              </h2>
               <ul className={stl.itemList}>
                 <a
                   onMouseOver={() => newDinerenImg(0)}
@@ -333,7 +411,9 @@ const Activiteiten = () => {
                 >
                   <li className={stl.listItem}>
                     <IoIosArrowForward className={stl.arrow} />
-                    Argentino Tango
+                    {currentLanguage === "Dutch" && "Argentino Tango"}
+                    {currentLanguage === "German" && "Argentinischer Tango"}
+                    {currentLanguage === "Chinese" && "阿根廷探戈"}
                   </li>
                 </a>
                 <a
@@ -343,8 +423,10 @@ const Activiteiten = () => {
                   href="https://www.woodyshouse.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Woody's
-                    Steakhouse
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Woody's Steakhouse"}
+                    {currentLanguage === "German" && "Woody's Steakhouse"}
+                    {currentLanguage === "Chinese" && "伍迪牛排馆"}
                   </li>
                 </a>
                 <a
@@ -354,8 +436,10 @@ const Activiteiten = () => {
                   href="http://www.hetsteakhouse.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Tennessee
-                    Steakhouse
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Tennessee Steakhouse"}
+                    {currentLanguage === "German" && "Tennessee Steakhouse"}
+                    {currentLanguage === "Chinese" && "田纳西牛排馆"}
                   </li>
                 </a>
                 <a
@@ -365,8 +449,10 @@ const Activiteiten = () => {
                   href="https://restaurantdeopschepper.com/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Bistro De
-                    Opschepper
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Bistro De Opschepper"}
+                    {currentLanguage === "German" && "Bistro De Opschepper"}
+                    {currentLanguage === "Chinese" && "自夸小酒馆"}
                   </li>
                 </a>
                 <a
@@ -376,8 +462,10 @@ const Activiteiten = () => {
                   href="https://www.deherenvanderechter.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> De heren van de
-                    rechter
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "De Heren van de Rechter"}
+                    {currentLanguage === "German" && "Die Herren vom Richter"}
+                    {currentLanguage === "Chinese" && "法官先生们"}
                   </li>
                 </a>
                 <a
@@ -387,8 +475,10 @@ const Activiteiten = () => {
                   href="https://brasseriezusenzo.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Brasserie Zus en
-                    Zo
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Brasserie Zus en Zo"}
+                    {currentLanguage === "German" && "Brasserie Zus und So"}
+                    {currentLanguage === "Chinese" && "Zus和 Zo 小酒馆"}
                   </li>
                 </a>
                 <a
@@ -398,7 +488,10 @@ const Activiteiten = () => {
                   href="https://www.bovenmeestersteenwijk.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Bovenmeester
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Bovenmeester"}
+                    {currentLanguage === "German" && "Bovenmeester"}
+                    {currentLanguage === "Chinese" && "Bovenmeester"}
                   </li>
                 </a>
                 <a
@@ -408,7 +501,10 @@ const Activiteiten = () => {
                   href="https://rhodossteenwijk.nl/"
                 >
                   <li className={stl.listItem}>
-                    <IoIosArrowForward className={stl.arrow} /> Rhodos
+                    <IoIosArrowForward className={stl.arrow} />
+                    {currentLanguage === "Dutch" && "Rhodos"}
+                    {currentLanguage === "German" && "Rhodos"}
+                    {currentLanguage === "Chinese" && "罗得岛"}
                   </li>
                 </a>
               </ul>
@@ -423,7 +519,11 @@ const Activiteiten = () => {
           </div>
           <div className={stl.linksModal}>
             <div className={stl.innerLinkModal}>
-              <h2>Links</h2>
+              <h2>
+                {currentLanguage === "Dutch" && "Links"}
+                {currentLanguage === "German" && "Links"}
+                {currentLanguage === "Chinese" && "链接"}
+              </h2>
               <div className={stl.linksList}>
                 <div className={stl.innerWrap}>
                   <div className={stl.leftAlign}>
@@ -439,21 +539,33 @@ const Activiteiten = () => {
                       rel="noreferrer"
                       href="http://www.taxiooststeenwijk.nl/Home/"
                     >
-                      <span className={stl.linkSpan}>Taxi Oost</span>
+                      <span className={stl.linkSpan}>
+                        {currentLanguage === "Dutch" && "Taxi Oost"}
+                        {currentLanguage === "German" && "Taxi Oost"}
+                        {currentLanguage === "Chinese" && "东方出租车"}
+                      </span>
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.toyota-vanderlinde.nl/over-ons/auto-huren-steenwijk/"
                     >
-                      <span className={stl.linkSpan}>Auto huren</span>
+                      <span className={stl.linkSpan}>
+                        {currentLanguage === "Dutch" && "Auto huren"}
+                        {currentLanguage === "German" && "Auto mieten"}
+                        {currentLanguage === "Chinese" && "租车"}
+                      </span>
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://rijwielshopsteenwijk.nl/verhuur/"
                     >
-                      <span className={stl.linkSpan}>Fiets huren</span>
+                      <span className={stl.linkSpan}>
+                        {currentLanguage === "Dutch" && "Fiets huren"}
+                        {currentLanguage === "German" && "Fahrrad mieten"}
+                        {currentLanguage === "Chinese" && "租自行车"}
+                      </span>
                     </a>
                   </div>
                 </div>

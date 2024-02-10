@@ -115,7 +115,7 @@ const kamerImages = [
   Pic68,
 ];
 
-const Fotos = () => {
+const Fotos = ({ currentLanguage }) => {
   const [overlaySrc, setOverlaySrc] = useState("");
   const kamerImgs = useMemo(() => kamerImages, []);
 
@@ -136,7 +136,9 @@ const Fotos = () => {
               whileInView={{ opacity: 1, x: "0px" }}
               transition={{ duration: 1.25 }}
             >
-              Foto's
+              {currentLanguage === "Dutch" && "Foto's"}
+              {currentLanguage === "German" && "Fotos"}
+              {currentLanguage === "Chinese" && "相片"}
             </m.h1>
           </div>
         </div>
