@@ -244,7 +244,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {kamer.copy1[currentLanguage]}
                   <br />
                   <br />
-                  {kamer.copy2}
+                  {kamer.copy2[currentLanguage]}
                 </p>
               </div>
             </div>
@@ -259,11 +259,13 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {activeKamer.length > 0 &&
                     activeKamer.map((kamer, index) => (
                       <React.Fragment key={index}>
-                        {kamer.voorziening.map((item, itemIndex) => (
-                          <li className={stl.voorziening} key={itemIndex}>
-                            {item}
-                          </li>
-                        ))}
+                        {kamer.voorziening[currentLanguage].map(
+                          (item, itemIndex) => (
+                            <li className={stl.voorziening} key={itemIndex}>
+                              {item}
+                            </li>
+                          )
+                        )}
                       </React.Fragment>
                     ))}
                 </ul>
