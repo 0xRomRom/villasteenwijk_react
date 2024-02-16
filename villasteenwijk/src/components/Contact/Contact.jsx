@@ -25,7 +25,7 @@ const Contact = ({ currentLanguage }) => {
         errors.name = "Vul uw naam in";
       }
       if (currentLanguage === "German") {
-        errors.name = "Gib deinen Namen ein";
+        errors.name = "Gib deinen namen ein";
       }
       if (currentLanguage === "Chinese") {
         errors.name = "输入你的名字";

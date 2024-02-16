@@ -196,11 +196,11 @@ const kamers = [
       "3personen": 0,
       copy1: {
         Dutch:
-          "Vernoemd naar Johannes van den Kornput, een beroemde Nederlandse militair die in 1580 Steenwijk tegen de Spanjaarden verdedigde tijdens de 80-jarige oorlog.",
+          "Vernoemd naar Johan van den Kornput, een beroemde Nederlandse militair die in 1580 Steenwijk tegen de Spanjaarden verdedigde tijdens de 80-jarige oorlog.",
         German:
-          "Benannt nach Johannes van den Kornput, einem berühmten niederländischen Militär, der 1580 Steenwijk während des Achtzigjährigen Krieges gegen die Spanier verteidigte.",
+          "Benannt nach Johan van den Kornput, einem berühmten niederländischen Militär, der 1580 Steenwijk während des Achtzigjährigen Krieges gegen die Spanier verteidigte.",
         Chinese:
-          "以荷兰著名军人约翰内斯·范登·科恩普特（Johannes van den Kornput）命名，他在1580年八十年战争期间曾经捍卫斯特温克（Steenwijk）免受西班牙人的进攻。",
+          "以荷兰著名军人约翰内斯·范登·科恩普特（Johan van den Kornput）命名，他在1580年八十年战争期间曾经捍卫斯特温克（Steenwijk）免受西班牙人的进攻。",
       },
       copy2: {
         Dutch:
@@ -305,7 +305,7 @@ const kamers = [
           "Kühlschrank",
           "Wasserkocher",
           "Kostenlose Kaffee (Nespresso) und Tee-Einrichtungen",
-          "Auf Wunsch servieren wir ein köstliches, frisches Frühstück im Zimmer für €14.50,- pro Person",
+          "Auf Wunsch servieren wir ein köstliches, frisches Frühstück im Zimmer für €14.50,- pro person",
           "Ein wunderschönes, geräumiges Zimmer mit großem Badezimmer und begehbarer Dusche im Erdgeschoss, mit einer Gesamtfläche von 40m2, inklusive: Garderobe, Flur, geräumiges WC, Abstellraum, separates Schlafzimmer mit einem komfortablen Doppelbett (160X200), angrenzendes Badezimmer mit großer begehbarer Dusche",
           "Ein Tisch mit 2 Stühlen, an dem auch das Frühstück serviert wird",
           "Auf Wunsch können wir ein zusätzliches Bett aufstellen, Kosten €25,-",

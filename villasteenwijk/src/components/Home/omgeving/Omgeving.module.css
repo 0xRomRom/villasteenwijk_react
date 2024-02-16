@@ -87,6 +87,7 @@
   }
   .omgeving {
     height: 80rem;
+    overflow: hidden;
   }
   .hero {
     padding: 0;

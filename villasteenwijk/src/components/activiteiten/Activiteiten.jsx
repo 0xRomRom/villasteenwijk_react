@@ -125,7 +125,7 @@ const Activiteiten = ({ currentLanguage }) => {
                 </span>
                 <span className={stl.conditionSpan}>
                   {currentLanguage === "Dutch" && "1 E-Chopper per persoon"}
-                  {currentLanguage === "German" && "1 E-Chopper pro Person"}
+                  {currentLanguage === "German" && "1 E-Chopper pro person"}
                   {currentLanguage === "Chinese" && "每人一辆E-Chopper"}
                 </span>
                 <span className={stl.conditionSpan}>

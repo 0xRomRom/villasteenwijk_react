@@ -27,6 +27,7 @@ code {
   margin: 0;
   box-sizing: border-box;
   font-family: luxuryFont;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {

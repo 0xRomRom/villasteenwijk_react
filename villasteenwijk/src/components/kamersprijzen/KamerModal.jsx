@@ -219,7 +219,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                 <PiForkKnifeBold className={stl.forkIcon} />
                 <span className={stl.copyTitle}>
                   {currentLanguage === "Dutch" && "Heerlijk ontbijt"}
-                  {currentLanguage === "German" && "Leckeres Frühstück"}
+                  {currentLanguage === "German" && "Leckeres frühstück"}
                   {currentLanguage === "Chinese" && "美味的早餐"}
                 </span>
               </div>
