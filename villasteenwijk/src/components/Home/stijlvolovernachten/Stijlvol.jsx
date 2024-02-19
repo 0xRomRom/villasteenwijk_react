@@ -42,7 +42,7 @@ const Stijlvol = ({ currentLanguage }) => {
           {currentLanguage === "Chinese" &&
             "您可以在我们位于斯滕韦克要塞小镇历史悠久的市中心的 6 间全新客房中的一间度过一个豪华但价格实惠的夜晚。"}
           {currentLanguage === "English" &&
-            "You can spend the night in luxury, but affordable, in 1 of our 6 brand new rooms in the historic city center of the fortified town of Steenwijk."}
+            "You can spend the night in luxury, but affordably, in 1 of our 6 brand new rooms in the historic city center of the fortified town of Steenwijk."}
           <br />
           <br />
           {currentLanguage === "Dutch" &&
@@ -83,6 +83,7 @@ const Stijlvol = ({ currentLanguage }) => {
             {currentLanguage === "Dutch" && "Bekijk kamers"}
             {currentLanguage === "German" && "Zimmer ansehen"}
             {currentLanguage === "Chinese" && "查看房间"}
+            {currentLanguage === "English" && "See rooms"}
             <FaArrowRight className={stl.arrowRight} />
           </m.span>
         </div>

@@ -30,6 +30,9 @@ const Contact = ({ currentLanguage }) => {
       if (currentLanguage === "Chinese") {
         errors.name = "输入你的名字";
       }
+      if (currentLanguage === "English") {
+        errors.name = "Enter your name";
+      }
     }
 
     if (!emailRef.current.value.trim()) {
@@ -42,6 +45,9 @@ const Contact = ({ currentLanguage }) => {
       if (currentLanguage === "Chinese") {
         errors.email = "无效的邮件地址";
       }
+      if (currentLanguage === "English") {
+        errors.email = "Invalid E-Mail address";
+      }
     } else if (!/\S+@\S+\.\S+/.test(emailRef.current.value)) {
       if (currentLanguage === "Dutch") {
         errors.email = "Ongeldig E-Mail adres";
@@ -51,6 +57,9 @@ const Contact = ({ currentLanguage }) => {
       }
       if (currentLanguage === "Chinese") {
         errors.email = "无效的邮件地址";
+      }
+      if (currentLanguage === "English") {
+        errors.email = "Invalid E-Mail address";
       }
     }
 
@@ -63,6 +72,9 @@ const Contact = ({ currentLanguage }) => {
       }
       if (currentLanguage === "Chinese") {
         errors.message = "写一个信息";
+      }
+      if (currentLanguage === "English") {
+        errors.message = "Write a message";
       }
     }
 
@@ -105,6 +117,7 @@ const Contact = ({ currentLanguage }) => {
         {currentLanguage === "Dutch" && "Contact"}
         {currentLanguage === "German" && "Kontakt"}
         {currentLanguage === "Chinese" && "接触"}
+        {currentLanguage === "English" && "Contact"}
       </m.h1>
       <div className={stl.contactWrapper}>
         <m.div
@@ -138,14 +151,17 @@ const Contact = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "Creditcard"}
                 {currentLanguage === "German" && "Kreditkarte"}
                 {currentLanguage === "Chinese" && "信用卡"}
+                {currentLanguage === "English" && "Creditcard"}
                 <br />
                 {currentLanguage === "Dutch" && "Overschrijving"}
                 {currentLanguage === "German" && "Überweisung"}
                 {currentLanguage === "Chinese" && "转账"}
+                {currentLanguage === "English" && "Manual Transfer"}
                 <br />
                 {currentLanguage === "Dutch" && "Contant"}
                 {currentLanguage === "German" && "Barzahlung"}
                 {currentLanguage === "Chinese" && "现金"}
+                {currentLanguage === "English" && "Cash"}
               </span>
             </div>
           </div>
@@ -194,6 +210,13 @@ const Contact = ({ currentLanguage }) => {
                   ref={copyRef}
                 ></textarea>
               )}
+              {currentLanguage === "English" && (
+                <textarea
+                  className={stl.copyField}
+                  placeholder="Your message"
+                  ref={copyRef}
+                ></textarea>
+              )}
 
               {formErrors.message && (
                 <p className={stl.error}>{formErrors.message}</p>
@@ -220,6 +243,14 @@ const Contact = ({ currentLanguage }) => {
                   type="text"
                   className={stl.textInput}
                   placeholder="你的名字"
+                  ref={nameRef}
+                />
+              )}
+              {currentLanguage === "English" && (
+                <input
+                  type="text"
+                  className={stl.textInput}
+                  placeholder="Your name"
                   ref={nameRef}
                 />
               )}
@@ -252,6 +283,14 @@ const Contact = ({ currentLanguage }) => {
                   ref={emailRef}
                 />
               )}
+              {currentLanguage === "English" && (
+                <input
+                  type="email"
+                  className={stl.textInput}
+                  placeholder="Your E-Mail"
+                  ref={emailRef}
+                />
+              )}
 
               {formErrors.email && (
                 <p className={stl.error}>{formErrors.email}</p>
@@ -261,6 +300,7 @@ const Contact = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "Verzenden"}
                 {currentLanguage === "German" && "Schicken"}
                 {currentLanguage === "Chinese" && "发送"}
+                {currentLanguage === "English" && "Send"}
               </button>
             </form>
           </div>

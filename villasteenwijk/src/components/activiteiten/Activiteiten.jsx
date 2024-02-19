@@ -82,6 +82,7 @@ const Activiteiten = ({ currentLanguage }) => {
           {currentLanguage === "Dutch" && "Activiteiten"}
           {currentLanguage === "German" && "Aktivitäten"}
           {currentLanguage === "Chinese" && "活动"}
+          {currentLanguage === "English" && "Activities"}
         </m.h1>
         <div className={stl.ontDekDiv}>
           <m.h2
@@ -95,6 +96,8 @@ const Activiteiten = ({ currentLanguage }) => {
             {currentLanguage === "German" &&
               "Entdecken Sie, was Steenwijk zu bieten hat"}
             {currentLanguage === "Chinese" && "发现斯滕维克提供的内容"}
+            {currentLanguage === "English" &&
+              "Discover what Steenwijk has to offer"}
           </m.h2>
         </div>
       </m.header>
@@ -111,27 +114,32 @@ const Activiteiten = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "Huur een E-chopper"}
                 {currentLanguage === "German" && "Mieten Sie einen E-Chopper"}
                 {currentLanguage === "Chinese" && "租一辆电动摩托车"}
+                {currentLanguage === "English" && "Rent an E-Chopper"}
               </h2>
               <div className={stl.conditionsList}>
                 <span className={stl.conditionSpan}>
                   {currentLanguage === "Dutch" && "€35,- voor 4 uur"}
                   {currentLanguage === "German" && "€35,- für 4 Stunden"}
                   {currentLanguage === "Chinese" && "4小时35欧元"}
+                  {currentLanguage === "English" && "€35,- for 4 hours"}
                 </span>
                 <span className={stl.conditionSpan}>
                   {currentLanguage === "Dutch" && "€50,- voor 1 dag"}
                   {currentLanguage === "German" && "€50,- für 1 Tag"}
                   {currentLanguage === "Chinese" && "一天50欧元"}
+                  {currentLanguage === "English" && "€50,- per day"}
                 </span>
                 <span className={stl.conditionSpan}>
                   {currentLanguage === "Dutch" && "1 E-Chopper per persoon"}
                   {currentLanguage === "German" && "1 E-Chopper pro person"}
                   {currentLanguage === "Chinese" && "每人一辆E-Chopper"}
+                  {currentLanguage === "English" && "1 E-Chopper per person"}
                 </span>
                 <span className={stl.conditionSpan}>
                   {currentLanguage === "Dutch" && "Max bereik: 40KM"}
-                  {currentLanguage === "German" && "Maximale Reichweite: 40 km"}
+                  {currentLanguage === "German" && "Maximale Reichweite: 40km"}
                   {currentLanguage === "Chinese" && "最大续航里程：40公里"}
+                  {currentLanguage === "English" && "Max reach: 40km"}
                 </span>
                 <button
                   className={stl.bookCta}
@@ -140,6 +148,7 @@ const Activiteiten = ({ currentLanguage }) => {
                   {currentLanguage === "Dutch" && "Book"}
                   {currentLanguage === "German" && "Buch"}
                   {currentLanguage === "Chinese" && "预订"}
+                  {currentLanguage === "English" && "Book"}
                 </button>
               </div>
             </div>
@@ -150,6 +159,7 @@ const Activiteiten = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "Activiteiten"}
                 {currentLanguage === "German" && "Aktivitäten"}
                 {currentLanguage === "Chinese" && "活动"}
+                {currentLanguage === "English" && "Activities"}
               </h2>
               <ul className={stl.itemList}>
                 <a
@@ -163,6 +173,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Villa Ramswoerthe"}
                     {currentLanguage === "German" && "Villa Ramswoerthe"}
                     {currentLanguage === "Chinese" && "Ramswoerthe 别墅"}
+                    {currentLanguage === "English" && "Villa Ramswoerthe"}
                   </li>
                 </a>
                 <a
@@ -176,6 +187,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Sint Clemenskerk"}
                     {currentLanguage === "German" && "Sint Clemens Kirche"}
                     {currentLanguage === "Chinese" && "圣克莱门斯教堂"}
+                    {currentLanguage === "English" && "Sint Clemenschurch"}
                   </li>
                 </a>
                 <a
@@ -190,6 +202,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "German" &&
                       "Kirche Unserer Lieben Frau"}
                     {currentLanguage === "Chinese" && "我们亲爱的夫人教堂"}
+                    {currentLanguage === "English" && "Our dear lady church"}
                   </li>
                 </a>
                 <a
@@ -205,6 +218,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "German" &&
                       "Tierpark Taman Indonesien"}
                     {currentLanguage === "Chinese" && "Taman 印度尼西亚动物园"}
+                    {currentLanguage === "English" && "Zoo 'Taman Indonesia'"}
                   </li>
                 </a>
                 <a
@@ -218,6 +232,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Theater De Meenthe"}
                     {currentLanguage === "German" && "Theater De Meenthe"}
                     {currentLanguage === "Chinese" && "Meenthe 剧院"}
+                    {currentLanguage === "English" && "Theather The Meenthe"}
                   </li>
                 </a>
                 <a
@@ -231,6 +246,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Stadsmuseum"}
                     {currentLanguage === "German" && "Stadtmuseum"}
                     {currentLanguage === "Chinese" && "城市博物馆"}
+                    {currentLanguage === "English" && "Citymuseum"}
                   </li>
                 </a>
                 <a
@@ -245,6 +261,8 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "German" &&
                       "Abenteuerlicher Kletterwald"}
                     {currentLanguage === "Chinese" && "冒险攀登森林"}
+                    {currentLanguage === "English" &&
+                      "Climbforrest 'Adventurous'"}
                   </li>
                 </a>
                 <a
@@ -260,6 +278,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "German" &&
                       "Stadtrundgang Steenwijk Festungsstadt"}
                     {currentLanguage === "Chinese" && "斯滕维克古城市漫步"}
+                    {currentLanguage === "English" && "City walk"}
                   </li>
                 </a>
               </ul>
@@ -285,6 +304,7 @@ const Activiteiten = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "In de regio"}
                 {currentLanguage === "German" && "In der Region"}
                 {currentLanguage === "Chinese" && "在该地区"}
+                {currentLanguage === "English" && "In the region"}
               </h2>
               <ul className={stl.itemList}>
                 <a
@@ -309,6 +329,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Hunnebedden"}
                     {currentLanguage === "German" && "Hünengräber"}
                     {currentLanguage === "Chinese" && "史前石棺"}
+                    {currentLanguage === "English" && "Dolmens"}
                   </li>
                 </a>
                 <a
@@ -322,6 +343,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Weerribben"}
                     {currentLanguage === "German" && "Weerribben"}
                     {currentLanguage === "Chinese" && "韦尔里本"}
+                    {currentLanguage === "English" && "Weerribben"}
                   </li>
                 </a>
                 <a
@@ -335,6 +357,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "De Woldberg"}
                     {currentLanguage === "German" && "De Woldberg"}
                     {currentLanguage === "Chinese" && "沃尔德贝格"}
+                    {currentLanguage === "English" && "The Woldberg"}
                   </li>
                 </a>
                 <a
@@ -348,6 +371,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Havelte"}
                     {currentLanguage === "German" && "Havelte"}
                     {currentLanguage === "Chinese" && "哈费尔特"}
+                    {currentLanguage === "English" && "Havelte"}
                   </li>
                 </a>
                 <a
@@ -361,6 +385,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "De Orchideeën Hoeve"}
                     {currentLanguage === "German" && "Die Orchideenfarm"}
                     {currentLanguage === "Chinese" && "兰花农场"}
+                    {currentLanguage === "English" && "The Orchids Farm"}
                   </li>
                 </a>
                 <a
@@ -375,6 +400,8 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "German" &&
                       "Schloss Old Stoutenburght"}
                     {currentLanguage === "Chinese" && "Old Stoutenburght 城堡"}
+                    {currentLanguage === "English" &&
+                      "Castle Old Stoutenburght"}
                   </li>
                 </a>
               </ul>
@@ -401,6 +428,7 @@ const Activiteiten = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "Dineren"}
                 {currentLanguage === "German" && "Essen gehen"}
                 {currentLanguage === "Chinese" && "用餐"}
+                {currentLanguage === "English" && "Dining"}
               </h2>
               <ul className={stl.itemList}>
                 <a
@@ -414,6 +442,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Argentino Tango"}
                     {currentLanguage === "German" && "Argentinischer Tango"}
                     {currentLanguage === "Chinese" && "阿根廷探戈"}
+                    {currentLanguage === "English" && "Argentino Tango"}
                   </li>
                 </a>
                 <a
@@ -427,6 +456,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Woody's Steakhouse"}
                     {currentLanguage === "German" && "Woody's Steakhouse"}
                     {currentLanguage === "Chinese" && "伍迪牛排馆"}
+                    {currentLanguage === "English" && "Woody's Steakhouse"}
                   </li>
                 </a>
                 <a
@@ -440,6 +470,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Tennessee Steakhouse"}
                     {currentLanguage === "German" && "Tennessee Steakhouse"}
                     {currentLanguage === "Chinese" && "田纳西牛排馆"}
+                    {currentLanguage === "English" && "Tennessee Steakhouse"}
                   </li>
                 </a>
                 <a
@@ -453,6 +484,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Bistro De Opschepper"}
                     {currentLanguage === "German" && "Bistro De Opschepper"}
                     {currentLanguage === "Chinese" && "自夸小酒馆"}
+                    {currentLanguage === "English" && "Bistro 'The Opschepper'"}
                   </li>
                 </a>
                 <a
@@ -466,6 +498,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "De Heren van de Rechter"}
                     {currentLanguage === "German" && "Die Herren vom Richter"}
                     {currentLanguage === "Chinese" && "法官先生们"}
+                    {currentLanguage === "English" && "De heren van de Rechter"}
                   </li>
                 </a>
                 <a
@@ -479,6 +512,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Brasserie Zus en Zo"}
                     {currentLanguage === "German" && "Brasserie Zus und So"}
                     {currentLanguage === "Chinese" && "Zus和 Zo 小酒馆"}
+                    {currentLanguage === "English" && "Brasserie Zus en Zo"}
                   </li>
                 </a>
                 <a
@@ -492,6 +526,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Bovenmeester"}
                     {currentLanguage === "German" && "Bovenmeester"}
                     {currentLanguage === "Chinese" && "Bovenmeester"}
+                    {currentLanguage === "English" && "Bovenmeester"}
                   </li>
                 </a>
                 <a
@@ -505,6 +540,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Dutch" && "Rhodos"}
                     {currentLanguage === "German" && "Rhodos"}
                     {currentLanguage === "Chinese" && "罗得岛"}
+                    {currentLanguage === "English" && "Rhodos"}
                   </li>
                 </a>
               </ul>
@@ -523,6 +559,7 @@ const Activiteiten = ({ currentLanguage }) => {
                 {currentLanguage === "Dutch" && "Links"}
                 {currentLanguage === "German" && "Links"}
                 {currentLanguage === "Chinese" && "链接"}
+                {currentLanguage === "English" && "Links"}
               </h2>
               <div className={stl.linksList}>
                 <div className={stl.innerWrap}>
@@ -543,6 +580,7 @@ const Activiteiten = ({ currentLanguage }) => {
                         {currentLanguage === "Dutch" && "Taxi Oost"}
                         {currentLanguage === "German" && "Taxi Oost"}
                         {currentLanguage === "Chinese" && "东方出租车"}
+                        {currentLanguage === "English" && "Taxi Oost"}
                       </span>
                     </a>
                     <a
@@ -554,6 +592,7 @@ const Activiteiten = ({ currentLanguage }) => {
                         {currentLanguage === "Dutch" && "Auto huren"}
                         {currentLanguage === "German" && "Auto mieten"}
                         {currentLanguage === "Chinese" && "租车"}
+                        {currentLanguage === "English" && "Rent a car"}
                       </span>
                     </a>
                     <a
@@ -565,6 +604,7 @@ const Activiteiten = ({ currentLanguage }) => {
                         {currentLanguage === "Dutch" && "Fiets huren"}
                         {currentLanguage === "German" && "Fahrrad mieten"}
                         {currentLanguage === "Chinese" && "租自行车"}
+                        {currentLanguage === "English" && "Rent a bicycle"}
                       </span>
                     </a>
                   </div>

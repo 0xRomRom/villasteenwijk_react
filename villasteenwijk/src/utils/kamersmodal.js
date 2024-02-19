@@ -11,6 +11,8 @@ const kamers = [
           "Benannt nach dem berühmten Künstler und Bildhauer Hildo Krop, dem Stadtbildhauer von Amsterdam, geboren in Steenwijk.",
         Chinese:
           "希尔多·克罗普 (Hildo Krop) 出生于斯廷韦克 (Steenwijk)，是阿姆斯特丹的艺术家和造型师。",
+        English:
+          "Named after the famous artist and sculptor Hildo Krop, the City Sculptor of Amsterdam, born in Steenwijk.",
       },
 
       copy2: {
@@ -20,6 +22,8 @@ const kamers = [
           "Dieses schöne, helle Zimmer für 2 Personen mit englischen Tapeten, edlem Samt, Vorhangstoffen und weichen Teppichen befindet sich im 2. Stock der Villa Steenwyck und bietet einen wunderschönen Blick auf die Festungsstadt Steenwijk und den Steenwijkerturm.",
         Chinese:
           "这间美丽的 2 人明亮客房位于 Villa Steenwyck 的二楼，配有英式壁纸、华丽的天鹅绒、窗帘面料和柔软的地毯，可欣赏 Steenwijk 防御城镇和 Steenwijker 塔的美丽景色。",
+        English:
+          "This beautiful, 2-person, bright room with English wallpaper, rich velvet, curtain fabrics and soft carpeting is located on the 2nd floor of Villa Steenwyck with a beautiful view of the fortified town of Steenwijk and the Steenwijker tower.",
       },
       voorziening: {
         Dutch: [
@@ -64,6 +68,20 @@ const kamers = [
           "冰箱内备有冷、平静的水",
           "2件“De Witte Lietaer”豪华柔软的浴袍",
         ],
+        English: [
+          "Luxury Boxspring beds (2 beds together, 180x200cm with luxury topper)",
+          "The beds can also be separated, as 2 single beds of 90x200cm each. If desired",
+          "Satin bedding and bath textiles from “De Witte Lietaer”",
+          "Dining set to enjoy your breakfast or play a game",
+          "Dining set to enjoy your breakfast or play a game",
+          "Luxury Philips Ambilight TV with Netflix and cable TV",
+          "Free super-fast wifi",
+          "Equipped with Daikin heat pump air conditioners for environmentally conscious cooling and heating of your room with built-in flash-streamer air purification against dust, pollen, viruses, bacteria, and allergens, For always fresh “mountain air” in your room",
+          "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
+          "Free coffee (Nespresso) and tea facilities",
+          "Refrigerator with cool, flat water",
+          "2 Luxury, soft bathrobes from “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -79,6 +97,8 @@ const kamers = [
           "Benannt nach Hendrik Jan Trom Meesters, einem wohlhabenden Unternehmer und Philanthropen aus Steenwijk, der unter anderem das Boutique-Hotel Villa Steenwijk im Jahr 1905 als Wijkverpleging errichten ließ.",
         Chinese:
           "以亨德里克·扬·特罗姆·梅斯特斯（Hendrik Jan Trom Meesters）的名字命名，他是一位富有的斯廷维克企业家和慈善家，于1905年建造了精品酒店维拉·斯廷维克（Boutique hotel Villa Steenwijk），作为维克护理中心之一。",
+        English:
+          "Named after Hendrik Jan Trom Meesters, a wealthy Steenwijk entrepreneur and philanthropist, who, among other things, had the Boutique hotel Villa Steenwijk built in 1905 as a district nurse.",
       },
       copy2: {
         Dutch:
@@ -87,6 +107,8 @@ const kamers = [
           "Dieses wunderschöne, 2- oder 3-Personen-Luxuszimmer mit goldenen Tapeten, weichem Teppichboden und reichhaltigen, samtigen Vorhangstoffen befindet sich im 2. Stock der Villa Steenwyck an der Vorderseite der Villa. Es kann ein dritter Schlafplatz für Sie geschaffen werden, durch ein ausklappbares Sofa.",
         Chinese:
           "这间漂亮的、可容纳2或3人的豪华客房，配有金色壁纸、柔软的地毯和丰富的天鹅绒窗帘，位于维拉·斯廷维克（Villa Steenwyck）的二楼，位于维拉的正面。通过折叠沙发，可以为您提供第三个睡眠空间。",
+        English:
+          "This beautiful, 2 or 3-person, luxurious room with golden wallpaper, soft carpeting and rich velvet curtain fabrics is located on the 2nd floor of Villa Steenwyck at the front of the Villa. A 3rd sleeping place can be created for you, by means of a fold-out sofa.",
       },
       voorziening: {
         Dutch: [
@@ -125,6 +147,18 @@ const kamers = [
           "共用浴室，配有厕所、坐浴盆、洗手盆和豪华淋浴，每间客房配有一块放置卫生用品的架子",
           "2件“De Witte Lietaer”品牌的豪华柔软浴袍",
         ],
+        English: [
+          "Luxury “van der Valk” Kingsize Boxspring bed from Swiss Sense 160X200 cm",
+          "Satin white bedding and bath textiles from “De Witte Lietaer”",
+          "Luxury Philips Ambilight TV with Netflix and cable TV",
+          "Free super-fast wifi",
+          "Shared bathroom with toilet, bidet, sink, and luxury rain shower",
+          "Free coffee (Nespresso) and Tea facilities",
+          "Refrigerator with cool, flat water",
+          "Equipped with Daikin heat pump air conditioners for environmentally conscious cooling and heating of your room with built-in flash-streamer air purification against dust, pollen, viruses, bacteria, and allergens, For always fresh “mountain air” in your room",
+          "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
+          "2 Luxury, soft bathrobes from “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -140,6 +174,8 @@ const kamers = [
           "Benannt nach dem äußerst freundlichen Kinderarzt, der hier von 1950 bis 1980 gearbeitet hat.",
         Chinese:
           "以非常友好的儿科医生命名，该医生在1950年至1980年期间在这里工作过。",
+        English:
+          "Named after the very friendly pediatrician who worked here from 1950-1980.",
       },
       copy2: {
         Dutch:
@@ -148,6 +184,8 @@ const kamers = [
           "Dieses wunderschöne, luxuriöse Zimmer für 2 Personen mit roter/goldener Tapete, weichem Teppichboden und reichhaltigen, samtigen Vorhangstoffen befindet sich im zweiten Stock der Villa Steenwyck an der Seite der Villa.",
         Chinese:
           "这间漂亮的双人豪华客房设有红色/金色墙纸、柔软地毯和丰富的绒面窗帘布料，位于维拉斯蒂恩维克别墅的二楼，别墅的一侧。",
+        English:
+          "This beautiful, 2-person, luxurious room with red/gold wallpaper, soft carpeting and rich velvet curtain fabrics is located on the 2nd floor of Villa Steenwyck on the side of the Villa.",
       },
       voorziening: {
         Dutch: [
@@ -186,6 +224,18 @@ const kamers = [
           "共用浴室，配有厕所、坐浴盆、洗手盆和豪华淋浴，每间客房配有一块放置卫生用品的架子",
           "2件'De Witte Lietaer'品牌的豪华柔软浴袍",
         ],
+        English: [
+          "Luxury 'van der Valk' Kingsize Boxspring bed from Swiss Sense 160X200cm",
+          "Satin white bedding and bath textiles from “De Witte Lietaer”",
+          "Luxury Philips Ambilight TV with Netflix and cable TV",
+          "Free super-fast wifi",
+          "Shared bathroom with toilet, bidet, sink, and luxury rain shower",
+          "Free coffee (Nespresso) and tea facilities",
+          "Refrigerator with cool, flat water",
+          "Equipped with Daikin heat pump air conditioners for environmentally conscious cooling and heating of your room with built-in flash-streamer air purification against dust, pollen, viruses, bacteria, and allergens, For always fresh “mountain air” in your room",
+          "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
+          "2 Luxury, soft bathrobes from “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -201,6 +251,8 @@ const kamers = [
           "Benannt nach Johan van den Kornput, einem berühmten niederländischen Militär, der 1580 Steenwijk während des Achtzigjährigen Krieges gegen die Spanier verteidigte.",
         Chinese:
           "以荷兰著名军人约翰内斯·范登·科恩普特（Johan van den Kornput）命名，他在1580年八十年战争期间曾经捍卫斯特温克（Steenwijk）免受西班牙人的进攻。",
+        English:
+          "Named after Johan van den Kornput, a famous Dutch soldier who defended Steenwijk against the Spanish in 1580 during the 80 Years War.",
       },
       copy2: {
         Dutch:
@@ -209,6 +261,8 @@ const kamers = [
           "Dieses romantische, luxuriöse Zimmer für 2 Personen mit antikem Himmelbett, weichem Teppichboden und reichhaltigen, samtigen Stoffen befindet sich im ersten Stock der Villa Steenwyck an der Vorderseite der Villa und verfügt über ein eigenes angrenzendes Badezimmer mit Waschbecken und Dusche.",
         Chinese:
           "这间浪漫的双人豪华客房设有古董四柱床、柔软的地毯和丰富的绒面布料，位于维拉斯蒂恩维克别墅的一楼，别墅的前部，配有独立的相连浴室，设有洗手盆和淋浴。",
+        English:
+          "This romantic, 2-person, luxurious room with an antique four-poster bed, soft carpeting and rich velvet fabrics is located on the 1st floor of Villa Steenwyck at the front of the Villa and has its own adjacent bathroom with sink and shower.",
       },
       voorziening: {
         Dutch: [
@@ -250,6 +304,19 @@ const kamers = [
           "共用浴室，配有厕所、坐浴盆、洗手盆和豪华淋浴，每间客房配有一块放置卫生用品的架子",
           "2件'De Witte Lietaer'品牌的豪华柔软浴袍",
         ],
+        English: [
+          "Antique Romantic Canopy Bed (140X200) with a comfortable mattress and blackout canopy curtains",
+          "Satin bedding and bath textiles from “De Witte Lietaer”",
+          "Luxury Philips Ambilight TV with Netflix and cable TV",
+          "Free super-fast wifi",
+          "Private bathroom with shower & sink",
+          "Private toilet, located on the landing",
+          "Free coffee (Nespresso) and tea facilities",
+          "Refrigerator with cool, flat water",
+          "Equipped with Daikin heat pump air conditioners for environmentally conscious cooling and heating of your room with built-in flash-streamer air purification against dust, pollen, viruses, bacteria, and allergens, For always fresh “mountain air” in your room",
+          "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
+          "2 Luxury, soft bathrobes from “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -265,6 +332,8 @@ const kamers = [
           "Neben dem Boutique-Hotel Villa Steenwyck befindet sich unser neuestes, modern und hell eingerichtetes Hotelzimmer, Zimmer 5, Giethoorn.",
         Chinese:
           "在精品酒店维拉斯蒂恩维克别墅旁边，我们最新的、现代化且明亮装饰的酒店客房，房间5，吉思霍恩。",
+        English:
+          "Next to Boutique hotel Villa Steenwyck, our newest, modern and brightly furnished hotel room is located, Room 5. Giethoorn.",
       },
       copy2: "",
       voorziening: {
@@ -331,6 +400,27 @@ const kamers = [
           "一张桌子和两把椅子，可用于用餐",
           "根据需要，我们可以提供1张额外的床，费用€25,-",
         ],
+        English: [
+          "Extra bed €25,- (Max 3 persons)",
+          "40m2",
+          "Maximum 3 persons",
+          "Private entrance",
+          "All on the ground floor",
+          "Free parking",
+          "Luxury kingsize boxspring bed of 160X200cm - Satin white bedding and bath textiles from “De Witte Lietaer”",
+          "Free super-fast WiFi",
+          "Private bathroom with toilet, sink, and large walk-in shower",
+          "Central heating",
+          "Provided with bath and bed linen (towels, beds are made)",
+          "Seating area to enjoy breakfast",
+          "Refrigerator",
+          "Kettle",
+          "Free coffee (Nespresso) and tea facilities",
+          "If desired, we can provide a delicious, fresh breakfast in the room for €14.50 per person",
+          "A beautiful, spacious room with a large bathroom and walk-in shower on the ground floor, with a total area of 40m2 including: Wardrobe, Hall, spacious toilet, storage cupboard, separate bedroom with a comfortable double bed (160X200), ensuite bathroom with large walk-in shower",
+          "A table with 2 chairs where breakfast is served",
+          "If desired, we can place 1 extra bed, Cost €25,-",
+        ],
       },
     },
   ],
@@ -345,6 +435,8 @@ const kamers = [
         German:
           "Neben dem Boutique-Hotel Villa Steenwyck befindet sich das 'Appartement Villa Steenwyck.",
         Chinese: "在精品酒店维拉斯蒂恩维克别墅旁边，有“维拉斯蒂恩维克公寓。",
+        English:
+          "Next to Boutique hotel Villa Steenwyck, there is 'Apartment Villa Steenwyck'.",
       },
       copy2: {
         Dutch:
@@ -353,6 +445,8 @@ const kamers = [
           "Ein komplett ebenerdig eingerichtetes Apartment im Erdgeschoss mit 110m2, bestehend aus: Flur, Toilette, Abstellkammer, separates Schlafzimmer mit einem komfortablen Doppelbett (160X200), angrenzendem Badezimmer mit großer begehbarer Dusche. Ein wunderschönes Wohnzimmer mit hohem, offenen, spitzem Decke, kombinierte voll ausgestattete Küche mit gemütlicher Essbar.",
         Chinese:
           "一间完全位于一楼的110平方米单层公寓，内设有：门厅、卫生间、储藏柜、带舒适双人床（160X200）的独立卧室，带大型步入式淋浴的连接浴室。一个拥有高高的、敞开式、尖顶天花板的美丽客厅，配有舒适的吧台的完全配备的厨房。",
+        English:
+          "A fully furnished apartment on the ground floor of 110m2 containing: Hall, toilet, storage cupboard, separate bedroom with a lovely double bed (160X200), ensuite bathroom with large walk-in shower. A beautiful living room with high, open , pointed ceiling, combined fully equipped kitchen with cozy dining bar.",
       },
       voorziening: {
         Dutch: [
@@ -414,6 +508,26 @@ const kamers = [
           "热水壶",
           "免费咖啡（Nespresso）和茶设施",
           "带4个吧台凳的餐吧",
+        ],
+        English: [
+          "Private entrance",
+          "All on the ground floor and without thresholds, wheelchair friendly. Except for the step at the front door.",
+          "Luxury kingsize boxspring bed of 160X200cm",
+          "Satin white bedding and bath textiles from “De Witte Lietaer”",
+          "Luxury Philips Ambilight TV with Netflix and cable TV",
+          "Free super-fast WiFi",
+          "Private bathroom with toilet, sink, and large walk-in shower",
+          "Equipped with Daikin Air conditioning",
+          "Provided with bath linen (towels, guest towels)",
+          "Living room with pellet stove and Chesterfield furnishings",
+          "Private terrace with seating",
+          "Fully equipped kitchen with:",
+          "Refrigerator",
+          "Plates, cutlery, cookware, glasses, cups",
+          "5-burner gas stove",
+          "Kettle",
+          "Free coffee (Nespresso) and tea facilities",
+          "Dining bar with 4 bar stools",
         ],
       },
     },

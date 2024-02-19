@@ -31,6 +31,7 @@ const KamersPrijzen = ({ currentLanguage }) => {
         {currentLanguage === "Dutch" && "Kamers & Prijzen"}
         {currentLanguage === "German" && "Zimmer & Preise"}
         {currentLanguage === "Chinese" && "房间及价格"}
+        {currentLanguage === "English" && "Rooms & Prices"}
       </m.h1>
       {!kamerKeuze && (
         <>
@@ -66,6 +67,7 @@ const KamersPrijzen = ({ currentLanguage }) => {
               {currentLanguage === "Dutch" && "Appartement Villa Steenwyck"}
               {currentLanguage === "German" && "Apartement Villa Steenwyck"}
               {currentLanguage === "Chinese" && "斯汀威克别墅公寓"}
+              {currentLanguage === "English" && "Appartment Villa Steenwyck"}
             </span>
           </div>
         </>

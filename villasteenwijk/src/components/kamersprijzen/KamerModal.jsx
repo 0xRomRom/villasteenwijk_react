@@ -175,6 +175,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {currentLanguage === "Dutch" && "Per nacht"}
                   {currentLanguage === "German" && "Pro nacht"}
                   {currentLanguage === "Chinese" && "每晚"}
+                  {currentLanguage === "English" && "Per night"}
                 </span>
               </div>
               <div className={stl.totalWrap}>
@@ -204,6 +205,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {currentLanguage === "Dutch" && "Toeristenbelasting"}
                   {currentLanguage === "German" && "Kurtaxe"}
                   {currentLanguage === "Chinese" && "旅游税"}
+                  {currentLanguage === "English" && "Tourist tax"}
                 </span>
               </div>
               <div className={stl.toeslagBottom}>
@@ -221,6 +223,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {currentLanguage === "Dutch" && "Heerlijk ontbijt"}
                   {currentLanguage === "German" && "Leckeres frühstück"}
                   {currentLanguage === "Chinese" && "美味的早餐"}
+                  {currentLanguage === "English" && "Lovely breakfast"}
                 </span>
               </div>
               <div className={stl.toeslagBottom}>
@@ -239,6 +242,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {currentLanguage === "Dutch" && "Omschrijving"}
                   {currentLanguage === "German" && "Beschreibung"}
                   {currentLanguage === "Chinese" && "描述"}
+                  {currentLanguage === "English" && "Description"}
                 </h2>
                 <p className={stl.roomCopy}>
                   {kamer.copy1[currentLanguage]}
@@ -254,6 +258,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                   {currentLanguage === "Dutch" && "Voorzieningen"}
                   {currentLanguage === "German" && "Dienstleistungen"}
                   {currentLanguage === "Chinese" && "服务"}
+                  {currentLanguage === "English" && "Services"}
                 </h2>
                 <ul className={stl.voorzienList}>
                   {activeKamer.length > 0 &&
@@ -277,6 +282,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
               {currentLanguage === "Dutch" && "Reserveren"}
               {currentLanguage === "German" && "Buchen"}
               {currentLanguage === "Chinese" && "预订"}
+              {currentLanguage === "English" && "Book"}
             </button>
           </div>
         </div>
