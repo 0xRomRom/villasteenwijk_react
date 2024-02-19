@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 import stl from "./Navbar.module.css";
 import logo from "../../assets/icons/Logo.png";
 
-const languages = {};
-
 const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -27,6 +25,11 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
       alt: "Chinese flag",
       setLang: "Chinese",
     },
+    {
+      src: "./flags/UK.webp",
+      alt: "English flag",
+      setLang: "English",
+    },
   ];
 
   const order2 = [
@@ -45,9 +48,41 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
       alt: "Chinese flag",
       setLang: "Chinese",
     },
+    {
+      src: "./flags/UK.webp",
+      alt: "English flag",
+      setLang: "English",
+    },
   ];
 
   const order3 = [
+    {
+      src: "./flags/China.png",
+      alt: "Chinese flag",
+      setLang: "Chinese",
+    },
+    {
+      src: "./flags/NL.webp",
+      alt: "Dutch flag",
+      setLang: "Dutch",
+    },
+    {
+      src: "./flags/German.png",
+      alt: "German flag",
+      setLang: "German",
+    },
+    {
+      src: "./flags/UK.webp",
+      alt: "English flag",
+      setLang: "English",
+    },
+  ];
+  const order4 = [
+    {
+      src: "./flags/UK.webp",
+      alt: "English flag",
+      setLang: "English",
+    },
     {
       src: "./flags/China.png",
       alt: "Chinese flag",
@@ -274,6 +309,39 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
                   </div>
                 ))
               : order3.slice(0, 1).map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))}
+          </>
+        )}
+        {currentLanguage === "English" && (
+          <>
+            {navFolded
+              ? order4.map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))
+              : order4.slice(0, 1).map((item) => (
                   <div
                     className={stl.flag}
                     onClick={() => handleNewLanguage(item.setLang)}
