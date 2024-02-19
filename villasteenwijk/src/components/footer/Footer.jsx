@@ -24,6 +24,7 @@ const Footer = ({ currentLanguage }) => {
         {currentLanguage === "Dutch" && "Reserveer"}
         {currentLanguage === "German" && "Buchen"}
         {currentLanguage === "Chinese" && "预订"}
+        {currentLanguage === "English" && "Book"}
       </span>
       <div className={stl.border}></div>
       <span className={stl.copyRight}>
@@ -31,6 +32,8 @@ const Footer = ({ currentLanguage }) => {
         {currentLanguage === "German" &&
           "© 2024 Boutique-Hotel Villa Steenwyck"}
         {currentLanguage === "Chinese" && "© 2024 斯汀威克精品酒店"}
+        {currentLanguage === "English" &&
+          "© 2024 Boutique Hotel Villa Steenwyck"}
       </span>
     </footer>
   );

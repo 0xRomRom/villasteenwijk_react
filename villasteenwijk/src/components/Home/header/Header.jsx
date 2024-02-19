@@ -51,6 +51,7 @@ const Header = ({ currentLanguage }) => {
         {currentLanguage === "Dutch" && "Reserveren"}
         {currentLanguage === "German" && "Buchen"}
         {currentLanguage === "Chinese" && "预订"}
+        {currentLanguage === "English" && "Book"}
       </button>
     </header>
   );
