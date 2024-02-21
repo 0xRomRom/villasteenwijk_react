@@ -13,6 +13,8 @@ const kamers = [
           "希尔多·克罗普 (Hildo Krop) 出生于斯廷韦克 (Steenwijk)，是阿姆斯特丹的艺术家和造型师。",
         English:
           "Named after the famous artist and sculptor Hildo Krop, the City Sculptor of Amsterdam, born in Steenwijk.",
+        Spanish:
+          "Lleva el nombre del famoso artista y escultor Hildo Krop, el escultor de la ciudad de Ámsterdam, nacido en Steenwijk.",
       },
 
       copy2: {
@@ -24,6 +26,8 @@ const kamers = [
           "这间美丽的 2 人明亮客房位于 Villa Steenwyck 的二楼，配有英式壁纸、华丽的天鹅绒、窗帘面料和柔软的地毯，可欣赏 Steenwijk 防御城镇和 Steenwijker 塔的美丽景色。",
         English:
           "This beautiful, 2-person, bright room with English wallpaper, rich velvet, curtain fabrics and soft carpeting is located on the 2nd floor of Villa Steenwyck with a beautiful view of the fortified town of Steenwijk and the Steenwijker tower.",
+        Spanish:
+          "Esta hermosa habitación luminosa para 2 personas con papel tapiz inglés, rico terciopelo, telas para cortinas y alfombras suaves está ubicada en el segundo piso de Villa Steenwyck con una hermosa vista de la ciudad fortificada de Steenwijk y la torre Steenwijker.",
       },
       voorziening: {
         Dutch: [
@@ -82,6 +86,20 @@ const kamers = [
           "Refrigerator with cool, flat water",
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
+        Spanish: [
+          "Camas de muelles embolsados de lujo (2 camas juntas, 180x200cm con cubrecolchón de lujo)",
+          "Las camas también se pueden separar, como 2 camas individuales de 90x200cm cada una. Si se desea",
+          "Ropa de cama de satén y textiles de baño de “De Witte Lietaer”",
+          "Conjunto de comedor para disfrutar de su desayuno o jugar un juego",
+          "Conjunto de comedor para disfrutar de su desayuno o jugar un juego",
+          "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
+          "Wifi súper rápido gratuito",
+          "Equipado con aires acondicionados de bomba de calor Daikin para enfriar y calentar su habitación de manera ambientalmente consciente con purificación de aire flash-streamer incorporada contra el polvo, polen, virus, bacterias y alérgenos, Para siempre tener aire fresco de “montaña” en su habitación",
+          "Baño compartido con inodoro, bidet, lavabo y ducha de lluvia de lujo, con un estante para sus artículos de tocador por habitación",
+          "Café gratuito (Nespresso) y facilidades para hacer té",
+          "Refrigerador con agua fría y plana",
+          "2 batas de baño de lujo y suaves de “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -99,6 +117,8 @@ const kamers = [
           "以亨德里克·扬·特罗姆·梅斯特斯（Hendrik Jan Trom Meesters）的名字命名，他是一位富有的斯廷维克企业家和慈善家，于1905年建造了精品酒店维拉·斯廷维克（Boutique hotel Villa Steenwijk），作为维克护理中心之一。",
         English:
           "Named after Hendrik Jan Trom Meesters, a wealthy Steenwijk entrepreneur and philanthropist, who, among other things, had the Boutique hotel Villa Steenwijk built in 1905 as a district nurse.",
+        Spanish:
+          "Debe su nombre a Hendrik Jan Trom Meesters, un rico empresario y filántropo de Steenwijk que, entre otras cosas, hizo construir en 1905 el hotel boutique Villa Steenwijk como enfermero de distrito.",
       },
       copy2: {
         Dutch:
@@ -109,6 +129,8 @@ const kamers = [
           "这间漂亮的、可容纳2或3人的豪华客房，配有金色壁纸、柔软的地毯和丰富的天鹅绒窗帘，位于维拉·斯廷维克（Villa Steenwyck）的二楼，位于维拉的正面。通过折叠沙发，可以为您提供第三个睡眠空间。",
         English:
           "This beautiful, 2 or 3-person, luxurious room with golden wallpaper, soft carpeting and rich velvet curtain fabrics is located on the 2nd floor of Villa Steenwyck at the front of the Villa. A 3rd sleeping place can be created for you, by means of a fold-out sofa.",
+        Spanish:
+          "Esta hermosa habitación lujosa para 2 o 3 personas con papel tapiz dorado, alfombras suaves y ricas telas de terciopelo para cortinas está ubicada en el segundo piso de Villa Steenwyck, en la parte delantera de la Villa. Se puede crear una tercera plaza para dormir mediante un sofá plegable.",
       },
       voorziening: {
         Dutch: [
@@ -159,6 +181,18 @@ const kamers = [
           "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
+        Spanish: [
+          "Cama de muelles embolsados de lujo “van der Valk” Kingsize de Swiss Sense 160X200 cm",
+          "Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",
+          "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
+          "Wifi súper rápido gratuito",
+          "Baño compartido con inodoro, bidet, lavabo y ducha de lluvia de lujo",
+          "Café gratuito (Nespresso) y facilidades para hacer té",
+          "Refrigerador con agua fría y plana",
+          "Equipado con aires acondicionados de bomba de calor Daikin para enfriar y calentar su habitación de manera ambientalmente consciente con purificación de aire flash-streamer incorporada contra el polvo, polen, virus, bacterias y alérgenos, Para siempre tener aire fresco de “montaña” en su habitación",
+          "Baño compartido con inodoro, bidet, lavabo y ducha de lluvia de lujo, con un estante para sus artículos de tocador por habitación",
+          "2 batas de baño de lujo y suaves de “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -176,6 +210,8 @@ const kamers = [
           "以非常友好的儿科医生命名，该医生在1950年至1980年期间在这里工作过。",
         English:
           "Named after the very friendly pediatrician who worked here from 1950-1980.",
+        Spanish:
+          "Lleva el nombre del amable pediatra que trabajó aquí entre 1950 y 1980.",
       },
       copy2: {
         Dutch:
@@ -186,6 +222,8 @@ const kamers = [
           "这间漂亮的双人豪华客房设有红色/金色墙纸、柔软地毯和丰富的绒面窗帘布料，位于维拉斯蒂恩维克别墅的二楼，别墅的一侧。",
         English:
           "This beautiful, 2-person, luxurious room with red/gold wallpaper, soft carpeting and rich velvet curtain fabrics is located on the 2nd floor of Villa Steenwyck on the side of the Villa.",
+        Spanish:
+          "Esta hermosa habitación lujosa para 2 personas con papel tapiz rojo/dorado, alfombras suaves y ricas telas de terciopelo para cortinas está ubicada en el segundo piso de Villa Steenwyck, en el costado de la Villa.",
       },
       voorziening: {
         Dutch: [
@@ -236,6 +274,18 @@ const kamers = [
           "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
+        Spanish: [
+          "Cama de muelles embolsados de lujo 'van der Valk' Kingsize de Swiss Sense 160X200cm",
+          "Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",
+          "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
+          "Wifi súper rápido gratuito",
+          "Baño compartido con inodoro, bidet, lavabo y ducha de lluvia de lujo",
+          "Café gratuito (Nespresso) y facilidades para hacer té",
+          "Refrigerador con agua fría y plana",
+          "Equipado con aires acondicionados de bomba de calor Daikin para enfriar y calentar su habitación de manera ambientalmente consciente con purificación de aire flash-streamer incorporada contra el polvo, polen, virus, bacterias y alérgenos, Para siempre tener aire fresco de “montaña” en su habitación",
+          "Baño compartido con inodoro, bidet, lavabo y ducha de lluvia de lujo, con un estante para sus artículos de tocador por habitación",
+          "2 batas de baño de lujo y suaves de “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -253,6 +303,8 @@ const kamers = [
           "以荷兰著名军人约翰内斯·范登·科恩普特（Johan van den Kornput）命名，他在1580年八十年战争期间曾经捍卫斯特温克（Steenwijk）免受西班牙人的进攻。",
         English:
           "Named after Johan van den Kornput, a famous Dutch soldier who defended Steenwijk against the Spanish in 1580 during the 80 Years War.",
+        Spanish:
+          "Lleva el nombre de Johan van den Kornput, un famoso soldado holandés que defendió Steenwijk contra los españoles en 1580 durante la Guerra de los 80 Años.",
       },
       copy2: {
         Dutch:
@@ -263,6 +315,8 @@ const kamers = [
           "这间浪漫的双人豪华客房设有古董四柱床、柔软的地毯和丰富的绒面布料，位于维拉斯蒂恩维克别墅的一楼，别墅的前部，配有独立的相连浴室，设有洗手盆和淋浴。",
         English:
           "This romantic, 2-person, luxurious room with an antique four-poster bed, soft carpeting and rich velvet fabrics is located on the 1st floor of Villa Steenwyck at the front of the Villa and has its own adjacent bathroom with sink and shower.",
+        Spanish:
+          "Esta romántica habitación de lujo para 2 personas con una antigua cama con dosel, suaves alfombras y ricas telas de terciopelo está ubicada en el primer piso de Villa Steenwyck, en la parte delantera de la villa, y tiene su propio baño adyacente con lavabo y ducha.",
       },
       voorziening: {
         Dutch: [
@@ -317,6 +371,19 @@ const kamers = [
           "Shared bathroom with toilet, bidet, sink, and luxury rain shower, with a shelf for your toilet items per room",
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
+        Spanish: [
+          "Cama con dosel romántica antigua (140X200) con un colchón cómodo y cortinas opacas para el dosel",
+          "Ropa de cama de satén y textiles de baño de “De Witte Lietaer”",
+          "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
+          "Wifi súper rápido gratuito",
+          "Baño privado con ducha y lavabo",
+          "Inodoro privado, ubicado en el rellano",
+          "Café gratuito (Nespresso) y facilidades para hacer té",
+          "Refrigerador con agua fría y plana",
+          "Equipado con aires acondicionados de bomba de calor Daikin para enfriar y calentar su habitación de manera ambientalmente consciente con purificación de aire flash-streamer incorporada contra el polvo, polen, virus, bacterias y alérgenos, Para siempre tener aire fresco de “montaña” en su habitación",
+          "Baño compartido con inodoro, bidet, lavabo y ducha de lluvia de lujo, con un estante para sus artículos de tocador por habitación",
+          "2 batas de baño de lujo y suaves de “De Witte Lietaer”",
+        ],
       },
     },
   ],
@@ -334,6 +401,8 @@ const kamers = [
           "在精品酒店维拉斯蒂恩维克别墅旁边，我们最新的、现代化且明亮装饰的酒店客房，房间5，吉思霍恩。",
         English:
           "Next to Boutique hotel Villa Steenwyck, our newest, modern and brightly furnished hotel room is located, Room 5. Giethoorn.",
+        Spanish:
+          "Junto al hotel boutique Villa Steenwyck se encuentra nuestra habitación de hotel más nueva, moderna y luminosamente amueblada, la habitación 5. Giethoorn.",
       },
       copy2: "",
       voorziening: {
@@ -421,6 +490,27 @@ const kamers = [
           "A table with 2 chairs where breakfast is served",
           "If desired, we can place 1 extra bed, Cost €25,-",
         ],
+        Spanish: [
+          "Cama extra €25,- (Máximo 3 personas)",
+          "40m2",
+          "Máximo 3 personas",
+          "Entrada privada",
+          "Todo en la planta baja",
+          "Aparcamiento gratuito",
+          "Cama de muelles embolsados de lujo tamaño king de 160X200cm - Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",
+          "Wifi súper rápido gratuito",
+          "Baño privado con inodoro, lavabo y amplia ducha a ras de suelo",
+          "Calefacción central",
+          "Provisto de ropa de baño y cama (toallas, las camas están hechas)",
+          "Zona de estar para disfrutar del desayuno",
+          "Refrigerador",
+          "Hervidor",
+          "Café gratuito (Nespresso) y facilidades para hacer té",
+          "Si lo desea, podemos proporcionar un delicioso y fresco desayuno en la habitación por €14.50 por persona",
+          "Una hermosa y espaciosa habitación con un amplio baño y ducha a ras de suelo en la planta baja, con un área total de 40m2 que incluye: Armario, Vestíbulo, amplio inodoro, armario de almacenamiento, dormitorio separado con una cómoda cama doble (160X200), baño ensuite con amplia ducha a ras de suelo",
+          "Una mesa con 2 sillas donde se sirve el desayuno",
+          "Si lo desea, podemos colocar 1 cama extra, Costo €25,-",
+        ],
       },
     },
   ],
@@ -437,6 +527,8 @@ const kamers = [
         Chinese: "在精品酒店维拉斯蒂恩维克别墅旁边，有“维拉斯蒂恩维克公寓。",
         English:
           "Next to Boutique hotel Villa Steenwyck, there is 'Apartment Villa Steenwyck'.",
+        Spanish:
+          "Al lado del hotel boutique Villa Steenwyck se encuentra el 'Apartamento Villa Steenwyck'.",
       },
       copy2: {
         Dutch:
@@ -447,6 +539,8 @@ const kamers = [
           "一间完全位于一楼的110平方米单层公寓，内设有：门厅、卫生间、储藏柜、带舒适双人床（160X200）的独立卧室，带大型步入式淋浴的连接浴室。一个拥有高高的、敞开式、尖顶天花板的美丽客厅，配有舒适的吧台的完全配备的厨房。",
         English:
           "A fully furnished apartment on the ground floor of 110m2 containing: Hall, toilet, storage cupboard, separate bedroom with a lovely double bed (160X200), ensuite bathroom with large walk-in shower. A beautiful living room with high, open , pointed ceiling, combined fully equipped kitchen with cozy dining bar.",
+        Spanish:
+          "Un apartamento completamente amueblado en la planta baja de 110 m2 que contiene: vestíbulo, aseo, armario, dormitorio independiente con una preciosa cama doble (160X200) y cuarto de baño privado con gran ducha a ras de suelo. Un hermoso salón con techo alto, abierto y puntiagudo, cocina totalmente equipada combinada con una acogedora barra comedor.",
       },
       voorziening: {
         Dutch: [
@@ -528,6 +622,26 @@ const kamers = [
           "Kettle",
           "Free coffee (Nespresso) and tea facilities",
           "Dining bar with 4 bar stools",
+        ],
+        Spanish: [
+          "Entrada privada",
+          "Todo en la planta baja y sin desniveles, accesible en silla de ruedas. Excepto por el escalón en la puerta principal.",
+          "Cama de muelles embolsados de lujo tamaño king de 160X200cm",
+          "Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",
+          "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
+          "Wifi súper rápido gratuito",
+          "Baño privado con inodoro, lavabo y amplia ducha a ras de suelo",
+          "Equipado con aire acondicionado Daikin",
+          "Provisto de ropa de baño (toallas, toallas de invitados)",
+          "Sala de estar con estufa de pellets y mobiliario Chesterfield",
+          "Terraza privada con asientos",
+          "Cocina totalmente equipada con:",
+          "Refrigerador",
+          "Platos, cubiertos, utensilios de cocina, vasos, tazas",
+          "Placa de gas de 5 quemadores",
+          "Hervidor",
+          "Café gratuito (Nespresso) y facilidades para hacer té",
+          "Barra de comedor con 4 taburetes",
         ],
       },
     },
