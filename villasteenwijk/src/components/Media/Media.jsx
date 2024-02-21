@@ -37,6 +37,7 @@ const Media = ({ currentLanguage }) => {
               {currentLanguage === "German" && "Medien"}
               {currentLanguage === "Chinese" && "媒体"}
               {currentLanguage === "English" && "Media"}
+              {currentLanguage === "Spanish" && "Medios"}
             </m.h1>
           </div>
         </div>

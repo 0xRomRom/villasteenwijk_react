@@ -33,6 +33,9 @@ const Contact = ({ currentLanguage }) => {
       if (currentLanguage === "English") {
         errors.name = "Enter your name";
       }
+      if (currentLanguage === "Spanish") {
+        errors.name = "Introduzca su nombre";
+      }
     }
 
     if (!emailRef.current.value.trim()) {
@@ -48,6 +51,9 @@ const Contact = ({ currentLanguage }) => {
       if (currentLanguage === "English") {
         errors.email = "Invalid E-Mail address";
       }
+      if (currentLanguage === "Spanish") {
+        errors.email = "Dirección de correo electrónico no válida";
+      }
     } else if (!/\S+@\S+\.\S+/.test(emailRef.current.value)) {
       if (currentLanguage === "Dutch") {
         errors.email = "Ongeldig E-Mail adres";
@@ -60,6 +66,9 @@ const Contact = ({ currentLanguage }) => {
       }
       if (currentLanguage === "English") {
         errors.email = "Invalid E-Mail address";
+      }
+      if (currentLanguage === "Spanish") {
+        errors.email = "Dirección de correo electrónico no válida";
       }
     }
 
@@ -75,6 +84,9 @@ const Contact = ({ currentLanguage }) => {
       }
       if (currentLanguage === "English") {
         errors.message = "Write a message";
+      }
+      if (currentLanguage === "Spanish") {
+        errors.message = "Escribe un mensaje";
       }
     }
 
@@ -118,6 +130,7 @@ const Contact = ({ currentLanguage }) => {
         {currentLanguage === "German" && "Kontakt"}
         {currentLanguage === "Chinese" && "接触"}
         {currentLanguage === "English" && "Contact"}
+        {currentLanguage === "Spanish" && "Contacto"}
       </m.h1>
       <div className={stl.contactWrapper}>
         <m.div
@@ -152,16 +165,19 @@ const Contact = ({ currentLanguage }) => {
                 {currentLanguage === "German" && "Kreditkarte"}
                 {currentLanguage === "Chinese" && "信用卡"}
                 {currentLanguage === "English" && "Creditcard"}
+                {currentLanguage === "Spanish" && "Tarjeta de crédito"}
                 <br />
                 {currentLanguage === "Dutch" && "Overschrijving"}
                 {currentLanguage === "German" && "Überweisung"}
                 {currentLanguage === "Chinese" && "转账"}
                 {currentLanguage === "English" && "Manual Transfer"}
+                {currentLanguage === "Spanish" && "Sobrescrito a mano"}
                 <br />
                 {currentLanguage === "Dutch" && "Contant"}
                 {currentLanguage === "German" && "Barzahlung"}
                 {currentLanguage === "Chinese" && "现金"}
                 {currentLanguage === "English" && "Cash"}
+                {currentLanguage === "Spanish" && "En efectivo"}
               </span>
             </div>
           </div>
@@ -217,6 +233,13 @@ const Contact = ({ currentLanguage }) => {
                   ref={copyRef}
                 ></textarea>
               )}
+              {currentLanguage === "Spanish" && (
+                <textarea
+                  className={stl.copyField}
+                  placeholder="Tu mensaje"
+                  ref={copyRef}
+                ></textarea>
+              )}
 
               {formErrors.message && (
                 <p className={stl.error}>{formErrors.message}</p>
@@ -251,6 +274,14 @@ const Contact = ({ currentLanguage }) => {
                   type="text"
                   className={stl.textInput}
                   placeholder="Your name"
+                  ref={nameRef}
+                />
+              )}
+              {currentLanguage === "Spanish" && (
+                <input
+                  type="text"
+                  className={stl.textInput}
+                  placeholder="Su nombre"
                   ref={nameRef}
                 />
               )}
@@ -291,6 +322,14 @@ const Contact = ({ currentLanguage }) => {
                   ref={emailRef}
                 />
               )}
+              {currentLanguage === "Spanish" && (
+                <input
+                  type="email"
+                  className={stl.textInput}
+                  placeholder="Tu correo electrónico"
+                  ref={emailRef}
+                />
+              )}
 
               {formErrors.email && (
                 <p className={stl.error}>{formErrors.email}</p>
@@ -301,6 +340,7 @@ const Contact = ({ currentLanguage }) => {
                 {currentLanguage === "German" && "Schicken"}
                 {currentLanguage === "Chinese" && "发送"}
                 {currentLanguage === "English" && "Send"}
+                {currentLanguage === "Spanish" && "Enviar"}
               </button>
             </form>
           </div>

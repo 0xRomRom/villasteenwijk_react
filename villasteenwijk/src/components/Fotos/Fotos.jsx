@@ -140,6 +140,7 @@ const Fotos = ({ currentLanguage }) => {
               {currentLanguage === "German" && "Fotos"}
               {currentLanguage === "Chinese" && "相片"}
               {currentLanguage === "English" && "Pictures"}
+              {currentLanguage === "Spanish" && "Fotos"}
             </m.h1>
           </div>
         </div>
