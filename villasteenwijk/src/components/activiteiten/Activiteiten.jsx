@@ -281,7 +281,7 @@ const Activiteiten = ({ currentLanguage }) => {
                     {currentLanguage === "Chinese" && "冒险攀登森林"}
                     {currentLanguage === "English" &&
                       "Climbforrest 'Adventurous'"}
-                    {currentLanguage === "Spanish" && "escalarforst aventurero"}
+                    {currentLanguage === "Spanish" && "Escalarforst Aventurero"}
                   </li>
                 </a>
                 <a
