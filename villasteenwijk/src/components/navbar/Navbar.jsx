@@ -186,6 +186,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Home"}
             {currentLanguage === "Chinese" && "家"}
             {currentLanguage === "English" && "Home"}
+            {currentLanguage === "Spanish" && "Hogar"}
           </li>
         </Link>
 
@@ -199,6 +200,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Zimmer & Preise"}
             {currentLanguage === "Chinese" && "房间及价格"}
             {currentLanguage === "English" && "Rooms & Prices"}
+            {currentLanguage === "Spanish" && "Habitaciones y precios"}
           </li>
         </Link>
 
@@ -208,6 +210,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Fotos"}
             {currentLanguage === "Chinese" && "相片"}
             {currentLanguage === "English" && "Pictures"}
+            {currentLanguage === "Spanish" && "Fotos"}
           </li>
         </Link>
 
@@ -217,6 +220,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Medien"}
             {currentLanguage === "Chinese" && "媒体"}
             {currentLanguage === "English" && "Media"}
+            {currentLanguage === "Spanish" && "Medios"}
           </li>
         </Link>
 
@@ -226,6 +230,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Virtueller 3D-Rundgang"}
             {currentLanguage === "Chinese" && "3D虚拟游览"}
             {currentLanguage === "English" && "3D Virtual Tour"}
+            {currentLanguage === "Spanish" && "Visita Virtual 3d"}
           </li>
         </Link>
 
@@ -239,6 +244,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Aktivitäten"}
             {currentLanguage === "Chinese" && "活动"}
             {currentLanguage === "English" && "Activities"}
+            {currentLanguage === "Spanish" && "Actividades"}
           </li>
         </Link>
 
@@ -248,6 +254,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Kontakt"}
             {currentLanguage === "Chinese" && "接触"}
             {currentLanguage === "English" && "Contact"}
+            {currentLanguage === "Spanish" && "Contacto"}
           </li>
         </Link>
 
@@ -263,6 +270,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "German" && "Buchen"}
             {currentLanguage === "Chinese" && "预订"}
             {currentLanguage === "English" && "Book"}
+            {currentLanguage === "Spanish" && "Libro"}
           </li>
         </a>
       </ul>
