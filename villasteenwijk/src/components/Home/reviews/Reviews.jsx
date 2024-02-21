@@ -19,6 +19,8 @@ const Reviews = ({ currentLanguage }) => {
           {currentLanguage === "German" && "Durchschnittliche Kundenbewertung"}
           {currentLanguage === "Chinese" && "平均客户评分"}
           {currentLanguage === "English" && "Average visitor rating"}
+          {currentLanguage === "Spanish" &&
+            "Calificación promedio de visitantes"}
         </m.h2>
         <m.span
           className={stl.rating}
@@ -52,6 +54,7 @@ const Reviews = ({ currentLanguage }) => {
                 {currentLanguage === "German" && "Trompmeesters zimmer"}
                 {currentLanguage === "Chinese" && "特罗姆梅斯特的房间"}
                 {currentLanguage === "English" && "Trompmeesters room"}
+                {currentLanguage === "Spanish" && "Sala de Trompmeesters"}
               </span>
             </div>
             <div className={stl.userRating}>9.3/10</div>
@@ -66,6 +69,8 @@ const Reviews = ({ currentLanguage }) => {
                 "一个迷人的地方！住宿很舒适，维护得很好，业主很友好，乐于助人。环境宜人，适合度过轻松的周末。"}
               {currentLanguage === "English" &&
                 "A charming place! The accommodation was cozy and well maintained, the owners were friendly and helpful. A pleasant environment for a relaxing weekend away."}
+              {currentLanguage === "Spanish" &&
+                "¡Un lugar encantador! El alojamiento era acogedor y estaba bien mantenido, los propietarios eran amables y serviciales. Un ambiente agradable para un fin de semana relajante."}
             </p>
           </div>
         </m.div>
@@ -89,6 +94,7 @@ const Reviews = ({ currentLanguage }) => {
                 {currentLanguage === "German" && "Hildo Krop zimmer"}
                 {currentLanguage === "Chinese" && "希尔多·克罗普房间"}
                 {currentLanguage === "English" && "Hildo Krop room"}
+                {currentLanguage === "Spanish" && "Sala de Hildo Krop"}
               </span>
             </div>
             <div className={stl.userRating}>9.5/10</div>
@@ -103,6 +109,8 @@ const Reviews = ({ currentLanguage }) => {
                 "一个不错的床和早餐！房间舒适干净，早餐美味。适合安静的过夜。"}
               {currentLanguage === "English" &&
                 "A nice bed and breakfast. The room was comfortable and clean, and the breakfast tasty. Suitable for a quiet overnight stay."}
+              {currentLanguage === "Spanish" &&
+                "Una buena cama y desayuno. La habitación era cómoda y limpia, y el desayuno delicioso. Adecuado para pasar una noche tranquila."}
             </p>
           </div>
         </m.div>
@@ -126,6 +134,7 @@ const Reviews = ({ currentLanguage }) => {
                 {currentLanguage === "German" && "Kleibeuker zimmer"}
                 {currentLanguage === "Chinese" && "粘土打击室"}
                 {currentLanguage === "English" && "Kleibeuker room"}
+                {currentLanguage === "Spanish" && "Sala de Kleibeuker"}
               </span>
             </div>
             <div className={stl.userRating}>9.7/10</div>
@@ -140,6 +149,8 @@ const Reviews = ({ currentLanguage }) => {
                 "很棒的民宿！漂亮的房间，景色优美。早餐新鲜可口。那里的人们非常热情好客，让我们住得很愉快。绝对会再次回来！"}
               {currentLanguage === "English" &&
                 "Great B&B! Nice room with a nice view. The breakfast was fresh and delicious. The people there were really hospitable and made our stay perfect. Definitely coming back again!"}
+              {currentLanguage === "Spanish" &&
+                "Gran B&B! Bonita habitación con una bonita vista. El desayuno era fresco y delicioso. La gente de allí fue muy hospitalaria e hizo que nuestra estancia fuera perfecta. ¡Definitivamente regresaremos otra vez!"}
             </p>
           </div>
         </m.div>

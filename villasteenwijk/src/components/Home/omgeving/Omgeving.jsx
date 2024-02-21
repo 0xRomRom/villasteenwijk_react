@@ -14,6 +14,7 @@ const Omgeving = ({ currentLanguage }) => {
         {currentLanguage === "German" && "Der oberhaupt von Overijssel"}
         {currentLanguage === "Chinese" && "上艾瑟尔省的头"}
         {currentLanguage === "English" && "Head of Overijssel"}
+        {currentLanguage === "Spanish" && "Jefa de Overijssel"}
       </m.h1>
 
       <div className={stl.nlwrap}>
@@ -46,6 +47,8 @@ const Omgeving = ({ currentLanguage }) => {
           "我们美丽的城市别墅建于 1905 年，由 Jan Hendrik Tromp Meesters（一位富有的斯廷韦克企业家和慈善家）委托建造，采用著名的新艺术风格作为社区护理建筑，至今仍可以在别墅前面的牌匾上看到。斯滕韦克附近的别墅俗称“绿十字大楼”，这里曾经是医生诊所、婴儿接种疫苗以及人们来这里进行体育检查的地方。"}
         {currentLanguage === "English" &&
           "Our beautiful city villa was built in 1905, commissioned by Jan Hendrik Tromp Meesters (a wealthy Steenwijk entrepreneur and philanthropist) in the well-known Art Nouveau style as a community nursing building, which can still be seen on the plaque at the front of the villa. In “The green cross building”, as the villa near the Steenwijker is popularly called, there used to be a doctor's practice, babies received their vaccinations and people came here for sports inspections."}
+        {currentLanguage === "Spanish" &&
+          "Nuestra hermosa villa urbana fue construida en 1905 por encargo de Jan Hendrik Tromp Meesters (un rico empresario y filántropo de Steenwijk) en el conocido estilo Art Nouveau como edificio de enfermería comunitaria, que todavía se puede ver en la placa en la parte delantera de la villa. En el “Edificio de la Cruz Verde”, como se llama popularmente a la villa cerca de Steenwijker, había un consultorio médico, se vacunaba a los bebés y la gente venía aquí para realizar controles deportivos."}
       </m.p>
     </section>
   );

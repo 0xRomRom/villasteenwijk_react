@@ -18,6 +18,7 @@ const Beleef = ({ currentLanguage }) => {
           {currentLanguage === "German" && "Erleben Sie es selbst"}
           {currentLanguage === "Chinese" && "亲自体验一下"}
           {currentLanguage === "English" && "Explore yourself"}
+          {currentLanguage === "Spanish" && "Explorate a ti mismo"}
         </m.button>
         <m.img
           initial={{ opacity: 0, y: "-20px" }}
