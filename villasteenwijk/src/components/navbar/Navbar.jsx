@@ -30,6 +30,11 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
       alt: "English flag",
       setLang: "English",
     },
+    {
+      src: "./flags/Spain.webp",
+      alt: "Spanish flag",
+      setLang: "Spanish",
+    },
   ];
 
   const order2 = [
@@ -52,6 +57,11 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
       src: "./flags/UK.webp",
       alt: "English flag",
       setLang: "English",
+    },
+    {
+      src: "./flags/Spain.webp",
+      alt: "Spanish flag",
+      setLang: "Spanish",
     },
   ];
 
@@ -76,8 +86,45 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
       alt: "English flag",
       setLang: "English",
     },
+    {
+      src: "./flags/Spain.webp",
+      alt: "Spanish flag",
+      setLang: "Spanish",
+    },
   ];
   const order4 = [
+    {
+      src: "./flags/UK.webp",
+      alt: "English flag",
+      setLang: "English",
+    },
+    {
+      src: "./flags/China.png",
+      alt: "Chinese flag",
+      setLang: "Chinese",
+    },
+    {
+      src: "./flags/NL.webp",
+      alt: "Dutch flag",
+      setLang: "Dutch",
+    },
+    {
+      src: "./flags/German.png",
+      alt: "German flag",
+      setLang: "German",
+    },
+    {
+      src: "./flags/Spain.webp",
+      alt: "Spanish flag",
+      setLang: "Spanish",
+    },
+  ];
+  const order5 = [
+    {
+      src: "./flags/Spain.webp",
+      alt: "Spanish flag",
+      setLang: "Spanish",
+    },
     {
       src: "./flags/UK.webp",
       alt: "English flag",
@@ -350,6 +397,39 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
                   </div>
                 ))
               : order4.slice(0, 1).map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))}
+          </>
+        )}
+        {currentLanguage === "Spanish" && (
+          <>
+            {navFolded
+              ? order5.map((item) => (
+                  <div
+                    className={stl.flag}
+                    onClick={() => handleNewLanguage(item.setLang)}
+                    key={item.setLang}
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.atl}
+                      className={stl.flagIcon}
+                    />
+                    <span className={stl.languageTitle}>{item.setLang}</span>
+                  </div>
+                ))
+              : order5.slice(0, 1).map((item) => (
                   <div
                     className={stl.flag}
                     onClick={() => handleNewLanguage(item.setLang)}
