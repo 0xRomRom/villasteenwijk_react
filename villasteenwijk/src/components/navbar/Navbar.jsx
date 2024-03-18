@@ -259,7 +259,7 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
         </Link>
 
         <a
-          href="https://www.booking.com/hotel/nl/villa-steenwyck.nl.html"
+          href="https://ibe.smarthotel.nl/?id=bbcd1ebf-52ce-44d5-a248-01be65dfecd8"
           className={stl.links}
           target="_blank"
           rel="noopener noreferrer"

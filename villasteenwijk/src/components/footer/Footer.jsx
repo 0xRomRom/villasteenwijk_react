@@ -5,7 +5,7 @@ import logo from "../../assets/icons/Logo.png";
 const Footer = ({ currentLanguage }) => {
   const openExternalLink = () => {
     window.open(
-      "https://www.booking.com/hotel/nl/villa-steenwyck.nl.html",
+      "https://ibe.smarthotel.nl/?id=bbcd1ebf-52ce-44d5-a248-01be65dfecd8",
       "_blank"
     );
   };
