@@ -9,8 +9,9 @@ import Pic1 from "../../assets/media/1.webp";
 import Pic2 from "../../assets/media/2.webp";
 import Pic3 from "../../assets/media/3.webp";
 import Pic4 from "../../assets/media/4.webp";
+import Pic5 from "../../assets/media/5.webp";
 
-const kamerImages = [Pic1, Pic2, Pic3, Pic4];
+const kamerImages = [Pic1, Pic2, Pic3, Pic4, Pic5];
 
 const Media = ({ currentLanguage }) => {
   const [overlaySrc, setOverlaySrc] = useState("");
