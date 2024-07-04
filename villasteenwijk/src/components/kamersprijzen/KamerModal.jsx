@@ -232,7 +232,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
               <div className={stl.toeslagBottom}>
                 <FaEuroSign className={stl.euro2} />
                 <div className={stl.pppnCol}>
-                  <span className={stl.copyTxt}>14.50,-</span>
+                  <span className={stl.copyTxt}>20,-</span>
                   <span className={stl.pppnTxt}>p.p.p.n.</span>
                 </div>
               </div>
