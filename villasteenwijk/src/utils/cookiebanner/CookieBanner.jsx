@@ -178,11 +178,6 @@ const CookieBanner = () => {
                   We use cookies to <span className={stl.white}>improve</span>{" "}
                   your user experience.
                   <br />
-                  <span className={stl.readMore} onClick={readMoreCta}>
-                    {" "}
-                    {!navigated && "Read more"}
-                    {navigated && "Go home"}
-                  </span>
                 </span>
                 <div className={stl.btnsWrap}>
                   <button className={stl.acceptCta} onClick={acceptCookies}>
