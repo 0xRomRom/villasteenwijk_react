@@ -506,7 +506,7 @@ const kamers = [
           "Refrigerador",
           "Hervidor",
           "Café gratuito (Nespresso) y facilidades para hacer té",
-          "Si lo desea, podemos proporcionar un delicioso y fresco desayuno en la habitación por €20 por persona",
+          "Si lo desea, podemos proporcionar un delicioso y fresco desayuno en la habitación por €20l por persona",
           "Una hermosa y espaciosa habitación con un amplio baño y ducha a ras de suelo en la planta baja, con un área total de 40m2 que incluye: Armario, Vestíbulo, amplio inodoro, armario de almacenamiento, dormitorio separado con una cómoda cama doble (160X200), baño ensuite con amplia ducha a ras de suelo",
           "Una mesa con 2 sillas donde se sirve el desayuno",
           "Si lo desea, podemos colocar 1 cama extra, Costo €25,-",

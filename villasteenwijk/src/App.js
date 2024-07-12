@@ -11,6 +11,7 @@ import HouseTour from "./components/HouseTour/HouseTour";
 import Activiteiten from "./components/activiteiten/Activiteiten";
 import Contact from "./components/Contact/Contact";
 import ScrollToTop from "./utils/ScrollToTop";
+import CookieBanner from "./utils/cookiebanner/CookieBanner";
 
 const App = () => {
   const [currentLanguage, setCurrentLanguage] = useState("Dutch");
@@ -26,6 +27,7 @@ const App = () => {
         currentLanguage={currentLanguage}
       />
       <ScrollToTop />
+      <CookieBanner />
       <Routes>
         <Route
           index
