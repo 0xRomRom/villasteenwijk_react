@@ -186,7 +186,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                 <div className={stl.personWrapper}>
                   <div className={stl.priceBlock}>
                     <IoPeopleSharp className={stl.icon} />
-                    <span className={stl.copyTxt}>{kamer["2personen"]},-</span>
+                    {/* <span className={stl.copyTxt}>{kamer["2personen"]},-</span> */}
                   </div>
                   {kamer["3personen"] > 0 && (
                     <div className={stl.priceBlock}>
@@ -284,11 +284,11 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
           </div>
           <div className={stl.ctaBox}>
             <button className={stl.reserverenCta} onClick={openExternalLink}>
-              {currentLanguage === "Dutch" && "Reserveren"}
-              {currentLanguage === "German" && "Buchen"}
-              {currentLanguage === "Chinese" && "预订"}
-              {currentLanguage === "English" && "Book"}
-              {currentLanguage === "Spanish" && "Libro"}
+              {currentLanguage === "Dutch" && "Tarieven/Reserveren"}
+              {currentLanguage === "German" && "Tarife/Buchen"}
+              {currentLanguage === "Chinese" && "費率/预订"}
+              {currentLanguage === "English" && "Pricing & Book"}
+              {currentLanguage === "Spanish" && "Tarifas/Libro"}
             </button>
           </div>
         </div>

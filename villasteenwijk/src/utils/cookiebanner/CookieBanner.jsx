@@ -2,17 +2,14 @@ import { useEffect, useState } from "react";
 import stl from "./CookieBanner.module.css";
 import { GrConfigure } from "react-icons/gr";
 import { FaFlaskVial } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
 
 const CookieBanner = () => {
-  const navigate = useNavigate();
   const [cookieSettings, setCookieSettings] = useState({
     essential: true,
     analytics: true,
   });
   const [showBanner, setShowBanner] = useState(true);
   const [showPreferences, setShowPreferences] = useState(false);
-  const [navigated, setNavigated] = useState(false);
 
   const acceptCookies = () => {
     document.cookie = "cookieConsent=true; max-age=31536000";
@@ -60,21 +57,11 @@ const CookieBanner = () => {
     });
   };
 
-  const readMoreCta = () => {
-    if (!navigated) {
-      navigate("/privacy");
-      setNavigated(true);
-      return;
-    }
-    setNavigated(false);
-    navigate("/");
-  };
-
   return (
     <>
       {showBanner === true && (
         <div
-          className={`${stl.cookieBackdrop} ${navigated ? stl.visible : ""}`}
+          className={`${stl.cookieBackdrop}`}
           style={{
             display: showBanner ? "flex" : "none",
           }}
