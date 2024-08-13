@@ -188,14 +188,14 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                     <IoPeopleSharp className={stl.icon} />
                     {/* <span className={stl.copyTxt}>{kamer["2personen"]},-</span> */}
                   </div>
-                  {kamer["3personen"] > 0 && (
+                  {/* {kamer["3personen"] > 0 && (
                     <div className={stl.priceBlock}>
                       <FaPeopleGroup className={stl.icon} />
                       <span className={stl.copyTxt}>
                         {kamer["3personen"]},-
                       </span>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
