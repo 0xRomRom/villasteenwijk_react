@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo } from "react";
 import stl from "./KamerModal.module.css";
 import { FaEuroSign } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
-import { FaPeopleGroup } from "react-icons/fa6";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { PiForkKnifeBold } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
@@ -168,6 +167,15 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
               ))}
             </div>
           </div>
+          <div className={stl.ctaBox}>
+            <button className={stl.reserverenCta} onClick={openExternalLink}>
+              {currentLanguage === "Dutch" && "Tarieven / Reserveren"}
+              {currentLanguage === "German" && "Tarife / Buchen"}
+              {currentLanguage === "Chinese" && "費率/预订"}
+              {currentLanguage === "English" && "Pricing / Book"}
+              {currentLanguage === "Spanish" && "Tarifas / Libro"}
+            </button>
+          </div>
           <div className={stl.bottomWrap}>
             <div className={stl.prijsWrap}>
               <div className={stl.personCount}>
@@ -213,7 +221,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
               <div className={stl.toeslagBottom}>
                 <FaEuroSign className={stl.euro2} />
                 <div className={stl.pppnCol}>
-                  <span className={stl.copyTxt}>2.50,-</span>
+                  <span className={stl.copyTxt}>5,-</span>
                   <span className={stl.pppnTxt}>p.p.p.n.</span>
                 </div>
               </div>
@@ -281,15 +289,6 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className={stl.ctaBox}>
-            <button className={stl.reserverenCta} onClick={openExternalLink}>
-              {currentLanguage === "Dutch" && "Tarieven/Reserveren"}
-              {currentLanguage === "German" && "Tarife/Buchen"}
-              {currentLanguage === "Chinese" && "費率/预订"}
-              {currentLanguage === "English" && "Pricing & Book"}
-              {currentLanguage === "Spanish" && "Tarifas/Libro"}
-            </button>
           </div>
         </div>
       </div>
