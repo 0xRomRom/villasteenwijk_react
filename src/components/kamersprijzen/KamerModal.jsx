@@ -247,46 +247,48 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
             </div>
           </div>
           <div className={stl.descriptionWrap}>
-            <div className={stl.copyBox}>
-              <div className={stl.copyTextBox}>
-                <h2 className={stl.boxTitle}>
-                  {currentLanguage === "Dutch" && "Omschrijving"}
-                  {currentLanguage === "German" && "Beschreibung"}
-                  {currentLanguage === "Chinese" && "描述"}
-                  {currentLanguage === "English" && "Description"}
-                  {currentLanguage === "Spanish" && "Descripción"}
-                </h2>
-                <p className={stl.roomCopy}>
-                  {kamer.copy1[currentLanguage]}
-                  <br />
-                  <br />
-                  {kamer.copy2[currentLanguage]}
-                </p>
+            <div className={stl.innerWrap}>
+              <div className={stl.copyBox}>
+                <div className={stl.copyTextBox}>
+                  <h2 className={stl.boxTitle}>
+                    {currentLanguage === "Dutch" && "Omschrijving"}
+                    {currentLanguage === "German" && "Beschreibung"}
+                    {currentLanguage === "Chinese" && "描述"}
+                    {currentLanguage === "English" && "Description"}
+                    {currentLanguage === "Spanish" && "Descripción"}
+                  </h2>
+                  <p className={stl.roomCopy}>
+                    {kamer.copy1[currentLanguage]}
+                    <br />
+                    <br />
+                    {kamer.copy2[currentLanguage]}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className={stl.utilitiesBox}>
-              <div className={stl.utilitiesTextBox}>
-                <h2 className={stl.boxTitle}>
-                  {currentLanguage === "Dutch" && "Voorzieningen"}
-                  {currentLanguage === "German" && "Dienstleistungen"}
-                  {currentLanguage === "Chinese" && "服务"}
-                  {currentLanguage === "English" && "Services"}
-                  {currentLanguage === "Spanish" && "Servicios"}
-                </h2>
-                <ul className={stl.voorzienList}>
-                  {activeKamer.length > 0 &&
-                    activeKamer.map((kamer, index) => (
-                      <React.Fragment key={index}>
-                        {kamer.voorziening[currentLanguage].map(
-                          (item, itemIndex) => (
-                            <li className={stl.voorziening} key={itemIndex}>
-                              {item}
-                            </li>
-                          )
-                        )}
-                      </React.Fragment>
-                    ))}
-                </ul>
+              <div className={stl.utilitiesBox}>
+                <div className={stl.utilitiesTextBox}>
+                  <h2 className={stl.boxTitle}>
+                    {currentLanguage === "Dutch" && "Voorzieningen"}
+                    {currentLanguage === "German" && "Dienstleistungen"}
+                    {currentLanguage === "Chinese" && "服务"}
+                    {currentLanguage === "English" && "Services"}
+                    {currentLanguage === "Spanish" && "Servicios"}
+                  </h2>
+                  <ul className={stl.voorzienList}>
+                    {activeKamer.length > 0 &&
+                      activeKamer.map((kamer, index) => (
+                        <React.Fragment key={index}>
+                          {kamer.voorziening[currentLanguage].map(
+                            (item, itemIndex) => (
+                              <li className={stl.voorziening} key={itemIndex}>
+                                {item}
+                              </li>
+                            )
+                          )}
+                        </React.Fragment>
+                      ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
