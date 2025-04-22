@@ -58,7 +58,7 @@ const KamersPrijzen = ({ currentLanguage }) => {
               <span className={stl.doorName}>5. Giethoorn</span>
             </div>
           </div>
-          <div className={stl.appartmentGrid} onClick={() => openModal(6)}>
+          {/* <div className={stl.appartmentGrid} onClick={() => openModal(6)}>
             <img
               src={appartment}
               alt="Appartment"
@@ -71,7 +71,7 @@ const KamersPrijzen = ({ currentLanguage }) => {
               {currentLanguage === "English" && "Appartment Villa Steenwyck"}
               {currentLanguage === "Spanish" && "Apartamento Villa Steenwyck"}
             </span>
-          </div>
+          </div> */}
         </>
       )}
     </main>
