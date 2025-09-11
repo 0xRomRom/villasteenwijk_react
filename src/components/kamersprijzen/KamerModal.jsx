@@ -209,7 +209,6 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
             </div>
             <div className={stl.toeslagWrap}>
               <div className={stl.toeslagTop}>
-                <FaExclamationTriangle className={stl.exclamation} />
                 <span className={stl.copyTitle}>
                   {currentLanguage === "Dutch" && "Toeristenbelasting"}
                   {currentLanguage === "German" && "Kurtaxe"}
@@ -219,28 +218,8 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                 </span>
               </div>
               <div className={stl.toeslagBottom}>
-                <FaEuroSign className={stl.euro2} />
                 <div className={stl.pppnCol}>
-                  <span className={stl.copyTxt}>5,-</span>
-                  <span className={stl.pppnTxt}>p.p.p.n.</span>
-                </div>
-              </div>
-            </div>
-            <div className={stl.ontbijtWrap}>
-              <div className={stl.toeslagTop}>
-                <PiForkKnifeBold className={stl.forkIcon} />
-                <span className={stl.copyTitle}>
-                  {currentLanguage === "Dutch" && "Heerlijk ontbijt"}
-                  {currentLanguage === "German" && "Leckeres frühstück"}
-                  {currentLanguage === "Chinese" && "美味的早餐"}
-                  {currentLanguage === "English" && "Lovely breakfast"}
-                  {currentLanguage === "Spanish" && "Delicioso desayuno"}
-                </span>
-              </div>
-              <div className={stl.toeslagBottom}>
-                <FaEuroSign className={stl.euro2} />
-                <div className={stl.pppnCol}>
-                  <span className={stl.copyTxt}>20,-</span>
+                  <span className={stl.copyTxt}>€5,-</span>
                   <span className={stl.pppnTxt}>p.p.p.n.</span>
                 </div>
               </div>
