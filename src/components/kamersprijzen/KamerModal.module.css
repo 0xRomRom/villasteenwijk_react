@@ -103,7 +103,7 @@
 
 .icon {
   color: rgb(163, 163, 163);
-  font-size: 18px;
+  font-size: 20px;
 }
 .personCount {
   display: flex;
@@ -124,6 +124,7 @@
   color: white;
   font-family: "Open Sans";
   font-weight: bold;
+  font-size: 14px;
 }
 
 .copyTitle {

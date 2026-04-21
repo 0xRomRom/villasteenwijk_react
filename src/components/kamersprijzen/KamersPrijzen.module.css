@@ -11,7 +11,7 @@
 
 .fiveDoorGrid {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -91,4 +91,66 @@
     width: 22rem;
     height: 17.5rem;
   }
+}
+
+.breakfastDiv {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  padding: 0rem 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
+
+@media only screen and (min-width: 1800px) {
+  .breakfastDiv {
+    max-width: 30rem;
+  }
+}
+
+.breakfastSpan {
+  background-color: rgb(216, 216, 16);
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  max-width: 20rem;
+}
+
+.breakfastSpan:hover {
+  background-color: yellow;
+}
+
+.breakfastOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.507);
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0rem 1rem;
+}
+
+.breakfastImg {
+  width: 100%;
+  max-width: 30rem;
+
+  border-radius: 2rem;
+}
+
+.priceCol {
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+  padding-top: 1rem;
+  gap: 1rem;
 }

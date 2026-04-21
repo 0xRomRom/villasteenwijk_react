@@ -516,56 +516,50 @@ const kamers = [
   ],
   [
     {
-      hero: "App. Villa Steenwyck",
-      "2personen": 145,
-      "3personen": 0,
+      hero: "Ramswoerthe",
+      "2personen": 119,
+      "3personen": 169,
       copy1: {
         Dutch:
-          "Naast Boutique hotel Villa Steenwyck, bevind zich “Appartement Villa Steenwyck.",
+          "Dit is onze meest luxe en grootste kamer en ligt op de 1e verdieping.",
         German:
-          "Neben dem Boutique-Hotel Villa Steenwyck befindet sich das 'Appartement Villa Steenwyck.",
-        Chinese: "在精品酒店维拉斯蒂恩维克别墅旁边，有“维拉斯蒂恩维克公寓。",
+          "Dies ist unser luxuriösestes und größtes Zimmer und befindet sich im 1. Stock.",
+        Chinese: "这是我们最豪华、最大的房间，位于一楼。",
         English:
-          "Next to Boutique hotel Villa Steenwyck, there is 'Apartment Villa Steenwyck'.",
+          "This is our most luxurious and largest room and is located on the 1st floor.",
         Spanish:
-          "Al lado del hotel boutique Villa Steenwyck se encuentra el 'Apartamento Villa Steenwyck'.",
+          "Esta es nuestra habitación más lujosa y espaciosa, y está ubicada en el primer piso.",
       },
       copy2: {
         Dutch:
-          "Een volledig gelijkvloers ingericht appartement, op de begane grond, van 110m2 met daarin: Hal, Toilet, opbergkast, aparte slaapkamer met een heerlijk 2-persoons bed (160X200), ensuite badkamer met grote inloop douche. Een prachtige woonkamer met hoog, open, punt plafond, gecombineerde volledige ingerichte keuken met gezellige eetbar.",
+          "De kamer is te huur vanaf 15 juni, maar is alvast te reserveren.",
         German:
-          "Ein komplett ebenerdig eingerichtetes Apartment im Erdgeschoss mit 110m2, bestehend aus: Flur, Toilette, Abstellkammer, separates Schlafzimmer mit einem komfortablen Doppelbett (160X200), angrenzendem Badezimmer mit großer begehbarer Dusche. Ein wunderschönes Wohnzimmer mit hohem, offenen, spitzem Decke, kombinierte voll ausgestattete Küche mit gemütlicher Essbar.",
-        Chinese:
-          "一间完全位于一楼的110平方米单层公寓，内设有：门厅、卫生间、储藏柜、带舒适双人床（160X200）的独立卧室，带大型步入式淋浴的连接浴室。一个拥有高高的、敞开式、尖顶天花板的美丽客厅，配有舒适的吧台的完全配备的厨房。",
+          "Das Zimmer kann ab dem 15. Juni gemietet werden, kann aber im Voraus reserviert werden.",
+        Chinese: "该房间从6月15日起可供出租，但可以提前预订。",
         English:
-          "A fully furnished apartment on the ground floor of 110m2 containing: Hall, toilet, storage cupboard, separate bedroom with a lovely double bed (160X200), ensuite bathroom with large walk-in shower. A beautiful living room with high, open , pointed ceiling, combined fully equipped kitchen with cozy dining bar.",
+          "The room is available for rent from June 15, but can be reserved in advance.",
         Spanish:
-          "Un apartamento completamente amueblado en la planta baja de 110 m2 que contiene: vestíbulo, aseo, armario, dormitorio independiente con una preciosa cama doble (160X200) y cuarto de baño privado con gran ducha a ras de suelo. Un hermoso salón con techo alto, abierto y puntiagudo, cocina totalmente equipada combinada con una acogedora barra comedor.",
+          "La habitación está disponible para alquilar a partir del 15 de junio, pero se puede reservar con antelación.",
       },
       voorziening: {
         Dutch: [
-          "Eigen privé opgang",
-          "Alles op de begane grond en zonder drempels, rolstoel vriendelijk. Behalve het stoepje bij de voordeur.",
+          "Extra bed (slaap bank) + €50,-",
+          "2 persoons kamer",
+          "Eigen luxe badkamer, toilet en bad.",
+          "Bank op foto is uit te trekken tot 2-persoons (kinder)bed",
           "Luxe kingsize boxspring bed van 160X200cm",
           "Satijnen wit beddengoed en badtextiel van “De witte Lietaer”",
           "Luxe Philips Ambilight TV met Netflix en kabel TV",
+          "Nespresso koffie automaat met gratis koffie",
           "Gratis super snelle wifi",
           "Privé badkamer met toilet,wastafel en grote inloopdouche",
           "Voorzien van Daikin Airconditioning",
           "Voorzien van bad linnen (handdoeken, gastendoekjes)",
           "Woonkamer met pelletkachel en Chesterfield inrichting",
-          "Eigen privé terras met zitje",
-          "Compleet ingerichte keuken met:",
-          "Koelkast",
-          "Borden,bestek, pannenset, glazen, kopjes",
-          "5-pits gasfornuis",
-          "Waterkoker",
-          "Gratis koffie (Nespresso) en thee faciliteiten",
-          "Eet bar met 4 bar krukken",
         ],
         German: [
           "Eigenem privaten Eingang",
-          "Alles im Erdgeschoss und ohne Schwellen, rollstuhlgerecht. Mit Ausnahme der Stufe an der Haustür.",
+          "Zustellbett (Schlafsofa) + 50 €",
           "Luxuriöses Kingsize-Boxspringbett von 160X200cm",
           "Satinierte weiße Bettwäsche und Badtextilien von “De Witte Lietaer”",
           "Luxuriöser Philips Ambilight Fernseher mit Netflix und Kabel-TV",
@@ -585,7 +579,7 @@ const kamers = [
         ],
         Chinese: [
           "独立私人入口",
-          "一切都位于一楼，没有门槛，适合轮椅使用者。除了前门的台阶。",
+          "加床（沙发床）+ 50 欧元",
           "豪华160X200厘米的特大号弹簧床",
           "“De Witte Lietaer”品牌的亚麻色床上用品和浴巾",
           "配备Netflix和有线电视的豪华Philips Ambilight电视",
@@ -605,6 +599,7 @@ const kamers = [
         ],
         English: [
           "Private entrance",
+          "Extra bed (sofa bed) + €50",
           "All on the ground floor and without thresholds, wheelchair friendly. Except for the step at the front door.",
           "Luxury kingsize boxspring bed of 160X200cm",
           "Satin white bedding and bath textiles from “De Witte Lietaer”",
@@ -625,6 +620,7 @@ const kamers = [
         ],
         Spanish: [
           "Entrada privada",
+          "Cama supletoria (sofá cama) + 50 €",
           "Todo en la planta baja y sin desniveles, accesible en silla de ruedas. Excepto por el escalón en la puerta principal.",
           "Cama de muelles embolsados de lujo tamaño king de 160X200cm",
           "Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",

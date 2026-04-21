@@ -5,6 +5,7 @@ import { IoPeopleSharp } from "react-icons/io5";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { PiForkKnifeBold } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
+import { IoIosPeople } from "react-icons/io";
 
 //Kamer 1 Hildo Krop
 import Pic1 from "../../assets/hildokrop/Pic1.webp";
@@ -56,15 +57,15 @@ import Pic56 from "../../assets/giethoorn/Pic6.webp";
 import Pic57 from "../../assets/giethoorn/Pic7.webp";
 import Pic58 from "../../assets/giethoorn/Pic8.webp";
 
-//Kamer 6 Giethoorn
-import Pic61 from "../../assets/appartement/Pic1.webp";
-import Pic62 from "../../assets/appartement/Pic2.webp";
-import Pic63 from "../../assets/appartement/Pic3.webp";
-import Pic64 from "../../assets/appartement/Pic4.webp";
-import Pic65 from "../../assets/appartement/Pic5.webp";
-import Pic66 from "../../assets/appartement/Pic6.webp";
-import Pic67 from "../../assets/appartement/Pic7.webp";
-import Pic68 from "../../assets/appartement/Pic8.webp";
+//Kamer 6 Ramswoerthe
+import Pic61 from "../../assets/ramswoerthe/Pic1.webp";
+import Pic62 from "../../assets/ramswoerthe/Pic2.webp";
+import Pic63 from "../../assets/ramswoerthe/Pic3.webp";
+import Pic64 from "../../assets/ramswoerthe/Pic4.webp";
+import Pic65 from "../../assets/ramswoerthe/Pic5.webp";
+import Pic66 from "../../assets/ramswoerthe/Pic6.webp";
+import Pic67 from "../../assets/ramswoerthe/Pic7.webp";
+import Pic68 from "../../assets/ramswoerthe/Pic8.webp";
 
 import kamers from "../../utils/kamersmodal";
 
@@ -74,6 +75,7 @@ const kamer3Images = [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38];
 const kamer4Images = [Pic41, Pic42, Pic43, Pic44, Pic45, Pic46, Pic47, Pic48];
 const kamer5Images = [Pic51, Pic52, Pic53, Pic54, Pic55, Pic56, Pic57, Pic58];
 const kamer6Images = [Pic61, Pic62, Pic63, Pic64, Pic65, Pic66, Pic67, Pic68];
+
 const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
   const [activeKamer, setActiveKamer] = useState([]);
   const [activeButton, setActiveButton] = useState(0);
@@ -86,6 +88,22 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
   const kamer5Imgs = useMemo(() => kamer5Images, []);
   const kamer6Imgs = useMemo(() => kamer6Images, []);
 
+  useEffect(() => {
+    const allImages = [
+      ...kamer1Imgs,
+      ...kamer2Imgs,
+      ...kamer3Imgs,
+      ...kamer4Imgs,
+      ...kamer5Imgs,
+      ...kamer6Imgs,
+    ];
+
+    allImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [kamer1Imgs, kamer2Imgs, kamer3Imgs, kamer4Imgs, kamer5Imgs, kamer6Imgs]);
+
   const handleButtonClick = (index) => {
     setActiveButton(index);
   };
@@ -97,7 +115,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
   const openExternalLink = () => {
     window.open(
       "https://ibe.smarthotel.nl/?id=bbcd1ebf-52ce-44d5-a248-01be65dfecd8",
-      "_blank"
+      "_blank",
     );
   };
 
@@ -142,8 +160,8 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
 
   return activeKamer.map((kamer) => {
     return (
-      <div className={stl.kamermodal} key={Math.random()}>
-        <div className={stl.modalWrap}>
+      <div className={stl.kamermodal} key={Math.random()} onClick={closeModal}>
+        <div className={stl.modalWrap} onClick={(e) => e.stopPropagation()}>
           <div className={stl.modal}>
             <div className={stl.closeRow}>
               <IoMdClose className={stl.closeBtn} onClick={closeModal} />
@@ -194,16 +212,21 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                 <div className={stl.personWrapper}>
                   <div className={stl.priceBlock}>
                     <IoPeopleSharp className={stl.icon} />
-                    {/* <span className={stl.copyTxt}>{kamer["2personen"]},-</span> */}
+                    <span className={stl.copyTxt}>{kamer["2personen"]},-</span>
                   </div>
-                  {/* {kamer["3personen"] > 0 && (
+                  {kamer["3personen"] > 0 && (
                     <div className={stl.priceBlock}>
-                      <FaPeopleGroup className={stl.icon} />
+                      <IoIosPeople
+                        className={stl.icon}
+                        style={{
+                          fontSize: "24px",
+                        }}
+                      />
                       <span className={stl.copyTxt}>
                         {kamer["3personen"]},-
                       </span>
                     </div>
-                  )} */}
+                  )}
                 </div>
               </div>
             </div>
@@ -262,7 +285,7 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
                               <li className={stl.voorziening} key={itemIndex}>
                                 {item}
                               </li>
-                            )
+                            ),
                           )}
                         </React.Fragment>
                       ))}
