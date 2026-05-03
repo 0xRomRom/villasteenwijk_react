@@ -407,7 +407,6 @@ const kamers = [
       copy2: "",
       voorziening: {
         Dutch: [
-          "Extra bed €25,- (Max 3 personen)",
           "40m2",
           "Maximaal 3 personen",
           "Eigen privé opgang",
@@ -425,10 +424,8 @@ const kamers = [
           "Desgewenst verzorgen wij een heerlijk, vers, ontbijt op de kamer voor €20,- per persoon",
           "Een prachtige, ruime kamer met grote badkamer en inloopdouche op de begane grond, met een totale oppervlakte van 40m2 met daarin: Garderobe,Hal, ruime toilet, opbergkast, aparte slaapkamer met een heerlijk 2-persoons bed (160X200), ensuite badkamer met grote inloop douche",
           "Een tafel met 2 stoelen waar ook het ontbijt geserveerd wordt",
-          "Desgewenst kunnen wij 1 extra bed plaatsen, Kosten €25,-",
         ],
         German: [
-          "Zusatzbett €25,- (Maximal 3 Personen)",
           "40m2",
           "Maximal 3 Personen",
           "Eigenem privaten Eingang",
@@ -449,7 +446,6 @@ const kamers = [
           "Auf Wunsch können wir ein zusätzliches Bett aufstellen, Kosten €25,-",
         ],
         Chinese: [
-          "额外床铺 €25,-（最多3人）",
           "40平方米",
           "最多3人",
           "私人入口",
@@ -470,7 +466,6 @@ const kamers = [
           "根据需要，我们可以提供1张额外的床，费用€25,-",
         ],
         English: [
-          "Extra bed €25,- (Max 3 persons)",
           "40m2",
           "Maximum 3 persons",
           "Private entrance",
@@ -488,10 +483,8 @@ const kamers = [
           "If desired, we can provide a delicious, fresh breakfast in the room for €20 per person",
           "A beautiful, spacious room with a large bathroom and walk-in shower on the ground floor, with a total area of 40m2 including: Wardrobe, Hall, spacious toilet, storage cupboard, separate bedroom with a comfortable double bed (160X200), ensuite bathroom with large walk-in shower",
           "A table with 2 chairs where breakfast is served",
-          "If desired, we can place 1 extra bed, Cost €25,-",
         ],
         Spanish: [
-          "Cama extra €25,- (Máximo 3 personas)",
           "40m2",
           "Máximo 3 personas",
           "Entrada privada",
@@ -509,7 +502,6 @@ const kamers = [
           "Si lo desea, podemos proporcionar un delicioso y fresco desayuno en la habitación por €20l por persona",
           "Una hermosa y espaciosa habitación con un amplio baño y ducha a ras de suelo en la planta baja, con un área total de 40m2 que incluye: Armario, Vestíbulo, amplio inodoro, armario de almacenamiento, dormitorio separado con una cómoda cama doble (160X200), baño ensuite con amplia ducha a ras de suelo",
           "Una mesa con 2 sillas donde se sirve el desayuno",
-          "Si lo desea, podemos colocar 1 cama extra, Costo €25,-",
         ],
       },
     },
@@ -543,7 +535,6 @@ const kamers = [
       },
       voorziening: {
         Dutch: [
-          "Extra bed (slaap bank) + €50,-",
           "2 persoons kamer",
           "Eigen luxe badkamer, toilet en bad.",
           "Bank op foto is uit te trekken tot 2-persoons (kinder)bed",
@@ -559,7 +550,6 @@ const kamers = [
         ],
         German: [
           "Eigenem privaten Eingang",
-          "Zustellbett (Schlafsofa) + 50 €",
           "Luxuriöses Kingsize-Boxspringbett von 160X200cm",
           "Satinierte weiße Bettwäsche und Badtextilien von “De Witte Lietaer”",
           "Luxuriöser Philips Ambilight Fernseher mit Netflix und Kabel-TV",
@@ -579,7 +569,6 @@ const kamers = [
         ],
         Chinese: [
           "独立私人入口",
-          "加床（沙发床）+ 50 欧元",
           "豪华160X200厘米的特大号弹簧床",
           "“De Witte Lietaer”品牌的亚麻色床上用品和浴巾",
           "配备Netflix和有线电视的豪华Philips Ambilight电视",
@@ -599,7 +588,6 @@ const kamers = [
         ],
         English: [
           "Private entrance",
-          "Extra bed (sofa bed) + €50",
           "All on the ground floor and without thresholds, wheelchair friendly. Except for the step at the front door.",
           "Luxury kingsize boxspring bed of 160X200cm",
           "Satin white bedding and bath textiles from “De Witte Lietaer”",

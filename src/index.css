@@ -5,6 +5,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+#root {
+  min-height: 100vh !important;
+}
+.App {
+  min-height: 100vh !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,21 +35,4 @@ code {
   box-sizing: border-box;
   font-family: luxuryFont;
   user-select: none;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgb(0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(0, 0, 0);
 }

@@ -12,6 +12,7 @@ import Activiteiten from "./components/activiteiten/Activiteiten";
 import Contact from "./components/Contact/Contact";
 import ScrollToTop from "./utils/ScrollToTop";
 import CookieBanner from "./utils/cookiebanner/CookieBanner";
+import OntbijtService from "./components/ontbijt/OntbijtService";
 
 const App = () => {
   const [currentLanguage, setCurrentLanguage] = useState("Dutch");
@@ -37,6 +38,10 @@ const App = () => {
         <Route
           path="/kamersprijzen"
           element={<KamersPrijzen currentLanguage={currentLanguage} />}
+        />
+        <Route
+          path="/ontbijtservice"
+          element={<OntbijtService currentLanguage={currentLanguage} />}
         />
         <Route
           path="/fotos"

@@ -1,0 +1,11 @@
+.ontbijtPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding-top: 7rem;
+  padding-left: 6rem;
+  color: yellow;
+}

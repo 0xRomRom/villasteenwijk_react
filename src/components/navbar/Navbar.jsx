@@ -203,6 +203,19 @@ const Navbar = ({ setCurrentLanguage, currentLanguage }) => {
             {currentLanguage === "Spanish" && "Habitaciones y precios"}
           </li>
         </Link>
+        <Link
+          to="/ontbijtservice"
+          className={stl.links}
+          onClick={handleLinkClick}
+        >
+          <li className={stl.link}>
+            {currentLanguage === "Dutch" && "Ontbijt Service"}
+            {currentLanguage === "German" && "Frühstücksservice"}
+            {currentLanguage === "Chinese" && "早餐服务"}
+            {currentLanguage === "English" && "Breakfast Service"}
+            {currentLanguage === "Spanish" && "Servicio de Desayuno"}
+          </li>
+        </Link>
 
         <Link to="/fotos" className={stl.links} onClick={handleLinkClick}>
           <li className={stl.link}>

@@ -22,11 +22,12 @@ const KamersPrijzen = ({ currentLanguage }) => {
   }, [breakfastImages, breakfastImages.length]);
 
   useEffect(() => {
+    if (kamerKeuze) return;
     const interval = setInterval(() => {
       setBreakfastImgIndex((prev) => (prev + 1) % breakfastImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [breakfastImages.length]);
+  }, [breakfastImages.length, kamerKeuze]);
 
   const openModal = (room) => {
     setKamerKeuze(room);
@@ -99,7 +100,7 @@ const KamersPrijzen = ({ currentLanguage }) => {
       {!kamerKeuze && (
         <>
           <div className={stl.breakfastDiv}>
-            <button
+            {/* <button
               className={stl.breakfastSpan}
               onClick={() => setShowOntbijt(true)}
             >
@@ -108,7 +109,7 @@ const KamersPrijzen = ({ currentLanguage }) => {
               {currentLanguage === "Chinese" && "豪华早餐"}
               {currentLanguage === "English" && "Luxury Breakfast"}
               {currentLanguage === "Spanish" && "Desayuno de Lujo"}
-            </button>
+            </button> */}
           </div>
           <div className={stl.fiveDoorGrid}>
             <div className={stl.doorTile} onClick={() => openModal(1)}>

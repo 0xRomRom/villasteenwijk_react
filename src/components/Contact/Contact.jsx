@@ -112,7 +112,7 @@ const Contact = ({ currentLanguage }) => {
         "service_a939mwr",
         "template_zsbkdcj",
         params,
-        "1ExHLcqOKMpwg2JF5"
+        "1ExHLcqOKMpwg2JF5",
       );
       setEmailSent(true);
     }
@@ -161,18 +161,7 @@ const Contact = ({ currentLanguage }) => {
               </span>
               <span className={stl.listItem}>
                 <GrMoney className={stl.miniIcon} />
-                {currentLanguage === "Dutch" && "Creditcard"}
-                {currentLanguage === "German" && "Kreditkarte"}
-                {currentLanguage === "Chinese" && "信用卡"}
-                {currentLanguage === "English" && "Creditcard"}
-                {currentLanguage === "Spanish" && "Tarjeta de crédito"}
-                <br />
-                {currentLanguage === "Dutch" && "Overschrijving"}
-                {currentLanguage === "German" && "Überweisung"}
-                {currentLanguage === "Chinese" && "转账"}
-                {currentLanguage === "English" && "Manual Transfer"}
-                {currentLanguage === "Spanish" && "Sobrescrito a mano"}
-                <br />
+
                 {currentLanguage === "Dutch" && "Contant"}
                 {currentLanguage === "German" && "Barzahlung"}
                 {currentLanguage === "Chinese" && "现金"}

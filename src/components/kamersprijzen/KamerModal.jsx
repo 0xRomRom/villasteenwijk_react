@@ -195,41 +195,6 @@ const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
             </button>
           </div>
           <div className={stl.bottomWrap}>
-            <div className={stl.prijsWrap}>
-              <div className={stl.personCount}>
-                <span className={stl.copyTitle}>
-                  {currentLanguage === "Dutch" && "Per nacht"}
-                  {currentLanguage === "German" && "Pro nacht"}
-                  {currentLanguage === "Chinese" && "每晚"}
-                  {currentLanguage === "English" && "Per night"}
-                  {currentLanguage === "Spanish" && "Por noche"}
-                </span>
-              </div>
-              <div className={stl.totalWrap}>
-                <div className={stl.euroWrapper}>
-                  <FaEuroSign className={stl.euro} />
-                </div>
-                <div className={stl.personWrapper}>
-                  <div className={stl.priceBlock}>
-                    <IoPeopleSharp className={stl.icon} />
-                    <span className={stl.copyTxt}>{kamer["2personen"]},-</span>
-                  </div>
-                  {kamer["3personen"] > 0 && (
-                    <div className={stl.priceBlock}>
-                      <IoIosPeople
-                        className={stl.icon}
-                        style={{
-                          fontSize: "24px",
-                        }}
-                      />
-                      <span className={stl.copyTxt}>
-                        {kamer["3personen"]},-
-                      </span>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
             <div className={stl.toeslagWrap}>
               <div className={stl.toeslagTop}>
                 <span className={stl.copyTitle}>

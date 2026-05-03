@@ -150,6 +150,9 @@
   width: 9rem;
   gap: 1rem;
   /* background-color: red; */
+  color: white;
+  font-family: "Open Sans";
+  white-space: nowrap;
 }
 
 .euro {
@@ -179,10 +182,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem 0.5rem;
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
-  width: 50%;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .toeslagTop {
@@ -242,27 +243,12 @@
 .descriptionWrap {
   display: flex;
   width: 100%;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.1rem;
+  padding: 0.5rem;
   gap: 0.5rem;
   flex: 1;
   overflow-y: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
 }
 
-.descriptionWrap::-webkit-scrollbar {
-  width: 1px;
-}
-
-.descriptionWrap::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.descriptionWrap::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
 .innerWrap {
   display: flex;
   gap: 0.5rem;
@@ -293,22 +279,6 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* Hide scrollbar space for Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-}
-
-/* Chrome, Edge, Safari */
-.copyTextBox::-webkit-scrollbar {
-  width: 1px;
-}
-
-.copyTextBox::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.copyTextBox::-webkit-scrollbar-thumb {
-  background-color: transparent;
 }
 
 .boxTitle {
@@ -340,23 +310,8 @@
   padding-bottom: 10px;
   overflow-y: scroll;
   padding-top: 5px;
-  /* Hide scrollbar space for Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
 }
 
-/* Chrome, Edge, Safari */
-.voorzienList::-webkit-scrollbar {
-  width: 1px;
-}
-
-.voorzienList::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.voorzienList::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
 .voorziening {
   color: white;
   font-family: "Open Sans";
