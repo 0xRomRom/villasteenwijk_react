@@ -1,33 +1,12 @@
 import stl from "./KamersPrijzen.module.css";
 import { motion as m } from "framer-motion";
 import door from "../../assets/icons/Door.webp";
-import appartment from "../../assets/icons/Appartement.webp";
 import KamerModal from "./KamerModal";
-import { useEffect, useState } from "react";
-import Breakfast1 from "../../assets/ontbijt/Ontbijt1.webp";
-import Breakfast2 from "../../assets/ontbijt/Ontbijt2.webp";
+import { useState } from "react";
 
 const KamersPrijzen = ({ currentLanguage }) => {
   const [kamerKeuze, setKamerKeuze] = useState(null);
   const [showOntbijt, setShowOntbijt] = useState(false);
-  const [breakfastImgIndex, setBreakfastImgIndex] = useState(0);
-
-  const breakfastImages = [Breakfast1, Breakfast2];
-
-  useEffect(() => {
-    breakfastImages.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, [breakfastImages, breakfastImages.length]);
-
-  useEffect(() => {
-    if (kamerKeuze) return;
-    const interval = setInterval(() => {
-      setBreakfastImgIndex((prev) => (prev + 1) % breakfastImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [breakfastImages.length, kamerKeuze]);
 
   const openModal = (room) => {
     setKamerKeuze(room);
@@ -40,15 +19,6 @@ const KamersPrijzen = ({ currentLanguage }) => {
           className={stl.breakfastOverlay}
           onClick={() => setShowOntbijt(false)}
         >
-          <m.img
-            key={breakfastImgIndex}
-            src={breakfastImages[breakfastImgIndex]}
-            alt="Breakfast"
-            className={stl.breakfastImg}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-          />
           <div className={stl.priceCol}>
             <span>
               {currentLanguage === "Dutch" &&
