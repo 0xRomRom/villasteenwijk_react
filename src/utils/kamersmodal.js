@@ -31,6 +31,8 @@ const kamers = [
       },
       voorziening: {
         Dutch: [
+          "Luxe ontbijt in privé ontbijtkamer inclusief bediening",
+          "Eenvoudig ontbijt in uw kamer",
           "Luxe Boxspring bedden (2 bedden tegen elkaar aan, 180x200cm met luxe topper)",
           "De bedden zijn ook los van elkaar te zetten, als 2 1-persoons bedden van 90x200cm. Indien gewenst",
           "Satijnen beddengoed en badtextiel van “De witte Lietaer”",
@@ -45,6 +47,8 @@ const kamers = [
           "2 Luxe, zachte badjassen van “De Witte Lietaer”",
         ],
         German: [
+          "Luxusfrühstück in privatem Frühstücksraum inklusive Bedienung",
+          "Einfaches Frühstück auf Ihrem Zimmer",
           "Luxuriöse Boxspringbetten (2 Betten nebeneinander, 180x200cm mit luxuriöser Topper)",
           "Die Betten können auch einzeln gestellt werden, als 2 Einzelbetten von 90x200cm. Auf Wunsch",
           "Satinschlafwäsche und Badtextilien von 'De Witte Lietaer'",
@@ -59,6 +63,8 @@ const kamers = [
           "2 Luxuriöse, weiche Bademäntel von 'De Witte Lietaer'",
         ],
         Chinese: [
+          "带服务的私人早餐室豪华早餐",
+          "客房内简易早餐",
           "豪华弹簧床（两张床并排，180x200厘米，配有豪华床垫）",
           "床也可以单独放置，作为2张90x200厘米的单人床。根据需要",
           "“De Witte Lietaer”的缎面床上用品和浴巾",
@@ -73,6 +79,8 @@ const kamers = [
           "2件“De Witte Lietaer”豪华柔软的浴袍",
         ],
         English: [
+          "Luxury breakfast in a private breakfast room including service",
+          "Simple breakfast in your room",
           "Luxury Boxspring beds (2 beds together, 180x200cm with luxury topper)",
           "The beds can also be separated, as 2 single beds of 90x200cm each. If desired",
           "Satin bedding and bath textiles from “De Witte Lietaer”",
@@ -87,6 +95,8 @@ const kamers = [
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
         Spanish: [
+          "Desayuno de lujo en sala privada con servicio incluido",
+          "Desayuno sencillo en su habitación",
           "Camas de muelles embolsados de lujo (2 camas juntas, 180x200cm con cubrecolchón de lujo)",
           "Las camas también se pueden separar, como 2 camas individuales de 90x200cm cada una. Si se desea",
           "Ropa de cama de satén y textiles de baño de “De Witte Lietaer”",
@@ -134,6 +144,8 @@ const kamers = [
       },
       voorziening: {
         Dutch: [
+          "Luxe ontbijt in privé ontbijtkamer inclusief bediening",
+          "Eenvoudig ontbijt in uw kamer",
           "Luxe “van der Valk” Kingsize Boxspring bed van Swiss Sense 160X200 cm",
           "Satijnen wit beddengoed en badtextiel van “De witte Lietaer”",
           "Luxe Philips Ambilight TV met Netflix en kabel TV",
@@ -146,6 +158,8 @@ const kamers = [
           "2 Luxe, zachte badjassen van “De Witte Lietaer”",
         ],
         German: [
+          "Luxusfrühstück in privatem Frühstücksraum inklusive Bedienung",
+          "Einfaches Frühstück auf Ihrem Zimmer",
           "Luxuriöses 'van der Valk' Kingsize-Boxspringbett von Swiss Sense 160x200 cm",
           "Satinierte weiße Bettwäsche und Badtextilien von 'De Witte Lietaer'",
           "Luxuriöser Philips Ambilight Fernseher mit Netflix und Kabel-TV",
@@ -158,6 +172,8 @@ const kamers = [
           "2 Luxuriöse, weiche Bademäntel von 'De Witte Lietaer'",
         ],
         Chinese: [
+          "带服务的私人早餐室豪华早餐",
+          "客房内简易早餐",
           "豪华“van der Valk”品牌的Kingsize Boxspring床，来自Swiss Sense，尺寸160x200厘米",
           "“De Witte Lietaer”品牌的亚麻色床上用品和浴巾",
           "配备Netflix和有线电视的豪华Philips Ambilight电视",
@@ -170,6 +186,8 @@ const kamers = [
           "2件“De Witte Lietaer”品牌的豪华柔软浴袍",
         ],
         English: [
+          "Luxury breakfast in a private breakfast room including service",
+          "Simple breakfast in your room",
           "Luxury “van der Valk” Kingsize Boxspring bed from Swiss Sense 160X200 cm",
           "Satin white bedding and bath textiles from “De Witte Lietaer”",
           "Luxury Philips Ambilight TV with Netflix and cable TV",
@@ -182,6 +200,8 @@ const kamers = [
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
         Spanish: [
+          "Desayuno de lujo en sala privada con servicio incluido",
+          "Desayuno sencillo en su habitación",
           "Cama de muelles embolsados de lujo “van der Valk” Kingsize de Swiss Sense 160X200 cm",
           "Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",
           "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
@@ -227,6 +247,8 @@ const kamers = [
       },
       voorziening: {
         Dutch: [
+          "Luxe ontbijt in privé ontbijtkamer inclusief bediening",
+          "Eenvoudig ontbijt in uw kamer",
           "Luxe “van der Valk” Kingsize Boxspring bed van Swiss Sense 160X200cm",
           "Satijnen wit beddengoed en badtextiel van “De witte Lietaer”",
           "Luxe Philips Ambilight TV met Netflix en kabel TV",
@@ -239,6 +261,8 @@ const kamers = [
           "2 Luxe, zachte badjassen van “De Witte Lietaer”",
         ],
         German: [
+          "Luxusfrühstück in privatem Frühstücksraum inklusive Bedienung",
+          "Einfaches Frühstück auf Ihrem Zimmer",
           "Luxuriöses 'van der Valk' Kingsize-Boxspringbett von Swiss Sense 160x200cm",
           "Satinierte weiße Bettwäsche und Badtextilien von 'De Witte Lietaer'",
           "Luxuriöser Philips Ambilight Fernseher mit Netflix und Kabel-TV",
@@ -251,6 +275,8 @@ const kamers = [
           "2 Luxuriöse, weiche Bademäntel von 'De Witte Lietaer'",
         ],
         Chinese: [
+          "带服务的私人早餐室豪华早餐",
+          "客房内简易早餐",
           "豪华'van der Valk'品牌的Kingsize Boxspring床，来自Swiss Sense，尺寸160x200cm",
           "“De Witte Lietaer”品牌的亚麻色床上用品和浴巾",
           "配备Netflix和有线电视的豪华Philips Ambilight电视",
@@ -263,6 +289,8 @@ const kamers = [
           "2件'De Witte Lietaer'品牌的豪华柔软浴袍",
         ],
         English: [
+          "Luxury breakfast in a private breakfast room including service",
+          "Simple breakfast in your room",
           "Luxury 'van der Valk' Kingsize Boxspring bed from Swiss Sense 160X200cm",
           "Satin white bedding and bath textiles from “De Witte Lietaer”",
           "Luxury Philips Ambilight TV with Netflix and cable TV",
@@ -275,6 +303,8 @@ const kamers = [
           "2 Luxury, soft bathrobes from “De Witte Lietaer”",
         ],
         Spanish: [
+          "Desayuno de lujo en sala privada con servicio incluido",
+          "Desayuno sencillo en su habitación",
           "Cama de muelles embolsados de lujo 'van der Valk' Kingsize de Swiss Sense 160X200cm",
           "Ropa de cama blanca de satén y textiles de baño de “De Witte Lietaer”",
           "Televisor Philips Ambilight de lujo con Netflix y televisión por cable",
@@ -407,6 +437,8 @@ const kamers = [
       copy2: "",
       voorziening: {
         Dutch: [
+          "Luxe ontbijt in privé ontbijtkamer inclusief bediening",
+          "Eenvoudig ontbijt in uw kamer",
           "40m2",
           "Maximaal 3 personen",
           "Eigen privé opgang",
@@ -426,6 +458,8 @@ const kamers = [
           "Een tafel met 2 stoelen waar ook het ontbijt geserveerd wordt",
         ],
         German: [
+          "Luxusfrühstück in privatem Frühstücksraum inklusive Bedienung",
+          "Einfaches Frühstück auf Ihrem Zimmer",
           "40m2",
           "Maximal 3 Personen",
           "Eigenem privaten Eingang",
@@ -446,6 +480,8 @@ const kamers = [
           "Auf Wunsch können wir ein zusätzliches Bett aufstellen, Kosten €25,-",
         ],
         Chinese: [
+          "带服务的私人早餐室豪华早餐",
+          "客房内简易早餐",
           "40平方米",
           "最多3人",
           "私人入口",
@@ -466,6 +502,8 @@ const kamers = [
           "根据需要，我们可以提供1张额外的床，费用€25,-",
         ],
         English: [
+          "Luxury breakfast in a private breakfast room including service",
+          "Simple breakfast in your room",
           "40m2",
           "Maximum 3 persons",
           "Private entrance",
@@ -485,6 +523,8 @@ const kamers = [
           "A table with 2 chairs where breakfast is served",
         ],
         Spanish: [
+          "Desayuno de lujo en sala privada con servicio incluido",
+          "Desayuno sencillo en su habitación",
           "40m2",
           "Máximo 3 personas",
           "Entrada privada",
@@ -535,6 +575,8 @@ const kamers = [
       },
       voorziening: {
         Dutch: [
+          "Luxe ontbijt in privé ontbijtkamer inclusief bediening",
+          "Eenvoudig ontbijt in uw kamer",
           "2 persoons kamer",
           "Eigen luxe badkamer, toilet en bad.",
           "Bank op foto is uit te trekken tot 2-persoons (kinder)bed",
@@ -549,6 +591,8 @@ const kamers = [
           "Woonkamer met pelletkachel en Chesterfield inrichting",
         ],
         German: [
+          "Luxusfrühstück in privatem Frühstücksraum inklusive Bedienung",
+          "Einfaches Frühstück auf Ihrem Zimmer",
           "Eigenem privaten Eingang",
           "Luxuriöses Kingsize-Boxspringbett von 160X200cm",
           "Satinierte weiße Bettwäsche und Badtextilien von “De Witte Lietaer”",
@@ -568,6 +612,8 @@ const kamers = [
           "Essbar mit 4 Barhockern",
         ],
         Chinese: [
+          "带服务的私人早餐室豪华早餐",
+          "客房内简易早餐",
           "独立私人入口",
           "豪华160X200厘米的特大号弹簧床",
           "“De Witte Lietaer”品牌的亚麻色床上用品和浴巾",
@@ -587,6 +633,8 @@ const kamers = [
           "带4个吧台凳的餐吧",
         ],
         English: [
+          "Luxury breakfast in a private breakfast room including service",
+          "Simple breakfast in your room",
           "Private entrance",
           "All on the ground floor and without thresholds, wheelchair friendly. Except for the step at the front door.",
           "Luxury kingsize boxspring bed of 160X200cm",
@@ -607,6 +655,8 @@ const kamers = [
           "Dining bar with 4 bar stools",
         ],
         Spanish: [
+          "Desayuno de lujo en sala privada con servicio incluido",
+          "Desayuno sencillo en su habitación",
           "Entrada privada",
           "Cama supletoria (sofá cama) + 50 €",
           "Todo en la planta baja y sin desniveles, accesible en silla de ruedas. Excepto por el escalón en la puerta principal.",

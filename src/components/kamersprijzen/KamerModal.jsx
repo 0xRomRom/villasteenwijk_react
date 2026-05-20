@@ -69,14 +69,65 @@ import Pic68 from "../../assets/ramswoerthe/Pic8.webp";
 import Pic69 from "../../assets/ramswoerthe/Pic9.webp";
 import Pic70 from "../../assets/ramswoerthe/Pic10.webp";
 import Pic71 from "../../assets/ramswoerthe/Pic11.webp";
+import Simpelontbijt from "../../assets/ontbijt/Simpelontbijt.webp";
 
 import kamers from "../../utils/kamersmodal";
 
-const kamer1Images = [Pic1, Pic2, Pic3, Pic4, Pic5, Pic6, Pic7, Pic8];
-const kamer2Images = [Pic21, Pic22, Pic23, Pic24, Pic25, Pic26, Pic27, Pic28];
-const kamer3Images = [Pic31, Pic32, Pic33, Pic34, Pic35, Pic36, Pic37, Pic38];
-const kamer4Images = [Pic41, Pic42, Pic43, Pic44, Pic45, Pic46, Pic47, Pic48];
-const kamer5Images = [Pic51, Pic52, Pic53, Pic54, Pic55, Pic56, Pic57, Pic58];
+const kamer1Images = [
+  Pic1,
+  Pic2,
+  Pic3,
+  Pic4,
+  Pic5,
+  Pic6,
+  Pic7,
+  Pic8,
+  Simpelontbijt,
+];
+const kamer2Images = [
+  Pic21,
+  Pic22,
+  Pic23,
+  Pic24,
+  Pic25,
+  Pic26,
+  Pic27,
+  Pic28,
+  Simpelontbijt,
+];
+const kamer3Images = [
+  Pic31,
+  Pic32,
+  Pic33,
+  Pic34,
+  Pic35,
+  Pic36,
+  Pic37,
+  Pic38,
+  Simpelontbijt,
+];
+const kamer4Images = [
+  Pic41,
+  Pic42,
+  Pic43,
+  Pic44,
+  Pic45,
+  Pic46,
+  Pic47,
+  Pic48,
+  Simpelontbijt,
+];
+const kamer5Images = [
+  Pic51,
+  Pic52,
+  Pic53,
+  Pic54,
+  Pic55,
+  Pic56,
+  Pic57,
+  Pic58,
+  Simpelontbijt,
+];
 const kamer6Images = [
   Pic61,
   Pic62,
@@ -89,6 +140,8 @@ const kamer6Images = [
   Pic69,
   Pic70,
   Pic71,
+  ,
+  Simpelontbijt,
 ];
 
 const KamerModal = ({ kamerKeuze, setKamerKeuze, currentLanguage }) => {
