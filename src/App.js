@@ -18,12 +18,13 @@ const App = () => {
   const [currentLanguage, setCurrentLanguage] = useState("Dutch");
 
   useEffect(() => {
-    console.log(currentLanguage);
-  }, [currentLanguage]);
+    window.location.href =
+      "https://www.heerlijkehuisjes.nl/vakantiehuis-steenwijk/OV806";
+  }, []);
 
   return (
     <div className="App">
-      <Navbar
+      {/* <Navbar
         setCurrentLanguage={setCurrentLanguage}
         currentLanguage={currentLanguage}
       />
@@ -64,7 +65,7 @@ const App = () => {
           element={<Contact currentLanguage={currentLanguage} />}
         />
       </Routes>
-      <Footer currentLanguage={currentLanguage} />
+      <Footer currentLanguage={currentLanguage} /> */}
     </div>
   );
 };
