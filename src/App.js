@@ -19,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     window.location.href =
-      "https://www.heerlijkehuisjes.nl/vakantiehuis-steenwijk/OV806";
+      "https://www.villaforyou.com/nl/vakantiehuis-nederland/overijssel/vakantiehuis-steenwijk-18-personen-a8535?adults=2";
   }, []);
 
   return (
